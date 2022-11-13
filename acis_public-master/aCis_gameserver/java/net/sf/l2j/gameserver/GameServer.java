@@ -101,6 +101,7 @@ import net.sf.l2j.gameserver.taskmanager.ShadowItemTaskManager;
 import net.sf.l2j.gameserver.taskmanager.WaterTaskManager;
 import net.sf.l2j.util.DeadLockDetector;
 import net.sf.l2j.util.IPv4Filter;
+import net.sf.l2j.gameserver.data.xml.IconData;
 
 public class GameServer
 {
@@ -169,6 +170,7 @@ public class GameServer
 		SoulCrystalData.getInstance();
 		AugmentationData.getInstance();
 		CursedWeaponManager.getInstance();
+		IconData.getInstance();
 		
 		StringUtil.printSection("Admins");
 		AdminData.getInstance();

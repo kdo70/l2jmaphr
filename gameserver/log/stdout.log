@@ -1,2 +1,0 @@
-Error: Could not find or load main class net.sf.l2j.gameserver.GameServer
-Caused by: java.lang.ClassNotFoundException: net.sf.l2j.gameserver.GameServer

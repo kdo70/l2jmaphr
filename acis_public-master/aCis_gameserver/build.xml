@@ -8,6 +8,8 @@
 	<property name="build.dist" location="${build}/dist" />
 	<property name="build.dist.login" location="${build.dist}/login" />
 	<property name="build.dist.game" location="${build.dist}/gameserver" />
+	<property name="login" location="../../login" />
+	<property name="game" location="../../gameserver" />
 
 	<target name="dist" depends="jar">
 		<copy todir="${build.dist.login}/libs">
@@ -77,6 +79,18 @@
 		</copy>
 
 		<copy todir="${build.dist.game}/libs">
+			<fileset dir="${build}">
+				<include name="l2jserver.jar" />
+			</fileset>
+		</copy>
+
+		<copy todir="${login}/libs">
+			<fileset dir="${build}">
+				<include name="l2jserver.jar" />
+			</fileset>
+		</copy>
+
+		<copy todir="${game}/libs">
 			<fileset dir="${build}">
 				<include name="l2jserver.jar" />
 			</fileset>
