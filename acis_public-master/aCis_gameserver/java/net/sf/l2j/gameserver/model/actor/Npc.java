@@ -48,10 +48,7 @@ import net.sf.l2j.gameserver.taskmanager.RandomAnimationTaskManager;
 
 import java.text.DateFormat;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.StringTokenizer;
+import java.util.*;
 
 
 /**
@@ -1441,63 +1438,67 @@ public class Npc extends Creature {
     }
 
     /**
-     * Get drop list
+     * Получить drop лист
      */
     public static void sendNpcDrop(Player player, int npcId, int page) {
-
         final int ITEMS_PER_LIST = 8;
 
         final NpcTemplate npc = NpcData.getInstance().getTemplate(npcId);
-        if (npc == null) return;
-        if (npc.getDropData().isEmpty()) return;
 
+        if (npc == null || npc.getDropData().isEmpty()) {
+            return;
+        }
 
         final List<DropCategory> list = new ArrayList<>(npc.getDropData());
+
+        list.sort(Comparator.comparing(DropCategory::getCategoryChance));
         Collections.reverse(list);
-
-        int i = 0;
-        int itemsInPage = 0;
-        int currentPage = 1;
-
-        boolean hasMore = false;
 
         final StringBuilder sb = new StringBuilder();
 
+        int i = 0;
+        int CATEGORY = 0;
+        int currentPage = 1;
+        int itemsInPage = 0;
+        boolean hasMore = false;
+
         for (DropCategory cat : list) {
+            CATEGORY++;
             if (itemsInPage == ITEMS_PER_LIST) {
                 hasMore = true;
                 break;
             }
+
             if (i == 0 && currentPage == page) {
-                double catChance = (
-                        cat.getCategoryChance() * 1.
-                ) / 10000;
-                String percent = null;
-                if (catChance <= 0.001) {
-                    DecimalFormat df = new DecimalFormat("#.####");
-                    percent = df.format(catChance);
-                } else if (catChance <= 0.01) {
-                    DecimalFormat df = new DecimalFormat("#.###");
-                    percent = df.format(catChance);
-                } else {
-                    DecimalFormat df = new DecimalFormat("##.##");
-                    percent = df.format(catChance);
-                }
-                if (cat.isSweep()) {
-                    sb.append("<br><font color=B09878> &nbsp;Category spoil</font>");
-                } else {
-                    sb.append("<br><font color=B09878> &nbsp;Category chance: " + percent + "%</font>");
-                }
-                sb.append("<img src=L2UI.SquareGray width=280 height=1>");
+                sb.append("<br><center><font color=B09878>&nbsp;Category ")
+                        .append("#")
+                        .append(CATEGORY)
+                        .append("&nbsp;Type: ")
+                        .append(cat.isSweep() ? "Spoil " : "Drop ")
+                        .append("&nbsp;Chance: ")
+                        .append(cat.getChance())
+                        .append("%</font></center><img src=L2UI.SquareGray width=280 height=1>");
             }
             for (DropData drop : cat.getAllDrops()) {
-                double chance = (
-                        drop.getItemId() == 57
-                                ? drop.getChance() * Config.RATE_DROP_ADENA
-                                : drop.getChance() * Config.RATE_DROP_ITEMS
-                ) / 10000;
+                double chance = ((drop.getItemId() == 57) ? drop.getChance() * Config.RATE_DROP_ADENA : drop.getChance() * Config.RATE_DROP_ITEMS) / 10000;
+
+                double min = drop.getMinDrop();
+                double max = drop.getMaxDrop();
+
+                System.out.println("chance: " + chance);
+                System.out.println((boolean) ((int) chance > 100));
+                if ((int) chance > 100) {
+                    min = (min * chance) / 100;
+                    max = (max * chance) / 100;
+                }
+
+                chance = (drop.getChance() * Config.RATE_DROP_ITEMS) / 10000;
+
+                String minz = cat.getPercent(Math.floor(min));
+                String maxz = cat.getPercent(Math.ceil(max));
 
                 chance = chance > 100 ? 100 : chance;
+
 
                 String percent = null;
                 if (chance <= 0.001) {
@@ -1532,18 +1533,9 @@ public class Npc extends Creature {
 
                 sb.append("<table width=280 bgcolor=000000><tr>");
                 sb.append("<td width=44 height=41 align=center>");
-                sb.append("<table bgcolor=FFFFFF cellpadding=6 cellspacing=\"-5\">");
-                sb.append("<tr><td><button width=32 height=32 back="
-                        + IconData.getIcon(item.getItemId())
-                        + " fore=" + IconData.getIcon(item.getItemId())
-                        + "></td></tr></table></td>");
-                sb.append("<td width=260>"
-                        + name
-                        + "<br1><font color=B09878>"
-                        + "Chance: " + percent
-                        + "% Count: " + drop.getMinDrop()
-                        + (drop.getMinDrop() == drop.getMaxDrop() ? "" : " - " + drop.getMaxDrop())
-                        + "</font></td>");
+                sb.append("<table bgcolor=" + (cat.isSweep() ? "FF00FF" : "B09678") + " cellpadding=6 cellspacing=-5>");
+                sb.append("<tr><td><button width=32 height=32 back=" + IconData.getIcon(item.getItemId()) + " fore=" + IconData.getIcon(item.getItemId()) + "></td></tr></table></td>");
+                sb.append("<td width=260>" + name + "<br1>" + "<font color=B09878>Chance: " + percent + "% Count: " + minz + (min == max ? "" : " - " + maxz) + "</font></td>");
                 sb.append("</tr></table>");
                 sb.append("<img src=L2UI.SquareGray width=280 height=1>");
                 itemsInPage++;
@@ -1558,10 +1550,9 @@ public class Npc extends Creature {
         sb.append("<td align=center width=30>");
         sb.append("<table width=1 height=2 bgcolor=000000></table>");
         if (page > 1) {
-            sb.append("<button action=\"bypass droplist "
-                    + npcId + " "
-                    + (page - 1)
-                    + "\" width=16 height=16 back=L2UI_ch3.prev1_over fore=L2UI_ch3.prev1>");
+            sb.append("<button action=\"bypass droplist " + npcId + " " + (page - 1) + "\" width=16 height=16 back=L2UI_ch3.prev1_over fore=L2UI_ch3.prev1>");
+        } else {
+            sb.append("<button action=\"bypass droplist " + npcId + " " + (page) + "\" width=16 height=16 back=L2UI_ch3.prev1_over fore=L2UI_ch3.prev1>");
         }
         sb.append("</td>");
 
@@ -1570,11 +1561,9 @@ public class Npc extends Creature {
         sb.append("<td align=center width=30>");
         sb.append("<table width=1 height=2 bgcolor=000000></table>");
         if (hasMore) {
-            sb.append("<button action=\"bypass droplist "
-                    + npcId
-                    + " "
-                    + (page + 1)
-                    + "\" width=16 height=16 back=L2UI_ch3.next1_over fore=L2UI_ch3.next1>");
+            sb.append("<button action=\"bypass droplist " + npcId + " " + (page + 1) + "\" width=16 height=16 back=L2UI_ch3.next1_over fore=L2UI_ch3.next1>");
+        } else {
+            sb.append("<button action=\"bypass droplist " + npcId + " " + (page) + "\" width=16 height=16 back=L2UI_ch3.next1_over fore=L2UI_ch3.next1>");
         }
         sb.append("</td>");
         sb.append("<td width=100></td>");

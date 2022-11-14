@@ -162,7 +162,6 @@
 	<aCar name="admin_zone" accessLevel="7" params="[show - all|clear|id]" desc="Show the zone panel, or the zone visually."/>
 
 	<!-- EDIT NPC -->
-	<aCar name="admin_show_droplist" accessLevel="7" />
 	<aCar name="admin_show_scripts" accessLevel="7" />
 	<aCar name="admin_show_shop" accessLevel="7" />
 	<aCar name="admin_show_shoplist" accessLevel="7" />

@@ -54,7 +54,6 @@ public class AdminEditNpc implements IAdminCommandHandler
 
     private static final String[] ADMIN_COMMANDS =
             {
-                    "admin_show_droplist",
                     "admin_show_scripts",
                     "admin_show_shop",
                     "admin_show_shoplist",
@@ -87,20 +86,6 @@ public class AdminEditNpc implements IAdminCommandHandler
             catch (Exception e)
             {
                 player.sendMessage("Usage: //show_shop <npc_id>");
-            }
-        }
-        else if (command.startsWith("admin_show_droplist"))
-        {
-            try
-            {
-                int npcId = Integer.parseInt(st.nextToken());
-                int page = (st.hasMoreTokens()) ? Integer.parseInt(st.nextToken()) : 1;
-
-                showNpcDropList(player, npcId, page);
-            }
-            catch (Exception e)
-            {
-                player.sendMessage("Usage: //show_droplist <npc_id> [<page>]");
             }
         }
         else if (command.startsWith("admin_show_skilllist"))
@@ -178,137 +163,6 @@ public class AdminEditNpc implements IAdminCommandHandler
 
         final NpcHtmlMessage html = new NpcHtmlMessage(0);
         html.setHtml(sb.toString());
-        player.sendPacket(html);
-    }
-
-    private static void showNpcDropList(Player player, int npcId, int page)
-    {
-        final int ITEMS_PER_LIST = 8;
-
-        final NpcTemplate npc = NpcData.getInstance().getTemplate(npcId);
-        if (npc == null) return;
-        if (npc.getDropData().isEmpty()) return;
-
-
-        final List<DropCategory> list = new ArrayList<>(npc.getDropData());
-        Collections.reverse(list);
-
-        int i = 0;
-        int itemsInPage = 0;
-        int currentPage = 1;
-
-        boolean hasMore = false;
-
-        final StringBuilder sb = new StringBuilder();
-
-        for (DropCategory cat : list) {
-            sb.append("1");
-            if (itemsInPage == ITEMS_PER_LIST) {
-                hasMore = true;
-                break;
-            }
-
-            for (DropData drop : cat.getAllDrops()) {
-                double chance = (
-                        drop.getItemId() == 57
-                                ? drop.getChance() * Config.RATE_DROP_ADENA
-                                : drop.getChance() * Config.RATE_DROP_ITEMS
-                ) / 10000;
-
-                chance = chance > 100 ? 100 : chance;
-
-                String percent = null;
-                if (chance <= 0.001) {
-                    DecimalFormat df = new DecimalFormat("#.####");
-                    percent = df.format(chance);
-                } else if (chance <= 0.01) {
-                    DecimalFormat df = new DecimalFormat("#.###");
-                    percent = df.format(chance);
-                } else {
-                    DecimalFormat df = new DecimalFormat("##.##");
-                    percent = df.format(chance);
-                }
-
-                Item item = ItemData.getInstance().getTemplate(drop.getItemId());
-                String name = item.getName();
-
-                if (name.length() >= 40) name = name.substring(0, 37) + "...";
-
-                if (currentPage != page) {
-                    i++;
-                    if (i == ITEMS_PER_LIST) {
-                        currentPage++;
-                        i = 0;
-                    }
-                    continue;
-                }
-
-                if (itemsInPage == ITEMS_PER_LIST) {
-                    hasMore = true;
-                    break;
-                }
-
-                sb.append("<table width=280 bgcolor=000000><tr>");
-                sb.append("<td width=44 height=41 align=center>");
-                sb.append("<table bgcolor=FFFFFF cellpadding=6 cellspacing=\"-5\">");
-                sb.append("<tr><td><button width=32 height=32 back="
-                        + IconData.getIcon(item.getItemId())
-                        + " fore=" + IconData.getIcon(item.getItemId())
-                        + "></td></tr></table></td>");
-                sb.append("<td width=260>"
-                        + name
-                        + "<br1><font color=B09878>"
-                        + (cat.isSweep() ? "Spoil" : "Drop")
-                        + " Chance: " + percent
-                        + "% Count: " + drop.getMinDrop()
-                        + " - "
-                        + drop.getMaxDrop()
-                        + "</font></td>");
-                sb.append("</tr></table>");
-                sb.append("<img src=L2UI.SquareGray width=280 height=1>");
-                itemsInPage++;
-            }
-        }
-
-        sb.append("<img height=" + (335 - (itemsInPage * 42)) + ">");
-        sb.append("<img src=L2UI.SquareGray width=280 height=1>");
-
-        sb.append("<table width=280 bgcolor=000000><tr>");
-        sb.append("<td width=100></td>");
-        sb.append("<td align=center width=30>");
-        sb.append("<table width=1 height=2 bgcolor=000000></table>");
-        if (page > 1) {
-            sb.append("<button action=\"bypass droplist "
-                    + npcId + " "
-                    + (page - 1)
-                    + "\" width=16 height=16 back=L2UI_ch3.prev1_over fore=L2UI_ch3.prev1>");
-        }
-        sb.append("</td>");
-
-        sb.append("<td align=center width=100>Page " + page + "</td>");
-
-        sb.append("<td align=center width=30>");
-        sb.append("<table width=1 height=2 bgcolor=000000></table>");
-        if (hasMore) {
-            sb.append("<button action=\"bypass droplist "
-                    + npcId
-                    + " "
-                    + (page + 1)
-                    + "\" width=16 height=16 back=L2UI_ch3.next1_over fore=L2UI_ch3.next1>");
-        }
-        sb.append("</td>");
-        sb.append("<td width=100></td>");
-
-        sb.append("</tr></table>");
-
-        sb.append("<img src=L2UI.SquareGray width=280 height=1>");
-
-        NpcHtmlMessage html = new NpcHtmlMessage(npcId);
-
-        html.setFile("data/html/droplist.htm");
-        html.replace("%list%", sb.toString());
-        html.replace("%name%", npc.getName());
-
         player.sendPacket(html);
     }
 
