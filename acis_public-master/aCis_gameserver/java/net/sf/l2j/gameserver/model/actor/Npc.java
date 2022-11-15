@@ -12,6 +12,7 @@ import net.sf.l2j.gameserver.data.manager.DimensionalRiftManager;
 import net.sf.l2j.gameserver.data.manager.LotteryManager;
 import net.sf.l2j.gameserver.data.sql.ClanTable;
 import net.sf.l2j.gameserver.data.xml.*;
+import net.sf.l2j.gameserver.enums.FloodProtector;
 import net.sf.l2j.gameserver.enums.SayType;
 import net.sf.l2j.gameserver.enums.ScriptEventType;
 import net.sf.l2j.gameserver.enums.TeleportType;
@@ -1300,6 +1301,12 @@ public class Npc extends Creature {
     @Override
     public void onAction(Player player, boolean isCtrlPressed, boolean isShiftPressed) {
         if (isShiftPressed) {
+
+            if (!player.getClient().performAction(FloodProtector.SERVER_BYPASS)) {
+                player.sendPacket(ActionFailed.STATIC_PACKET);
+                return;
+            }
+
             // Check if the L2PcInstance is a GM
             if (player.isGM()) {
                 final NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());

@@ -119,10 +119,7 @@ public class DropCategory {
     }
 
     public String getChance(Player player, Monster monster, Boolean isChampion) {
-        System.out.println("_____________________________________________");
-        System.out.println("getCategoryChance() " + getCategoryChance());
         double chance = (getCategoryChance() * Config.RATE_DROP_ITEMS) / 10000;
-        System.out.println("chance() " + chance);
 
         if (Config.DEEPBLUE_DROP_RULES) {
             final int levelModifier = monster.calculateLevelModifierForDrop(player);
@@ -131,7 +128,6 @@ public class DropCategory {
             // Check if we should apply our maths so deep blue mobs will not drop that easy
             chance = ((chance - ((chance * levelModifier) / 100)) / deepBlueDrop);
         }
-        System.out.println("chance " + chance);
 
         if (isChampion) {
             chance *= Config.CHAMP_MUL_ITEMS;
@@ -145,7 +141,6 @@ public class DropCategory {
             chance = 0;
         }
 
-        System.out.println("getPercent  " + chance);
         return getPercent(chance);
     }
 
