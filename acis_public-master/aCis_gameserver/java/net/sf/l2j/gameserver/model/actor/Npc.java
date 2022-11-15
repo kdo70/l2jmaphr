@@ -27,8 +27,6 @@ import net.sf.l2j.gameserver.model.actor.template.NpcTemplate;
 import net.sf.l2j.gameserver.model.clanhall.ClanHall;
 import net.sf.l2j.gameserver.model.clanhall.SiegableHall;
 import net.sf.l2j.gameserver.model.entity.Castle;
-import net.sf.l2j.gameserver.model.item.DropCategory;
-import net.sf.l2j.gameserver.model.item.DropData;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
 import net.sf.l2j.gameserver.model.item.kind.Item;
 import net.sf.l2j.gameserver.model.item.kind.Weapon;
@@ -47,8 +45,9 @@ import net.sf.l2j.gameserver.taskmanager.DecayTaskManager;
 import net.sf.l2j.gameserver.taskmanager.RandomAnimationTaskManager;
 
 import java.text.DateFormat;
-import java.text.DecimalFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
 
 
 /**
@@ -1305,6 +1304,7 @@ public class Npc extends Creature {
             if (player.isGM()) {
                 final NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
                 html.setFile("data/html/admin/npcinfo.htm");
+                html.replace("%objectId%", getObjectId());
                 html.replace("%class%", getClass().getSimpleName());
                 html.replace("%id%", getTemplate().getNpcId());
                 html.replace("%lvl%", getTemplate().getLevel());
@@ -1375,7 +1375,7 @@ public class Npc extends Creature {
 			*/
                 player.sendPacket(html);
             } else if (Config.ALT_GAME_VIEWNPC) {
-                sendNpcDrop(player, getTemplate().getNpcId(), 1);
+                this.dropListHtml(player, getObjectId(), 1);
 /*				NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
 				html.setFile("data/html/custom/mobinfo.htm");
 
@@ -1438,146 +1438,9 @@ public class Npc extends Creature {
     }
 
     /**
-     * Получить drop лист
+     * Get html list of npc items
      */
-    public static void sendNpcDrop(Player player, int npcId, int page) {
-        final int ITEMS_PER_LIST = 8;
-
-        final NpcTemplate npc = NpcData.getInstance().getTemplate(npcId);
-
-        if (npc == null || npc.getDropData().isEmpty()) {
-            return;
-        }
-
-        final List<DropCategory> list = new ArrayList<>(npc.getDropData());
-
-        list.sort(Comparator.comparing(DropCategory::getCategoryChance));
-        Collections.reverse(list);
-
-        final StringBuilder sb = new StringBuilder();
-
-        int i = 0;
-        int CATEGORY = 0;
-        int currentPage = 1;
-        int itemsInPage = 0;
-        boolean hasMore = false;
-
-        for (DropCategory cat : list) {
-            CATEGORY++;
-            if (itemsInPage == ITEMS_PER_LIST) {
-                hasMore = true;
-                break;
-            }
-
-            if (i == 0 && currentPage == page) {
-                sb.append("<br><center><font color=B09878>&nbsp;Category ")
-                        .append("#")
-                        .append(CATEGORY)
-                        .append("&nbsp;Type: ")
-                        .append(cat.isSweep() ? "Spoil " : "Drop ")
-                        .append("&nbsp;Chance: ")
-                        .append(cat.getChance())
-                        .append("%</font></center><img src=L2UI.SquareGray width=280 height=1>");
-            }
-            for (DropData drop : cat.getAllDrops()) {
-                double chance = ((drop.getItemId() == 57) ? drop.getChance() * Config.RATE_DROP_ADENA : drop.getChance() * Config.RATE_DROP_ITEMS) / 10000;
-
-                double min = drop.getMinDrop();
-                double max = drop.getMaxDrop();
-
-                System.out.println("chance: " + chance);
-                System.out.println((boolean) ((int) chance > 100));
-                if ((int) chance > 100) {
-                    min = (min * chance) / 100;
-                    max = (max * chance) / 100;
-                }
-
-                chance = (drop.getChance() * Config.RATE_DROP_ITEMS) / 10000;
-
-                String minz = cat.getPercent(Math.floor(min));
-                String maxz = cat.getPercent(Math.ceil(max));
-
-                chance = chance > 100 ? 100 : chance;
-
-
-                String percent = null;
-                if (chance <= 0.001) {
-                    DecimalFormat df = new DecimalFormat("#.####");
-                    percent = df.format(chance);
-                } else if (chance <= 0.01) {
-                    DecimalFormat df = new DecimalFormat("#.###");
-                    percent = df.format(chance);
-                } else {
-                    DecimalFormat df = new DecimalFormat("##.##");
-                    percent = df.format(chance);
-                }
-
-                Item item = ItemData.getInstance().getTemplate(drop.getItemId());
-                String name = item.getName();
-
-                if (name.length() >= 40) name = name.substring(0, 37) + "...";
-
-                if (currentPage != page) {
-                    i++;
-                    if (i == ITEMS_PER_LIST) {
-                        currentPage++;
-                        i = 0;
-                    }
-                    continue;
-                }
-
-                if (itemsInPage == ITEMS_PER_LIST) {
-                    hasMore = true;
-                    break;
-                }
-
-                sb.append("<table width=280 bgcolor=000000><tr>");
-                sb.append("<td width=44 height=41 align=center>");
-                sb.append("<table bgcolor=" + (cat.isSweep() ? "FF00FF" : "B09678") + " cellpadding=6 cellspacing=-5>");
-                sb.append("<tr><td><button width=32 height=32 back=" + IconData.getIcon(item.getItemId()) + " fore=" + IconData.getIcon(item.getItemId()) + "></td></tr></table></td>");
-                sb.append("<td width=260>" + name + "<br1>" + "<font color=B09878>Chance: " + percent + "% Count: " + minz + (min == max ? "" : " - " + maxz) + "</font></td>");
-                sb.append("</tr></table>");
-                sb.append("<img src=L2UI.SquareGray width=280 height=1>");
-                itemsInPage++;
-            }
-        }
-
-        sb.append("<img height=" + (335 - (itemsInPage * 42)) + ">");
-        sb.append("<img src=L2UI.SquareGray width=280 height=1>");
-
-        sb.append("<table width=280 bgcolor=000000><tr>");
-        sb.append("<td width=100></td>");
-        sb.append("<td align=center width=30>");
-        sb.append("<table width=1 height=2 bgcolor=000000></table>");
-        if (page > 1) {
-            sb.append("<button action=\"bypass droplist " + npcId + " " + (page - 1) + "\" width=16 height=16 back=L2UI_ch3.prev1_over fore=L2UI_ch3.prev1>");
-        } else {
-            sb.append("<button action=\"bypass droplist " + npcId + " " + (page) + "\" width=16 height=16 back=L2UI_ch3.prev1_over fore=L2UI_ch3.prev1>");
-        }
-        sb.append("</td>");
-
-        sb.append("<td align=center width=100>Page " + page + "</td>");
-
-        sb.append("<td align=center width=30>");
-        sb.append("<table width=1 height=2 bgcolor=000000></table>");
-        if (hasMore) {
-            sb.append("<button action=\"bypass droplist " + npcId + " " + (page + 1) + "\" width=16 height=16 back=L2UI_ch3.next1_over fore=L2UI_ch3.next1>");
-        } else {
-            sb.append("<button action=\"bypass droplist " + npcId + " " + (page) + "\" width=16 height=16 back=L2UI_ch3.next1_over fore=L2UI_ch3.next1>");
-        }
-        sb.append("</td>");
-        sb.append("<td width=100></td>");
-
-        sb.append("</tr></table>");
-
-        sb.append("<img src=L2UI.SquareGray width=280 height=1>");
-
-        NpcHtmlMessage html = new NpcHtmlMessage(npcId);
-
-        html.setFile("data/html/droplist.htm");
-        html.replace("%list%", sb.toString());
-        html.replace("%name%", npc.getName());
-
-        player.sendPacket(html);
+    public void dropListHtml(Player player, int objectId, int page) {
+        (new DropListNpc(player, this, objectId, page)).send();
     }
 }

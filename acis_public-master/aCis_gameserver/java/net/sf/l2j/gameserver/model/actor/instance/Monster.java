@@ -1,26 +1,14 @@
 package net.sf.l2j.gameserver.model.actor.instance;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ScheduledFuture;
-
+import net.sf.l2j.Config;
 import net.sf.l2j.commons.math.MathUtil;
 import net.sf.l2j.commons.pool.ThreadPool;
 import net.sf.l2j.commons.random.Rnd;
-
-import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.data.manager.CursedWeaponManager;
 import net.sf.l2j.gameserver.data.xml.HerbDropData;
 import net.sf.l2j.gameserver.enums.BossInfoType;
 import net.sf.l2j.gameserver.geoengine.GeoEngine;
-import net.sf.l2j.gameserver.model.actor.Attackable;
-import net.sf.l2j.gameserver.model.actor.Creature;
-import net.sf.l2j.gameserver.model.actor.Playable;
-import net.sf.l2j.gameserver.model.actor.Player;
-import net.sf.l2j.gameserver.model.actor.Summon;
+import net.sf.l2j.gameserver.model.actor.*;
 import net.sf.l2j.gameserver.model.actor.container.monster.OverhitState;
 import net.sf.l2j.gameserver.model.actor.container.monster.SeedState;
 import net.sf.l2j.gameserver.model.actor.container.monster.SpoilState;
@@ -39,6 +27,13 @@ import net.sf.l2j.gameserver.model.location.Location;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
 import net.sf.l2j.gameserver.skills.L2Skill;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ScheduledFuture;
 
 /**
  * A monster extends {@link Attackable} class.<br>
@@ -153,6 +148,11 @@ public class Monster extends Attackable {
                     long exp = expSp[0];
                     int sp = expSp[1];
 
+                    if (isChampion()) {
+                        exp *= Config.CHAMP_MUL_EXP;
+                        sp *= Config.CHAMP_MUL_SP;
+                    }
+
                     exp *= 1 - penalty;
 
                     // Test over-hit.
@@ -218,6 +218,11 @@ public class Monster extends Attackable {
                 final int[] expSp = calculateExpAndSp(levelDiff, partyDmg, totalDamage);
                 long exp = expSp[0];
                 int sp = expSp[1];
+
+                if (isChampion()) {
+                    exp *= Config.CHAMP_MUL_EXP;
+                    sp *= Config.CHAMP_MUL_SP;
+                }
 
                 exp *= partyMul;
                 sp *= partyMul;
@@ -496,12 +501,25 @@ public class Monster extends Attackable {
         }
 
         // Applies Drop rates
-        if (drop.getItemId() == 57)
+        if (drop.getItemId() == 57) {
             dropChance *= Config.RATE_DROP_ADENA;
-        else if (isSweep)
+            if (isChampion())
+                dropChance *= Config.CHAMP_MUL_ADENA;
+        } else if (isSweep) {
             dropChance *= Config.RATE_DROP_SPOIL;
-        else
-            dropChance *= (isRaidBoss()) ? Config.RATE_DROP_ITEMS_BY_RAID : Config.RATE_DROP_ITEMS;
+            if (isChampion())
+                dropChance *= Config.CHAMP_MUL_SPOIL;
+        } else {
+            if (isRaidBoss()) {
+                dropChance *= Config.RATE_DROP_ITEMS_BY_RAID;
+            } else {
+                dropChance *= Config.RATE_DROP_ITEMS;
+                if (isChampion())
+                    dropChance *= Config.CHAMP_MUL_ITEMS;
+
+            }
+        }
+
 
         // Set our limits for chance of drop
         if (dropChance < 1)
@@ -564,13 +582,12 @@ public class Monster extends Attackable {
         // Applies Drop rates
         categoryDropChance *= (isRaidBoss()) ? Config.RATE_DROP_ITEMS_BY_RAID : Config.RATE_DROP_ITEMS;
 
+        if (isChampion())
+            categoryDropChance *= Config.CHAMP_MUL_ITEMS;
+
         // Set our limits for chance of drop
         if (categoryDropChance < 1)
             categoryDropChance = 1;
-
-        System.out.println(" ____________________________");
-        System.out.println("Monster");
-        System.out.println("Rnd " + Rnd.get(DropData.MAX_CHANCE) + " categoryDropChance " + categoryDropChance + " If: " + (Rnd.get(DropData.MAX_CHANCE) < categoryDropChance));
 
         // Check if an Item from this category must be dropped
         if (Rnd.get(DropData.MAX_CHANCE) < categoryDropChance) {
@@ -591,10 +608,20 @@ public class Monster extends Attackable {
             // if smaller.
 
             double dropChance = drop.getChance();
-            if (drop.getItemId() == 57)
+            if (drop.getItemId() == 57) {
                 dropChance *= Config.RATE_DROP_ADENA;
-            else
-                dropChance *= (isRaidBoss()) ? Config.RATE_DROP_ITEMS_BY_RAID : Config.RATE_DROP_ITEMS;
+                if (isChampion())
+                    dropChance *= Config.CHAMP_MUL_ADENA;
+            } else {
+                if (isRaidBoss()) {
+                    dropChance *= Config.RATE_DROP_ITEMS_BY_RAID;
+                } else {
+                    dropChance *= Config.RATE_DROP_ITEMS;
+                    if (isChampion())
+                        dropChance *= Config.CHAMP_MUL_ITEMS;
+
+                }
+            }
 
             if (dropChance < DropData.MAX_CHANCE)
                 dropChance = DropData.MAX_CHANCE;
@@ -608,10 +635,7 @@ public class Monster extends Attackable {
 
             // Check if the Item must be dropped
             int random = Rnd.get(DropData.MAX_CHANCE);
-            System.out.println("random: " + random);
-            System.out.println("dropChance: " + dropChance);
             while (random < dropChance) {
-                System.out.println("++");
                 // Get the item quantity dropped
                 if (min < max)
                     itemCount += Rnd.get(min, max);
@@ -734,7 +758,7 @@ public class Monster extends Attackable {
      * @param player : The {@link Player} to test.
      * @return The level modifier for drop purpose, based on this instance and the {@link Player} set as parameter.
      */
-    private int calculateLevelModifierForDrop(Player player) {
+    public int calculateLevelModifierForDrop(Player player) {
         if (Config.DEEPBLUE_DROP_RULES) {
             int highestLevel = player.getStatus().getLevel();
 
@@ -801,6 +825,27 @@ public class Monster extends Attackable {
                     continue;
 
                 dropOrAutoLootItem(player, holder, true);
+            }
+        }
+
+        // Apply special item drop for champions.
+        if (isChampion() && Config.CHAMP_ITEM_DROP_CHANCE > 0) {
+            int dropChance = Config.CHAMP_ITEM_DROP_CHANCE;
+
+            // Apply level modifier, if any/wanted.
+            if (Config.DEEPBLUE_DROP_RULES) {
+                int deepBlueDrop = (levelModifier > 0) ? 3 : 1;
+
+                // Check if we should apply our maths so deep blue mobs will not drop that easy.
+                dropChance = ((Config.CHAMP_ITEM_DROP_CHANCE - ((Config.CHAMP_ITEM_DROP_CHANCE * levelModifier) / 100)) / deepBlueDrop);
+            }
+
+            if (Rnd.get(100) < dropChance) {
+                final IntIntHolder item = new IntIntHolder(Config.CHAMP_ITEM_DROP_ID, Math.max(1, Rnd.get(1, Config.CHAMP_ITEM_DROP_COUNT)));
+                if (Config.AUTO_LOOT)
+                    player.addItem("ChampionLoot", item.getId(), item.getValue(), this, true);
+                else
+                    dropItem(player, item);
             }
         }
 

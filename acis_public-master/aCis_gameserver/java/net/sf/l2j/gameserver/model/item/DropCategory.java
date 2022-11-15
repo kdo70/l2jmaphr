@@ -3,6 +3,7 @@ package net.sf.l2j.gameserver.model.item;
 import net.sf.l2j.Config;
 import net.sf.l2j.commons.random.Rnd;
 import net.sf.l2j.gameserver.model.actor.Player;
+import net.sf.l2j.gameserver.model.actor.instance.Monster;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -109,25 +110,42 @@ public class DropCategory {
     public synchronized DropData dropOne(boolean raid) {
         int randomIndex = Rnd.get(getCategoryBalancedChance());
         int sum = 0;
-        System.out.println("----------------");
         for (DropData drop : getAllDrops()) {
             sum += Math.min((drop.getChance() * (raid ? Config.RATE_DROP_ITEMS_BY_RAID : Config.RATE_DROP_ITEMS)), DropData.MAX_CHANCE);
-
-            System.out.println("---------------- VAL 1:" + (drop.getChance() * (raid ? Config.RATE_DROP_ITEMS_BY_RAID : Config.RATE_DROP_ITEMS)));
-            System.out.println("---------------- VAL 2:" +  DropData.MAX_CHANCE);
-            System.out.println("sum: " + sum + " randomIndex: " + randomIndex + " if " + (sum >= randomIndex));
-            System.out.println(drop.toString());
             if (sum >= randomIndex) // drop this item and exit the function
                 return drop;
         }
         return null;
     }
 
-    public String getChance() {
+    public String getChance(Player player, Monster monster, Boolean isChampion) {
+        System.out.println("_____________________________________________");
+        System.out.println("getCategoryChance() " + getCategoryChance());
         double chance = (getCategoryChance() * Config.RATE_DROP_ITEMS) / 10000;
+        System.out.println("chance() " + chance);
+
+        if (Config.DEEPBLUE_DROP_RULES) {
+            final int levelModifier = monster.calculateLevelModifierForDrop(player);
+            int deepBlueDrop = (levelModifier > 0) ? 3 : 1;
+
+            // Check if we should apply our maths so deep blue mobs will not drop that easy
+            chance = ((chance - ((chance * levelModifier) / 100)) / deepBlueDrop);
+        }
+        System.out.println("chance " + chance);
+
+        if (isChampion) {
+            chance *= Config.CHAMP_MUL_ITEMS;
+        }
+
         if (chance >= 100) {
             chance = 100;
         }
+
+        if (chance < 0) {
+            chance = 0;
+        }
+
+        System.out.println("getPercent  " + chance);
         return getPercent(chance);
     }
 

@@ -118,6 +118,7 @@ public abstract class Creature extends WorldObject
 	
 	private final Map<Integer, Long> _disabledSkills = new ConcurrentHashMap<>();
 	private boolean _allSkillsDisabled;
+	private boolean _champion = false;
 	
 	public Creature(int objectId, CreatureTemplate template)
 	{
@@ -1943,5 +1944,16 @@ public abstract class Creature extends WorldObject
 	public boolean canBeHealed()
 	{
 		return !isDead() && !isInvul();
+	}
+
+
+	public void setChampion(boolean champ)
+	{
+		_champion = champ;
+	}
+
+	public boolean isChampion()
+	{
+		return _champion;
 	}
 }
