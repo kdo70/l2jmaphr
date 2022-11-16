@@ -1,0 +1,39 @@
+[15-11-2022 23:00:44]	INFO	-------------------------------------------------------------------=[ Config ]
+[15-11-2022 23:00:44]	INFO	Loading loginserver configuration files.
+[15-11-2022 23:00:44]	INFO	------------------------------------------------------------------=[ Poolers ]
+[15-11-2022 23:00:44]	INFO	Initializing ConnectionPool.
+[15-11-2022 23:00:44]	INFO	----------------------------------------------------------=[ LoginController ]
+[15-11-2022 23:00:44]	INFO	Cached 10 KeyPairs for RSA communication.
+[15-11-2022 23:00:44]	INFO	Stored 20 keys for Blowfish communication.
+[15-11-2022 23:00:44]	INFO	--------------------------------------------------------=[ GameServerManager ]
+[15-11-2022 23:00:44]	INFO	Loaded 127 server names.
+[15-11-2022 23:00:44]	INFO	Loaded 1 registered gameserver(s).
+[15-11-2022 23:00:44]	INFO	Cached 10 RSA keys for gameserver communication.
+[15-11-2022 23:00:44]	INFO	-----------------------------------------------------------------=[ Ban List ]
+[15-11-2022 23:00:44]	INFO	Loaded 0 banned IP(s).
+[15-11-2022 23:00:44]	INFO	-------------------------------------------------=[ IP, Ports & Socket infos ]
+[15-11-2022 23:00:44]	INFO	Listening for gameservers on *:9014.
+[15-11-2022 23:00:44]	INFO	Loginserver ready on 192.168.0.188:2106.
+[15-11-2022 23:00:44]	INFO	--------------------------------------------=[ Waiting for gameserver answer ]
+[15-11-2022 23:00:51]	INFO	Hooked [1] Bartz gameserver on: 192.168.0.188.
+[15-11-2022 23:05:34]	INFO	GameServer [1] Bartz is now set as disconnected.
+[15-11-2022 23:05:43]	INFO	Hooked [1] Bartz gameserver on: 192.168.0.188.
+[15-11-2022 23:23:12]	INFO	GameServer [1] Bartz is now set as disconnected.
+[15-11-2022 23:23:33]	INFO	Hooked [1] Bartz gameserver on: 192.168.0.188.
+[15-11-2022 23:58:14]	INFO	GameServer [1] Bartz is now set as disconnected.
+[15-11-2022 23:58:25]	INFO	Hooked [1] Bartz gameserver on: 192.168.0.188.
+[16-11-2022 00:28:47]	INFO	GameServer [1] Bartz is now set as disconnected.
+[16-11-2022 00:28:56]	INFO	Hooked [1] Bartz gameserver on: 192.168.0.188.
+[16-11-2022 00:37:52]	INFO	GameServer [1] Bartz is now set as disconnected.
+[16-11-2022 00:38:24]	INFO	Hooked [1] Bartz gameserver on: 192.168.0.188.
+[16-11-2022 00:40:56]	INFO	GameServer [1] Bartz is now set as disconnected.
+[16-11-2022 00:41:04]	INFO	Hooked [1] Bartz gameserver on: 192.168.0.188.
+[16-11-2022 00:43:17]	INFO	GameServer [1] Bartz is now set as disconnected.
+[16-11-2022 00:43:26]	INFO	Hooked [1] Bartz gameserver on: 192.168.0.188.
+[16-11-2022 00:45:29]	INFO	GameServer [1] Bartz is now set as disconnected.
+[16-11-2022 00:45:38]	INFO	Hooked [1] Bartz gameserver on: 192.168.0.188.
+[16-11-2022 00:49:44]	INFO	GameServer [1] Bartz is now set as disconnected.
+[16-11-2022 00:50:12]	INFO	Hooked [1] Bartz gameserver on: 192.168.0.188.
+[16-11-2022 00:50:56]	INFO	GameServer [1] Bartz is now set as disconnected.
+[16-11-2022 00:51:04]	INFO	Hooked [1] Bartz gameserver on: 192.168.0.188.
+[16-11-2022 00:52:16]	INFO	GameServer [1] Bartz is now set as disconnected.
