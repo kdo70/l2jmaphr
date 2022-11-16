@@ -9,16 +9,7 @@ import net.sf.l2j.gameserver.data.cache.HtmCache;
 import net.sf.l2j.gameserver.data.manager.BuyListManager;
 import net.sf.l2j.gameserver.data.manager.CursedWeaponManager;
 import net.sf.l2j.gameserver.data.manager.ZoneManager;
-import net.sf.l2j.gameserver.data.xml.AdminData;
-import net.sf.l2j.gameserver.data.xml.AnnouncementData;
-import net.sf.l2j.gameserver.data.xml.DoorData;
-import net.sf.l2j.gameserver.data.xml.InstantTeleportData;
-import net.sf.l2j.gameserver.data.xml.ItemData;
-import net.sf.l2j.gameserver.data.xml.MultisellData;
-import net.sf.l2j.gameserver.data.xml.NpcData;
-import net.sf.l2j.gameserver.data.xml.ScriptData;
-import net.sf.l2j.gameserver.data.xml.TeleportData;
-import net.sf.l2j.gameserver.data.xml.WalkerRouteData;
+import net.sf.l2j.gameserver.data.xml.*;
 import net.sf.l2j.gameserver.handler.IAdminCommandHandler;
 import net.sf.l2j.gameserver.model.actor.Player;
 
@@ -115,6 +106,7 @@ public class AdminReload implements IAdminCommandHandler
 				{
 					InstantTeleportData.getInstance().reload();
 					TeleportData.getInstance().reload();
+					MaphrTeleportData.getInstance().reload();
 					player.sendMessage("Teleport locations have been reloaded.");
 				}
 				else if (type.startsWith("zone"))

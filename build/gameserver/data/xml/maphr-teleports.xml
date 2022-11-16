@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<telPosList id="1">
+		<loc desc="Town of Dion" type="STANDARD" priceId="57" priceCount="760" x="5106" y="126916" z="-3664" />
+		<loc desc="Cruma Marshlands" type="STANDARD" priceId="57" priceCount="760" x="5106" y="126916" z="-3664" />
+		<loc desc="Cruma Tower" type="STANDARD" priceId="57" priceCount="2300" x="17225" y="114173" z="-3440" />
+		<loc desc="Fortress of Resistance" type="STANDARD" priceId="57" priceCount="1700" x="47382" y="111278" z="-2104" />
+		<loc desc="Plains of Dion" type="STANDARD" priceId="57" priceCount="1500" x="630" y="179184" z="-3720" />
+		<loc desc="Bee Hive" type="STANDARD" priceId="57" priceCount="2900" x="34475" y="188095" z="-2976" />
+		<loc desc="Tanor Canyon" type="STANDARD" priceId="57" priceCount="3900" x="60374" y="164301" z="-2856" />
+		<loc desc="Execution Ground" type="STANDARD" priceId="4356" priceCount="1" x="46165" y="150008" z="-3208" />
+		<loc desc="Floran Agricultural Area" type="STANDARD" priceId="4356" priceCount="1" x="15227" y="161866" z="-3608" />
+		<loc desc="Cruma Marshlands - Center" type="STANDARD" priceId="4356" priceCount="1" x="5941" y="125455" z="-3400" />
+		<loc desc="Cruma Tower - 1 Floor" type="STANDARD" priceId="4356" priceCount="1" x="17724" y="113950" z="-11672" />
+		<loc desc="Cruma Tower - 2 Floor" type="STANDARD" priceId="4356" priceCount="1" x="17723" y="108284" z="-9056" />
+	</telPosList>
+</list>

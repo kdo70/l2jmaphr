@@ -689,6 +689,12 @@ public class Npc extends Creature {
                 DimensionalRiftManager.getInstance().start(player, b1, this);
             } catch (final Exception e) {
             }
+        } else if (command.startsWith("teleport_list")) {
+            final StringTokenizer st = new StringTokenizer(command, " ");
+            st.nextToken();
+            int id = Integer.parseInt(st.nextToken());
+            MaphrTeleportData.getInstance().showTeleportList(player, this, TeleportType.STANDARD, id);
+
         } else if (command.equals("teleport_request")) {
             TeleportData.getInstance().showTeleportList(player, this, TeleportType.STANDARD);
         } else if (command.startsWith("teleport")) {
@@ -1231,6 +1237,7 @@ public class Npc extends Creature {
         final NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
         html.setFile(filename);
         html.replace("%objectId%", getObjectId());
+        html.replace("%username%", player.getName());
         player.sendPacket(html);
 
         player.sendPacket(ActionFailed.STATIC_PACKET);
