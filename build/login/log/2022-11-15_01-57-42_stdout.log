@@ -1,2 +1,0 @@
-Error: Could not find or load main class net.sf.l2j.loginserver.LoginServer
-Caused by: java.lang.ClassNotFoundException: net.sf.l2j.loginserver.LoginServer
