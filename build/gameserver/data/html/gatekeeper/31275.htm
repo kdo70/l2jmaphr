@@ -1,55 +1,115 @@
 <html>
 <title>Gatekeeper Tatiana</title>
-<body><br>
-Hello <font color=6697FF>%username%</font>! Pleased to meet you. I'm Tatiana, a gatekeeper of the Town of Goddard.
-<br1>
-    I control a gate of time and
-    space, which
-    allows people to travel instantly to remote places! If you want to learn how to operate it, you must study at the
-    Ivory
-    Tower for a long time, as I did.
-    <img src=L2UI.SquareGray width=280 height=1>
-    <table width=290 bgcolor="000000">
-        <tr>
-            <td width=60><a action="bypass -h npc_%objectId%_Chat 0"><font color=B09878>Towns</font></a></td>
-            <td width=60><a action="bypass -h npc_%objectId%_Chat 1">Villages</a></td>
-            <td width=60><a action="bypass -h npc_%objectId%_Chat 1">null</a></td>
-            <td width=60><a action="bypass -h npc_%objectId%_Chat 1">null</a></td>
-            <td width=60><a action="bypass -h npc_%objectId%_Chat 1">null</a></td>
-        </tr>
-    </table>
-    <img src=L2UI.SquareGray width=280 height=1>
-    <br>
-    <center>
-        <table width=280 bgcolor="000000">
-            <tr>
-                <td><a action="bypass -h npc_%objectId%_teleport_list 1">Town of Dion</td>
-                <td><a action="bypass -h npc_%objectId%_teleport_list 2">Town of Gludio</td>
-            </tr>
-            <tr>
-                <td><a action="bypass -h npc_%objectId%_teleport_list 3">Town of Giran</a></td>
-                <td><a action="bypass -h npc_%objectId%_teleport_list 4">Town of Goddard</td>
-            </tr>
-            <tr>
-                <td><a action="bypass -h npc_%objectId%_teleport_list 5">Town of Aden</td>
-                <td><a action="bypass -h npc_%objectId%_teleport_list 6">Town of Schuttgart</td>
-            </tr>
-            <tr>
-                <td><a action="bypass -h npc_%objectId%_teleport_list 7">Town of Rune</td>
-            </tr>
-            <tr>
-                <td><a action="bypass -h npc_%objectId%_teleport_list 8">Town of Heine</td>
-                <td><a action="bypass -h npc_%objectId%_teleport_list 9">Town of Oren</td>
-            </tr>
-        </table>
-    </center>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <a action="bypass -h npc_%objectId%_teleport_request">"I want to teleport."</a><br>
-    <a action="bypass -h npc_%objectId%_multisell 002">"I want to trade for the Dimensional Diamond."</a><br>
-    <a action="bypass -h npc_%objectId%_Quest NoblesseTeleporter">"I want to use the Noblesse Only: Teleport."</a><br>
-    <a action="bypass -h npc_%objectId%_Quest MonsterRaceTrack" msg="811;Monster Race Track">"I want free admission to
-        the
-        Monster Race Track."</a><br>
-    <a action="bypass -h npc_%objectId%_Quest">Quest</a>
+<body>
+<br>
+<table width=290>
+    <tr>
+        <td width=32 align="center">
+            <img src=L2UI_ch3.warningicon width=32 height=32></td>
+        <td width=80>
+            Hello, %username%! Pleased to meet you. I'm Tatiana, a gatekeeper of the Town of Goddard. I control a gate of time and space, which allows people to travel instantly to remote places! If you want to learn how to operate it, you must study at the Ivory Tower for a long time, as I did.
+        </td>
+        <td width=300></td>
+    </tr>
+</table>
+<br>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=290 bgcolor="000000">
+    <tr>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 0"><font color=B09878>Towns</font></a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 1">Villages</a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 1">Popular</a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 1">Other</a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 1">Store</a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Quest"><font color=A3A0A3>Quest</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<br>
+<center>
+    Now, where do you want to go?
+</center>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130>Location</td>
+        <td width=100>Locations level</td>
+        <td width=50>Town</td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 1">Town of Dion</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=50><a action="bypass -h npc_%objectId%_teleport_list 1"><font color=B09878>Teleport</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 1">Town of Gludio</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=50><a action="bypass -h npc_%objectId%_teleport_list 1"><font color=B09878>Teleport</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 1">Town of Giran</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=50><a action="bypass -h npc_%objectId%_teleport_list 1"><font color=B09878>Teleport</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 1">Town of Goddard</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=50><a action="bypass -h npc_%objectId%_teleport_list 1"><font color=B09878>Teleport</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 1">Town of Aden</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=50><a action="bypass -h npc_%objectId%_teleport_list 1"><font color=B09878>Teleport</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 1">Town of Schuttgart</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=50><a action="bypass -h npc_%objectId%_teleport_list 1"><font color=B09878>Teleport</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 1">Town of Rune</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=50><a action="bypass -h npc_%objectId%_teleport_list 1"><font color=B09878>Teleport</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 1">Town of Heine</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=50><a action="bypass -h npc_%objectId%_teleport_list 1"><font color=B09878>Teleport</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 1">Town of Oren</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=50><a action="bypass -h npc_%objectId%_teleport_list 1"><font color=B09878>Teleport</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<br>
 </body>
 </html>

@@ -13,5 +13,9 @@
 		<loc desc="Cruma Marshlands - Center" type="STANDARD" priceId="4356" priceCount="1" x="5941" y="125455" z="-3400" />
 		<loc desc="Cruma Tower - 1 Floor" type="STANDARD" priceId="4356" priceCount="1" x="17724" y="113950" z="-11672" />
 		<loc desc="Cruma Tower - 2 Floor" type="STANDARD" priceId="4356" priceCount="1" x="17723" y="108284" z="-9056" />
+		<loc desc="Cruma Tower - 2 Floor" type="STANDARD" priceId="4356" priceCount="1" x="17723" y="108284" z="-9056" />
+		<loc desc="Cruma Tower - 2 Floor" type="STANDARD" priceId="4356" priceCount="1" x="17723" y="108284" z="-9056" />
+		<loc desc="Cruma Tower - 2 Floor" type="STANDARD" priceId="4356" priceCount="1" x="17723" y="108284" z="-9056" />
+		<loc desc="Cruma Tower - 2 Floor" type="STANDARD" priceId="4356" priceCount="1" x="17723" y="108284" z="-9056" />
 	</telPosList>
 </list>

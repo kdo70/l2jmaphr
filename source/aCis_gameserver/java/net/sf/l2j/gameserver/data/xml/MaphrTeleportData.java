@@ -68,7 +68,7 @@ public class MaphrTeleportData implements IXmlReader {
         final NpcHtmlMessage html = new NpcHtmlMessage(npc.getObjectId());
 
         final StringBuilder sb = new StringBuilder();
-        StringUtil.append(sb, "<table width=280 bgcolor=000000><tr><td width=150>Location</td><td width=60>Cost</td><td width=80>Item</td></tr></table><img src=L2UI.SquareGray width=280 height=1>\n");
+        StringUtil.append(sb, "<table width=280 bgcolor=000000><tr><td width=150>Location</td><td width=60>Cost</td><td width=80>Item</td></tr></table><img src=L2UI.SquareGray width=280 height=1>");
 
 
         final List<Teleport> teleports = _teleports.get(id);
@@ -84,8 +84,8 @@ public class MaphrTeleportData implements IXmlReader {
                 StringUtil.append(sb, "<table width=280 bgcolor=000000><tr><td width=150><a action=\"bypass -h npc_%objectId%_teleport ", index, "\" msg=\"811;", teleport.getDesc(), "\">", teleport.getDesc(), "</a></td><td width=60><font color=A3A0A3>", priceCount, "</font></td><td width=80><font color=B09878>", ItemData.getInstance().getTemplate(teleport.getPriceId()).getName(), "</font></td></tr></table><img src=L2UI.SquareGray width=280 height=1>");
             }
 
-            if (teleports.size() < 15) {
-                StringUtil.append(sb, "<img height=", 20 * (15 - teleports.size()), ">");
+            if (teleports.size() < 13) {
+                StringUtil.append(sb, "<img height=", 20 * (13 - teleports.size()), ">");
             }
         }
 
