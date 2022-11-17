@@ -1238,6 +1238,7 @@ public class Npc extends Creature {
         html.setFile(filename);
         html.replace("%objectId%", getObjectId());
         html.replace("%username%", player.getName());
+        html.replace("%npcname%", getName());
         player.sendPacket(html);
 
         player.sendPacket(ActionFailed.STATIC_PACKET);
