@@ -367,7 +367,7 @@ public class DropListNpc {
      */
     public List<DropCategory> dropCategory() {
         final List<DropCategory> categories = new ArrayList<>(_template.getDropData());
-        categories.sort(Comparator.comparing(DropCategory::getCategoryChance));
+        categories.sort(Comparator.comparing(DropCategory::getDropChance));
         Collections.reverse(categories);
         return categories;
     }

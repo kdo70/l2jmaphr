@@ -144,6 +144,13 @@ public class DropCategory {
         return getPercent(chance);
     }
 
+    public int getDropChance() {
+        if (getCategoryType() >= 0)
+            return _categoryChance;
+
+        return 0;
+    }
+
     public String getPercent(double chance) {
         String percent = null;
         if (chance <= 0.001) {
