@@ -100,7 +100,6 @@ public class MaphrTeleportData implements IXmlReader {
         html.replace("%chatId%", chatId);
         html.replace("%npcname%", npc.getName());
         html.replace("%" + page + "%", "color=B09878");
-        System.out.println("page " + page);
 
         player.sendPacket(html);
     }

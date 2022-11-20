@@ -420,6 +420,7 @@ public class CreatureCast<T extends Creature>
 	 */
 	public void callSkill(L2Skill skill, Creature[] targets)
 	{
+		System.out.println("skill " + skill.getId());
 		// Raid Curses system.
 		if (_actor instanceof Playable && _actor.testCursesOnSkillSee(skill, targets))
 			return;

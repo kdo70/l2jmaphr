@@ -517,6 +517,8 @@ public final class Config {
      */
     public static boolean STORE_SKILL_COOLTIME;
     public static int MAX_BUFFS_AMOUNT;
+    public static boolean ENABLED_SKILL_DURATION_LIST;
+    public static HashMap<Integer, Integer> SKILL_DURATION_LIST;
 
     // --------------------------------------------------
     // Sieges
@@ -1176,6 +1178,31 @@ public final class Config {
 
         MAX_BUFFS_AMOUNT = players.getProperty("MaxBuffsAmount", 20);
         STORE_SKILL_COOLTIME = players.getProperty("StoreSkillCooltime", true);
+        ENABLED_SKILL_DURATION_LIST = players.getProperty("EnabledSkillDurationList", false);
+
+        if (ENABLED_SKILL_DURATION_LIST) {
+                SKILL_DURATION_LIST = new HashMap<>();
+                String[] propertySplit;
+                propertySplit = players.getProperty("SkillDurationList", "").split(";");
+                for (String skill : propertySplit) {
+                    String[] skillSplit = skill.split(",");
+                    if (skillSplit.length != 2) {
+
+                        System.out.println("[SkillDurationList]: invalid config property -> SkillDurationList \"" + skill + "\"");
+
+                    } else {
+                        try {
+
+                            SKILL_DURATION_LIST.put(Integer.parseInt(skillSplit[0]), Integer.parseInt(skillSplit[1]));
+                        } catch (NumberFormatException nfe) {
+                            nfe.printStackTrace();
+                            if (!skill.equals("")) {
+                                System.out.println("[SkillDurationList]: invalid config property -> SkillList \"" + skillSplit[0] + "\"" + skillSplit[1]);
+                            }
+                        }
+                    }
+            }
+        }
     }
 
     /**

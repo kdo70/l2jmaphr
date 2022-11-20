@@ -32,7 +32,6 @@
 	<buff skillId="1363" skillLevel="1" lowerLevel="1" upperLevel="41" isMagicClass="false"/>
 	<buff skillId="4700" skillLevel="13" lowerLevel="1" upperLevel="41" isMagicClass="false"/>
 	<buff skillId="1323" skillLevel="1" lowerLevel="1" upperLevel="41" isMagicClass="false"/>
-	<buff skillId="4553" skillLevel="4" lowerLevel="1" upperLevel="41" isMagicClass="false"/>
 
 	<!-- Mystic buff line №1 -->
 	<buff skillId="1204" skillLevel="2" lowerLevel="1" upperLevel="41" isMagicClass="true"/>
@@ -59,6 +58,5 @@
 	<buff skillId="365" skillLevel="1" lowerLevel="1" upperLevel="41" isMagicClass="true"/>
 	<buff skillId="4703" skillLevel="13" lowerLevel="1" upperLevel="41" isMagicClass="true"/>
 	<buff skillId="1355" skillLevel="1" lowerLevel="1" upperLevel="41" isMagicClass="true"/>
-	<buff skillId="4554" skillLevel="4" lowerLevel="1" upperLevel="41" isMagicClass="true"/>
 	<buff skillId="1323" skillLevel="1" lowerLevel="1" upperLevel="41" isMagicClass="true"/>
 </list>

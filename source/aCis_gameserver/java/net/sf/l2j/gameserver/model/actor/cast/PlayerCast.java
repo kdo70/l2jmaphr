@@ -127,6 +127,7 @@ public class PlayerCast extends PlayableCast<Player>
 	@Override
 	public void doToggleCast(L2Skill skill, Creature target)
 	{
+		System.out.println("skill " + skill.getId());
 		setCastTask(skill, target, 0, 0, 0);
 		
 		_actor.broadcastPacket(new MagicSkillUse(_actor, _actor, _skill.getId(), _skill.getLevel(), 0, 0));
