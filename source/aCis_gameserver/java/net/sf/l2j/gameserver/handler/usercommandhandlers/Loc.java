@@ -98,7 +98,8 @@ public class Loc implements IUserCommandHandler
 			default:
 				msg = SystemMessageId.LOC_ADEN_S1_S2_S3;
 		}
-		
+
+		System.out.println("x=\"" + player.getX() + "\" y=\"" + player.getY() + "\" z=\"" + player.getZ() + "\"");
 		player.sendPacket(SystemMessage.getSystemMessage(msg).addNumber(player.getX()).addNumber(player.getY()).addNumber(player.getZ()));
 	}
 	

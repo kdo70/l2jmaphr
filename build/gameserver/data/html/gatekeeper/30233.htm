@@ -1,9 +1,125 @@
-<html><body>Gatekeeper Esmeralda:<br>
-Many feared monsters lurk around Hunters Village. Teleporting is a great choice for travelers who are tired or in a hurry.<br>
-Are you homesick? In a hurry to help a friend in need? Or did you suddenly feel like going to the beach? We can send you anywhere on this vast continent in an instant.<br>
-<a action="bypass -h npc_%objectId%_teleport_request">Teleport</a><br>
-<a action="bypass -h npc_%objectId%_multisell 002">Exchange with the Dimensional Diamond</a><br>
-<a action="bypass -h npc_%objectId%_Quest NoblesseTeleporter">[Noblesse Only] teleport</a><br>
-<a action="bypass -h npc_%objectId%_Quest MonsterRaceTrack" msg="811;Monster Arena">Move to Monster Race Track (Free of Charge)</a><br>
-<a action="bypass -h npc_%objectId%_Quest">Quest</a>
-</body></html>
+<html>
+<title>Gatekeeper %npcname%</title>
+<body>
+<br>
+<table width=290>
+    <tr>
+        <td width=32 align="center">
+            <img src=L2UI_ch3.warningicon width=32 height=32></td>
+        <td width=80>
+            Many feared monsters lurk around Hunters Village. Teleporting is a great choice for travelers who are tired or in a hurry.<br1>
+            Are you homesick? In a hurry to help a friend in need? Or did you suddenly feel like going to the beach? We can send you anywhere on this vast continent in an instant.
+        </td>
+        <td width=150></td>
+    </tr>
+</table>
+<br>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=290 bgcolor="000000">
+    <tr>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 0"><font color=B09878>Towns</font></a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 1">Villages</a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_teleport_list 18 0 popular"><font %popular%>Popular</font></a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_teleport_list 19 0 other"><font %other%>Other</font></a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_multisell 002">Store</a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Quest"><font color=A3A0A3>Quest</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<br>
+<center>
+    Now, where do you want to go?
+</center>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130>Locations</td>
+        <td width=100>Locations level</td>
+        <td width=60>To Town</td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 2 0 towns">Town of Dion</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=60><a action="bypass -h npc_%objectId%_global_teleport 1 0" msg="811;Town of Dion"><font color=B09878>Dion</font></a>
+        </td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 3 0 towns">Town of Gludio</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=60><a action="bypass -h npc_%objectId%_global_teleport 1 1" msg="811;Town of Gludio"><font
+                color=B09878>Gludio</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 4 0 towns">Town of Giran</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=60><a action="bypass -h npc_%objectId%_global_teleport 1 2" msg="811;Town of Giran"><font color=B09878>Giran</font></a>
+        </td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 5 0 towns">Town of Goddard</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=60><a action="bypass -h npc_%objectId%_global_teleport 1 3" msg="811;Town of Goddard"><font
+                color=B09878>Goddard</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 6 0 towns">Town of Aden</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=60><a action="bypass -h npc_%objectId%_global_teleport 1 4" msg="811;Town of Aden"><font color=B09878>Aden</font></a>
+        </td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 7 0 towns">Town of Schuttgart</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=60><a action="bypass -h npc_%objectId%_global_teleport 1 5" msg="811;Town of Schuttgart"><font
+                color=B09878>Schuttgart</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 8 0 towns">Town of Rune</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=60><a action="bypass -h npc_%objectId%_global_teleport 1 6" msg="811;Town of Rune"><font color=B09878>Rune</font></a>
+        </td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 9 0 towns">Town of Heine</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=60><a action="bypass -h npc_%objectId%_global_teleport 1 7" msg="811;Town of Heine"><font color=B09878>Heine</font></a>
+        </td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 10 0 towns">Town of Oren</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=60><a action="bypass -h npc_%objectId%_global_teleport 1 8" msg="811;Town of Oren"><font color=B09878>Oren</font></a>
+        </td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<br>
+</body>
+</html>

@@ -9,7 +9,7 @@
         <td width=80>
             It is not a bad idea to take your time and rest along the way when you are walking to another village. However, if you don't have the time, we gatekeepers can help you by opening the door of space and time. Now, where do you want to go?
         </td>
-        <td width=300></td>
+        <td width=250></td>
     </tr>
 </table>
 <br>
@@ -18,9 +18,9 @@
     <tr>
         <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 0">Towns</a></td>
         <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 1"><font color=B09878>Villages</font></a></td>
-        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 1">Popular</a></td>
-        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 1">Other</a></td>
-        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 1">Store</a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_teleport_list 18 1 popular"><font %popular%>Popular</font></a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_teleport_list 19 1 other"><font %other%>Other</font></a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_multisell 002">Store</a></td>
         <td width=35 align="center"><a action="bypass -h npc_%objectId%_Quest"><font color=A3A0A3>Quest</font></a></td>
     </tr>
 </table>
@@ -34,50 +34,75 @@
     <tr>
         <td width=130>Locations</td>
         <td width=100>Locations level</td>
-        <td width=50>Town</td>
+        <td width=80>To Village</td>
     </tr>
 </table>
 <img src=L2UI.SquareGray width=280 height=1>
 <table width=280 bgcolor=000000>
     <tr>
-        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 1">Talking Island Village</a></td>
+        <td width=130><a action="bypass -h npc_%objectId%_global_teleport 1 9">Floran Village</a></td>
         <td width=100><font color=A3A0A3>18 - 25</font></td>
-        <td width=50><a action="bypass -h npc_%objectId%_teleport_list 1"><font color=B09878>Teleport</font></a></td>
+        <td width=80><a action="bypass -h npc_%objectId%_global_teleport 1 9" msg="811;Floran Village"><font color=B09878>Floran</font></a>
+        </td>
     </tr>
 </table>
 <img src=L2UI.SquareGray width=280 height=1>
 <table width=280 bgcolor=000000>
     <tr>
-        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 1">Elven Village</a></td>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 11 1 villages">Gludin Village</a></td>
         <td width=100><font color=A3A0A3>18 - 25</font></td>
-        <td width=50><a action="bypass -h npc_%objectId%_teleport_list 1"><font color=B09878>Teleport</font></a></td>
+        <td width=80><a action="bypass -h npc_%objectId%_global_teleport 1 10" msg="811;Gludin Village"><font color=B09878>Gludin</font></a></td>
     </tr>
 </table>
 <img src=L2UI.SquareGray width=280 height=1>
 <table width=280 bgcolor=000000>
     <tr>
-        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 1">Dark Elven Village</a></td>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 12 1 villages">Hunters Village</a></td>
         <td width=100><font color=A3A0A3>18 - 25</font></td>
-        <td width=50><a action="bypass -h npc_%objectId%_teleport_list 1"><font color=B09878>Teleport</font></a></td>
+        <td width=80><a action="bypass -h npc_%objectId%_global_teleport 1 11" msg="811;Hunters Village"><font color=B09878>Hunters</font></a></td>
     </tr>
 </table>
 <img src=L2UI.SquareGray width=280 height=1>
 <table width=280 bgcolor=000000>
     <tr>
-        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 1">Orc Village</a></td>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 13 1 villages">Talking Island Village</a></td>
         <td width=100><font color=A3A0A3>18 - 25</font></td>
-        <td width=50><a action="bypass -h npc_%objectId%_teleport_list 1"><font color=B09878>Teleport</font></a></td>
+        <td width=80><a action="bypass -h npc_%objectId%_global_teleport 1 12" msg="811;Talking Island Village"><font color=B09878>Talking Island</font></a></td>
     </tr>
 </table>
 <img src=L2UI.SquareGray width=280 height=1>
 <table width=280 bgcolor=000000>
     <tr>
-        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 1">Dwarven Village</a></td>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 14 1 villages">Elven Village</a></td>
         <td width=100><font color=A3A0A3>18 - 25</font></td>
-        <td width=50><a action="bypass -h npc_%objectId%_teleport_list 1"><font color=B09878>Teleport</font></a></td>
+        <td width=80><a action="bypass -h npc_%objectId%_global_teleport 1 13" msg="811;Elven Village"><font color=B09878>Elven</font></a></td>
     </tr>
 </table>
 <img src=L2UI.SquareGray width=280 height=1>
-<br><br><br><br><br><br><br>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 15 1 villages">Dark Elven Village</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=80><a action="bypass -h npc_%objectId%_global_teleport 1 14" msg="811;Dark Elven Village"><font color=B09878>Dark Elven</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 16 1 villages">Orc Village</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=80><a action="bypass -h npc_%objectId%_global_teleport 1 15" msg="811;Orc Village"><font color=B09878>Orc</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<table width=280 bgcolor=000000>
+    <tr>
+        <td width=130><a action="bypass -h npc_%objectId%_teleport_list 17 1 villages">Dwarven Village</a></td>
+        <td width=100><font color=A3A0A3>18 - 25</font></td>
+        <td width=80><a action="bypass -h npc_%objectId%_global_teleport 1 16" msg="811;Dwarven Village"><font color=B09878>Dwarven</font></a></td>
+    </tr>
+</table>
+<img src=L2UI.SquareGray width=280 height=1>
+<br>
 </body>
 </html>

@@ -292,6 +292,7 @@ public final class Config {
      * Misc
      */
     public static boolean FREE_TELEPORT;
+    public static int FREE_TELEPORT_LVL;
     public static boolean ANNOUNCE_MAMMON_SPAWN;
     public static boolean MOB_AGGRO_IN_PEACEZONE;
     public static boolean SHOW_NPC_LVL;
@@ -997,6 +998,7 @@ public final class Config {
         if (ALLOW_CLASS_MASTERS) CLASS_MASTER_SETTINGS = new ClassMasterSettings(npcs.getProperty("ConfigClassMaster"));
 
         FREE_TELEPORT = npcs.getProperty("FreeTeleport", false);
+        FREE_TELEPORT_LVL = npcs.getProperty("FreeTeleportLvl", 0);
         ANNOUNCE_MAMMON_SPAWN = npcs.getProperty("AnnounceMammonSpawn", true);
         MOB_AGGRO_IN_PEACEZONE = npcs.getProperty("MobAggroInPeaceZone", true);
         SHOW_NPC_LVL = npcs.getProperty("ShowNpcLevel", false);

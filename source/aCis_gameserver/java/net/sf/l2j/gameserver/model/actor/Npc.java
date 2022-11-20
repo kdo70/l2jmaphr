@@ -693,7 +693,9 @@ public class Npc extends Creature {
             final StringTokenizer st = new StringTokenizer(command, " ");
             st.nextToken();
             int id = Integer.parseInt(st.nextToken());
-            MaphrTeleportData.getInstance().showTeleportList(player, this, TeleportType.STANDARD, id);
+            int chatId = st.hasMoreTokens() ? Integer.parseInt(st.nextToken()) : 0;
+            String page = st.hasMoreTokens() ? st.nextToken() : "towns";
+            MaphrTeleportData.getInstance().showTeleportList(player, this, id, chatId, page);
 
         } else if (command.equals("teleport_request")) {
             TeleportData.getInstance().showTeleportList(player, this, TeleportType.STANDARD);
@@ -704,6 +706,18 @@ public class Npc extends Creature {
 
                 teleport(player, Integer.parseInt(st.nextToken()));
             } catch (final Exception e) {
+                player.sendPacket(ActionFailed.STATIC_PACKET);
+            }
+        } else if (command.startsWith("global_teleport")) {
+            try {
+                final StringTokenizer st = new StringTokenizer(command, " ");
+                st.nextToken();
+                int id = Integer.parseInt(st.nextToken());
+                int index = Integer.parseInt(st.nextToken());
+
+                teleport(player, id, index);
+            } catch (final Exception e) {
+                System.out.println(e.getMessage());
                 player.sendPacket(ActionFailed.STATIC_PACKET);
             }
         } else if (command.startsWith("instant_teleport")) {
@@ -772,6 +786,39 @@ public class Npc extends Creature {
         }
 
         if (Config.FREE_TELEPORT || teleport.getPriceCount() == 0 || player.destroyItemByItemId("InstantTeleport", teleport.getPriceId(), teleport.getPriceCount(), this, true))
+            player.teleportTo(teleport, 20);
+
+        player.sendPacket(ActionFailed.STATIC_PACKET);
+    }
+
+    protected void teleport(Player player, int id, int index) {
+        if (!isTeleportAllowed(player)) {
+            return;
+        }
+
+        final List<Teleport> teleports = MaphrTeleportData.getInstance().getTeleports(id);
+        if (teleports == null || index > teleports.size()) {
+            return;
+        }
+
+        final Teleport teleport = teleports.get(index);
+        if (teleport == null) {
+            return;
+        }
+
+        if (teleport.getType() == TeleportType.NOBLE && !player.isNoble()) {
+            return;
+        }
+
+        if (teleport.getCastleId() > 0) {
+            final Castle castle = CastleManager.getInstance().getCastleById(teleport.getCastleId());
+            if (castle != null && castle.getSiege().isInProgress()) {
+                player.sendPacket(SystemMessageId.CANNOT_PORT_VILLAGE_IN_SIEGE);
+                return;
+            }
+        }
+
+        if (Config.FREE_TELEPORT || teleport.getPriceCount() == 0 || player.destroyItemByItemId("InstantTeleport", teleport.getPriceId(), MaphrTeleportData.getInstance().calculatedPriceCount(player, teleport), this, true))
             player.teleportTo(teleport, 20);
 
         player.sendPacket(ActionFailed.STATIC_PACKET);
@@ -1197,6 +1244,9 @@ public class Npc extends Creature {
         if (content != null) {
             final NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
             html.setHtml(content);
+            html.replace("%username%", player.getName());
+            html.replace("%npcname%", getName());
+            html.replace("%karma%", player.getKarma());
             player.sendPacket(html);
 
             player.sendPacket(ActionFailed.STATIC_PACKET);

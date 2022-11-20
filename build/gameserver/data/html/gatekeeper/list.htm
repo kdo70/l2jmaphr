@@ -5,11 +5,11 @@
 <img src=L2UI.SquareGray width=280 height=1>
 <table width=290 bgcolor="000000">
     <tr>
-        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 0"><font color=B09878>Towns</font></a></td>
-        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 1">Villages</a></td>
-        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 1">Popular</a></td>
-        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 1">Other</a></td>
-        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 1">Store</a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 0"><font %towns%>Towns</font></a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_Chat 1"><font %villages%>Villages</font></a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_teleport_list 18 0 popular"><font %popular%>Popular</font></a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_teleport_list 19 0 other"><font %other%>Other</font></a></td>
+        <td width=35 align="center"><a action="bypass -h npc_%objectId%_multisell 002">Store</a></td>
         <td width=35 align="center"><a action="bypass -h npc_%objectId%_Quest"><font color=A3A0A3>Quest</font></a></td>
     </tr>
 </table>
@@ -22,7 +22,7 @@
 %list%
 <br>
 <center>
-    <a action="bypass -h npc_%objectId%_Chat 0">
+    <a action="bypass -h npc_%objectId%_Chat %chatId%">
         Return back
     </a>
 </center>
