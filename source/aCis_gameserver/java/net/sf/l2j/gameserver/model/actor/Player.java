@@ -714,8 +714,9 @@ public final class Player extends Playable
 	 */
 	public boolean isNewbie(boolean checkLowLevel)
 	{
-		return (checkLowLevel) ? (getClassId().getLevel() <= 1 && getStatus().getLevel() >= 6 && getStatus().getLevel() <= 25) : (getClassId().getLevel() <= 1 && getStatus().getLevel() <= 25);
-	}
+		return (checkLowLevel) ?
+				(getClassId().getLevel() <= 1 && getStatus().getLevel() >= 6 && getStatus().getLevel() <= 39)
+				: (getClassId().getLevel() <= 1 && getStatus().getLevel() <= 39);	}
 	
 	public void setBaseClass(int baseClass)
 	{
