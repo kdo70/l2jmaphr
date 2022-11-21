@@ -1007,6 +1007,15 @@
 		<set name="skillType" val="DEBUFF" />
 		<set name="operateType" val="PASSIVE" />
 		<set name="stayAfterDeath" val="true" />
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="0.2"/>
+			<mul order="0x30" stat="mAtkSpd" val="0.2"/>
+			<mul order="0x30" stat="rEvas" val="0.2"/>
+			<mul order="0x30" stat="runSpd" val="0.2"/>
+			<mul order="0x30" stat="regHp" val="0.2"/>
+			<mul order="0x30" stat="regCp" val="0.2"/>
+			<mul order="0x30" stat="regMp" val="0.2"/>
+		</for>
 	</skill>
 	<skill id="4268" levels="1" name="Danger Area">
 		<set name="target" val="SELF" />

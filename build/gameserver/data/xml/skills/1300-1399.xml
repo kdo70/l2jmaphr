@@ -1302,7 +1302,7 @@
 		<set name="operateType" val="ACTIVE"/>
 		<set name="aggroPoints" val="669"/>
 		<for>
-			<effect name="Buff" time="300" val="0" stackOrder="2" stackType="multi_buff">
+			<effect name="Buff" time="300" val="0" stackOrder="1" stackType="multi_buff">
 				<mul stat="pAtk" val="1.1"/>
 				<mul stat="pDef" val="1.2"/>
 				<basemul stat="rCrit" val="0.2"/>
