@@ -48,31 +48,7 @@ import net.sf.l2j.gameserver.data.sql.ClanTable;
 import net.sf.l2j.gameserver.data.sql.PlayerInfoTable;
 import net.sf.l2j.gameserver.data.sql.ServerMemoTable;
 import net.sf.l2j.gameserver.data.sql.SpawnTable;
-import net.sf.l2j.gameserver.data.xml.AdminData;
-import net.sf.l2j.gameserver.data.xml.AnnouncementData;
-import net.sf.l2j.gameserver.data.xml.ArmorSetData;
-import net.sf.l2j.gameserver.data.xml.AugmentationData;
-import net.sf.l2j.gameserver.data.xml.DoorData;
-import net.sf.l2j.gameserver.data.xml.FishData;
-import net.sf.l2j.gameserver.data.xml.HennaData;
-import net.sf.l2j.gameserver.data.xml.HerbDropData;
-import net.sf.l2j.gameserver.data.xml.InstantTeleportData;
-import net.sf.l2j.gameserver.data.xml.ItemData;
-import net.sf.l2j.gameserver.data.xml.MapRegionData;
-import net.sf.l2j.gameserver.data.xml.MultisellData;
-import net.sf.l2j.gameserver.data.xml.NewbieBuffData;
-import net.sf.l2j.gameserver.data.xml.NpcData;
-import net.sf.l2j.gameserver.data.xml.PlayerData;
-import net.sf.l2j.gameserver.data.xml.PlayerLevelData;
-import net.sf.l2j.gameserver.data.xml.RecipeData;
-import net.sf.l2j.gameserver.data.xml.ScriptData;
-import net.sf.l2j.gameserver.data.xml.SkillTreeData;
-import net.sf.l2j.gameserver.data.xml.SoulCrystalData;
-import net.sf.l2j.gameserver.data.xml.SpellbookData;
-import net.sf.l2j.gameserver.data.xml.StaticObjectData;
-import net.sf.l2j.gameserver.data.xml.SummonItemData;
-import net.sf.l2j.gameserver.data.xml.TeleportData;
-import net.sf.l2j.gameserver.data.xml.WalkerRouteData;
+import net.sf.l2j.gameserver.data.xml.*;
 import net.sf.l2j.gameserver.geoengine.GeoEngine;
 import net.sf.l2j.gameserver.handler.AdminCommandHandler;
 import net.sf.l2j.gameserver.handler.ChatHandler;
@@ -101,7 +77,6 @@ import net.sf.l2j.gameserver.taskmanager.ShadowItemTaskManager;
 import net.sf.l2j.gameserver.taskmanager.WaterTaskManager;
 import net.sf.l2j.util.DeadLockDetector;
 import net.sf.l2j.util.IPv4Filter;
-import net.sf.l2j.gameserver.data.xml.IconData;
 
 public class GameServer
 {
@@ -232,9 +207,12 @@ public class GameServer
 		GrandBossManager.getInstance();
 		DayNightManager.getInstance().notifyChangeMode();
 		DimensionalRiftManager.getInstance();
-		NewbieBuffData.getInstance();
 		InstantTeleportData.getInstance();
 		TeleportData.getInstance();
+
+		StringUtil.printSection("Newbie Buff");
+		NewbieBuffData.getInstance();
+		NewbieCommonBuffData.getInstance();
 		
 		StringUtil.printSection("Olympiads & Heroes");
 		OlympiadGameManager.getInstance();

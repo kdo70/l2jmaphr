@@ -21,6 +21,8 @@ public class NewbieBuffData implements IXmlReader
 	
 	private int _magicLowestLevel = 100;
 	private int _physicLowestLevel = 100;
+	private int _magicUpperLevel = 100;
+	private int _physicUpperLevel = 100;
 	
 	protected NewbieBuffData()
 	{
@@ -41,15 +43,20 @@ public class NewbieBuffData implements IXmlReader
 		{
 			final StatSet set = parseAttributes(buffNode);
 			final int lowerLevel = set.getInteger("lowerLevel");
+			final int upperLevel = set.getInteger("upperLevel");
 			if (set.getBool("isMagicClass"))
 			{
 				if (lowerLevel < _magicLowestLevel)
 					_magicLowestLevel = lowerLevel;
+				if (upperLevel > _magicUpperLevel)
+					_magicUpperLevel = upperLevel;
 			}
 			else
 			{
 				if (lowerLevel < _physicLowestLevel)
 					_physicLowestLevel = lowerLevel;
+				if (upperLevel < _physicUpperLevel)
+					_physicUpperLevel = upperLevel;
 			}
 			_buffs.add(new NewbieBuffHolder(set));
 		}));
@@ -69,7 +76,11 @@ public class NewbieBuffData implements IXmlReader
 	{
 		return (isMage) ? _magicLowestLevel : _physicLowestLevel;
 	}
-	
+	public int getUpperBuffLevel(boolean isMage)
+	{
+		return (isMage) ? _magicUpperLevel : _physicUpperLevel;
+	}
+
 	public static NewbieBuffData getInstance()
 	{
 		return SingletonHolder.INSTANCE;

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+    <buff skillId="1062" skillLevel="2" lowerLevel="6" upperLevel="75" icon="icon.skill1062" desc="Физическая защита: -5%, магическая защита: -10%, уклонение: -2, физическая атака: +5%, магическая атака: +10%, скорость атаки: +5%, скорость: магии +5%, скорость передвижения: +5."/>
+    <buff skillId="1414" skillLevel="1" lowerLevel="15" upperLevel="75" icon="icon.skill1414" desc="dsf"/>
+    <buff skillId="1356" skillLevel="1" lowerLevel="15" upperLevel="75" icon="icon.skill1356" desc="sdf"/>
+    <buff skillId="1355" skillLevel="1" lowerLevel="15" upperLevel="75" icon="icon.skill1355" desc="sdf"/>
+    <buff skillId="1357" skillLevel="1" lowerLevel="15" upperLevel="75" icon="icon.skill1357" desc="sdf"/>
+    <buff skillId="1413" skillLevel="1" lowerLevel="15" upperLevel="75" icon="icon.skill1413" desc="sdf"/>
+    <buff skillId="1363" skillLevel="1" lowerLevel="15" upperLevel="75" icon="icon.skill1363" desc="sdf"/>
+    <buff skillId="4699" skillLevel="13" lowerLevel="20" upperLevel="75" icon="icon.skill1331" desc="sdf"/>
+    <buff skillId="4700" skillLevel="13" lowerLevel="20" upperLevel="75" icon="icon.skill1331" desc="sdf"/>
+    <buff skillId="4702" skillLevel="13" lowerLevel="20" upperLevel="75" icon="icon.skill1332" desc="sdf"/>
+    <buff skillId="4703" skillLevel="13" lowerLevel="20" upperLevel="75" icon="icon.skill1332" desc="sdf"/>
+</list>
