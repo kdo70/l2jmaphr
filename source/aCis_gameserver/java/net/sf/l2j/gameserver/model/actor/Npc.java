@@ -927,6 +927,7 @@ public class Npc extends Creature {
         final NpcHtmlMessage html = new NpcHtmlMessage(npc.getObjectId());
         html.setHtml(sb.toString());
         html.replace("%objectId%", npc.getObjectId());
+        html.replace("%npcName%", npc.getName());
         player.sendPacket(html);
 
         player.sendPacket(ActionFailed.STATIC_PACKET);

@@ -1,44 +1,44 @@
 <?xml version='1.0' encoding='utf-8'?>
 <list>
     <!-- Warrior buff line №1 -->
-    <buff skillId="1204" skillLevel="2" lowerLevel="6" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="1040" skillLevel="3" lowerLevel="6" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="1036" skillLevel="2" lowerLevel="6" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="1045" skillLevel="6" lowerLevel="6" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="1048" skillLevel="6" lowerLevel="6" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="1068" skillLevel="3" lowerLevel="6" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="1086" skillLevel="2" lowerLevel="6" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="1077" skillLevel="3" lowerLevel="6" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="1240" skillLevel="3" lowerLevel="6" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="264" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="267" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="268" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="false"/>
+    <buff skillId="1204" skillLevel="2" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="1040" skillLevel="3" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="1036" skillLevel="2" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="1045" skillLevel="6" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="1048" skillLevel="6" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="1068" skillLevel="3" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="1086" skillLevel="2" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="1077" skillLevel="3" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="1240" skillLevel="3" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="264" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="267" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="268" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
 
     <!-- Warrior buff line №2 -->
-    <buff skillId="304" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="364" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="271" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="274" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="false"/>
-    <buff skillId="275" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="false"/>
+    <buff skillId="304" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="364" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="271" skillLevel="1" lowerLevel="20" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="274" skillLevel="1" lowerLevel="20" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
+    <buff skillId="275" skillLevel="1" lowerLevel="20" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false"/>
 
     <!-- Mystic buff line №1 -->
-    <buff skillId="1204" skillLevel="2" lowerLevel="6" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="1036" skillLevel="2" lowerLevel="6" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="1040" skillLevel="3" lowerLevel="6" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="1045" skillLevel="6" lowerLevel="6" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="1048" skillLevel="6" lowerLevel="6" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="1085" skillLevel="3" lowerLevel="6" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="1059" skillLevel="3" lowerLevel="6" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="1303" skillLevel="2" lowerLevel="6" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="1078" skillLevel="6" lowerLevel="6" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="264" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="267" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="268" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="true"/>
+    <buff skillId="1204" skillLevel="2" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="1036" skillLevel="2" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="1040" skillLevel="3" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="1045" skillLevel="6" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="1048" skillLevel="6" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="1085" skillLevel="3" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="1059" skillLevel="3" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="1303" skillLevel="2" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="1078" skillLevel="6" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="264" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="267" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="268" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
 
     <!-- Mystic buff line №2 -->
-    <buff skillId="304" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="349" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="273" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="276" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="true"/>
-    <buff skillId="365" skillLevel="1" lowerLevel="15" upperLevel="75" isMagicClass="true"/>
+    <buff skillId="304" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="349" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="273" skillLevel="1" lowerLevel="20" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="276" skillLevel="1" lowerLevel="20" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
+    <buff skillId="365" skillLevel="1" lowerLevel="20" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true"/>
 </list>

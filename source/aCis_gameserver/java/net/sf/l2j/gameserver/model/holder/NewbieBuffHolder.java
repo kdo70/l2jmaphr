@@ -9,10 +9,12 @@ import net.sf.l2j.commons.data.StatSet;
  */
 public class NewbieBuffHolder extends IntIntHolder
 {
-	private int _lowerLevel;
-	private int _upperLevel;
-	private boolean _isMagicClass;
-	
+	private final int _lowerLevel;
+	private final int _upperLevel;
+	private final boolean _isMagicClass;
+	private final int _priceId;
+	private final int _priceCount;
+
 	public NewbieBuffHolder(StatSet set)
 	{
 		super(set.getInteger("skillId"), set.getInteger("skillLevel"));
@@ -20,6 +22,8 @@ public class NewbieBuffHolder extends IntIntHolder
 		_lowerLevel = set.getInteger("lowerLevel");
 		_upperLevel = set.getInteger("upperLevel");
 		_isMagicClass = set.getBool("isMagicClass");
+		_priceId = set.getInteger("priceId");
+		_priceCount = set.getInteger("priceCount");
 	}
 	
 	/**
@@ -44,5 +48,21 @@ public class NewbieBuffHolder extends IntIntHolder
 	public boolean isMagicClassBuff()
 	{
 		return _isMagicClass;
+	}
+
+	/**
+	 * Gets price id.
+	 * @return the price id
+	 */
+	public Integer getPriceId() {
+		return _priceId;
+	}
+
+	/**
+	 * Gets price count.
+	 * @return the price count
+	 */
+	public int getPriceCount() {
+		return _priceCount;
 	}
 }

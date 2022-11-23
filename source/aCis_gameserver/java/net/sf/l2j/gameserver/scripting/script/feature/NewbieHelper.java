@@ -21,7 +21,7 @@ import net.sf.l2j.gameserver.model.holder.NewbieBuffHolder;
 import net.sf.l2j.gameserver.model.location.Location;
 import net.sf.l2j.gameserver.model.spawn.Spawn;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
-import net.sf.l2j.gameserver.network.serverpackets.MagicSkillUse;
+import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 import net.sf.l2j.gameserver.scripting.Quest;
 import net.sf.l2j.gameserver.scripting.QuestState;
 import net.sf.l2j.gameserver.skills.L2Skill;
@@ -69,181 +69,6 @@ public class NewbieHelper extends Quest {
         NEWBIE_GUIDE_LOCS.put(30573, new Location(-45067, -113549, -235));
     }
 
-    private static final int[] RADARS =
-            {
-                    // Talking Island
-                    30006, // Gatekeeper Roxxy
-                    30039, // Captain Gilbert
-                    30040, // Guard Leon
-                    30041, // Guard Arnold
-                    30042, // Guard Abellos
-                    30043, // Guard Johnstone
-                    30044, // Guard Chiperan
-                    30045, // Guard Kenyos
-                    30046, // Guard Hanks
-                    30283, // Blacksmith Altran
-                    30003, // Trader Silvia
-                    30004, // Trader Katerina
-                    30001, // Trader Lector
-                    30002, // Trader Jackson
-                    30031, // High Priest Biotin
-                    30033, // Magister Baulro
-                    30035, // Magister Harrys
-                    30032, // Priest Yohanes
-                    30036, // Priest Petron
-                    30026, // Grand Master Bitz
-                    30027, // Master Gwinter
-                    30029, // Master Minia
-                    30028, // Master Pintage
-                    30054, // Warehouse Keeper Rant
-                    30055, // Warehouse Keeper Rolfe
-                    30005, // Warehouse Keeper Wilford
-                    30048, // Darin
-                    30312, // Lighthouse Keeper Rockswell
-                    30368, // Lilith
-                    30049, // Bonnie
-                    30047, // Wharf Manager Firon
-                    30497, // Edmond
-                    30050, // Elias
-                    30311, // Sir Collin Windawood
-                    30051, // Cristel
-
-                    // Dark Elf Village
-                    30134, // Gatekeeper Jasmine
-                    30224, // Sentry Knight Rayla
-                    30348, // Sentry Nelsya
-                    30355, // Sentry Roselyn
-                    30347, // Sentry Marion
-                    30432, // Sentry Irene
-                    30356, // Sentry Altima
-                    30349, // Sentry Jenna
-                    30346, // Sentry Kayleen
-                    30433, // Sentry Kathaway
-                    30357, // Sentry Kristin
-                    30431, // Sentry Eriel
-                    30430, // Sentry Trionell
-                    30307, // Blacksmith Karrod
-                    30138, // Trader Minaless
-                    30137, // Trader Vollodos
-                    30135, // Trader Iria
-                    30136, // Trader Payne
-                    30143, // Master Trudy
-                    30360, // Master Harant
-                    30145, // Master Vlasty
-                    30135, // Magister Harne
-                    30144, // Tetrarch Vellior
-                    30358, // Tetrarch Thifiell
-                    30359, // Tetrarch Kaitar
-                    30141, // Tetrarch Talloth
-                    30139, // Warehouse Keeper Dorankus
-                    30140, // Warehouse Keeper Erviante
-                    30350, // Warehouse Freightman Carlon
-                    30421, // Varika
-                    30419, // Arkenia
-                    30130, // Abyssal Celebrant Undrias
-                    30351, // Astaron
-                    30353, // Jughead
-                    30354, // Jewel
-
-                    // Elven Village
-                    30146, // Gatekeeper Mirabel
-                    30285, // Sentinel Gartrandell
-                    30284, // Sentinel Knight Alberius
-                    30221, // Sentinel Rayen
-                    30217, // Sentinel Berros
-                    30219, // Sentinel Veltress
-                    30220, // Sentinel Starden
-                    30218, // Sentinel Kendell
-                    30216, // Sentinel Wheeler
-                    30363, // Blacksmith Aios
-                    30149, // Trader Creamees
-                    30150, // Trader Herbiel
-                    30148, // Trader Ariel
-                    30147, // Trader Unoren
-                    30155, // Master Ellenia
-                    30156, // Master Cobendell
-                    30157, // Magister Greenis
-                    30158, // Magister Esrandell
-                    30154, // Hierarch Asterios
-                    30153, // Warehouse Keeper Markius
-                    30152, // Warehouse Keeper Julia
-                    30151, // Warehouse Freightman Chad
-                    30423, // Northwind
-                    30414, // Rosella
-                    30361, // Rizraell
-                    31853, // Treant Bremec
-                    30223, // Arujien
-                    30362, // Andellia
-                    30222, // Alshupes
-                    30371, // Thalia
-                    31852, // Pixy Murika
-
-                    // Dwarven Village
-                    30540, // Gatekeeper Wirphy
-                    30541, // Protector Paion
-                    30542, // Defender Runant
-                    30543, // Defender Ethan
-                    30544, // Defender Cromwell
-                    30545, // Defender Proton
-                    30546, // Defender Dinkey
-                    30547, // Defender Tardyon
-                    30548, // Defender Nathan
-                    30531, // Iron Gate's Lockirin
-                    30532, // Golden Wheel's Spiron
-                    30533, // Silver Scale's Balanki
-                    30534, // Bronze Key's Keef
-                    30535, // Filaur of the Gray Pillar
-                    30536, // Black Anvil's Arin
-                    30525, // Head Blacksmith Bronk
-                    30526, // Blacksmith Brunon
-                    30527, // Blacksmith Silvera
-                    30518, // Trader Garita
-                    30519, // Trader Mion
-                    30516, // Trader Reep
-                    30517, // Trader Shari
-                    30520, // Warehouse Chief Reed
-                    30521, // Warehouse Freightman Murdoc
-                    30522, // Warehouse Keeper Airy
-                    30523, // Collector Gouph
-                    30524, // Collector Pippi
-                    30537, // Daichir, Priest of the Eart
-                    30650, // Priest of the Earth Gerald
-                    30538, // Priest of the Earth Zimenf
-                    30539, // Priestess of the Earth Chichirin
-                    30671, // Captain Croto
-                    30651, // Wanderer Dorf
-                    30550, // Gauri Twinklerock
-                    30554, // Miner Bolter
-                    30553, // Maryse Redbonnet
-
-                    // Orc Village
-                    30576, // Gatekeeper Tamil
-                    30577, // Praetorian Rukain
-                    30578, // Centurion Nakusin
-                    30579, // Centurion Tamai
-                    30580, // Centurion Parugon
-                    30581, // Centurion Orinak
-                    30582, // Centurion Tiku
-                    30583, // Centurion Petukai
-                    30584, // Centurion Vapook
-                    30569, // Prefect Brukurse
-                    30570, // Prefect Karukia
-                    30571, // Seer Tanapi
-                    30572, // Seer Livina
-                    30564, // Blacksmith Sumari
-                    30560, // Trader Uska
-                    30561, // Trader Papuma
-                    30558, // Trader Jakal
-                    30559, // Trader Kunai
-                    30562, // Warehouse Keeper Grookin
-                    30563, // Warehouse Keeper Imantu
-                    30565, // Flame Lord Kakai
-                    30566, // Atuba Chief Varkees
-                    30567, // Neruga Chief Tantus
-                    30568, // Urutu Chief Hatos
-                    30585, // Tataru Zu Hestui
-                    30587, // Gantaki Zu Urutu
-            };
 
     public NewbieHelper() {
         super(-1, "feature");
@@ -429,29 +254,7 @@ public class NewbieHelper extends Quest {
             else
                 htmltext += "_m20.htm";
         } else if (event.startsWith("SupportMagic")) {
-            // Prevent a cursed weapon wielder of being buffed.
-            if (player.isCursedWeaponEquipped())
-                return null;
-
-            // Orc Mage and Orc Shaman should receive fighter buffs since IL, although they are mage classes.
-            final boolean isMage = player.isMageClass() && player.getClassId() != ClassId.ORC_MYSTIC && player.getClassId() != ClassId.ORC_SHAMAN;
-
-            final int playerLevel = player.getStatus().getLevel();
-
-            // If the player is too low level, display a message and return.
-            if (playerLevel < NewbieBuffData.getInstance().getLowestBuffLevel(isMage))
-                htmltext = "guide_for_newbie002.htm";
-                // If the player is too high level, display a message and return.
-            else if (!player.isNewbie(false))
-                htmltext = "guide_for_newbie003.htm";
-            else {
-                //visual effect
-                player.broadcastPacket(new MagicSkillUse(npc, player, 1036, 1, 1000, 0));
-                ThreadPool.schedule(() -> setNewbieEffects(npc, player, isMage, playerLevel), 1000);
-
-                NewbieCommonBuffData.getInstance().getList(npc, player);
-                return null;
-            }
+            htmltext = NewbieBuffData.getInstance().supportMagic(npc, player);
         } else if (event.startsWith("CommonNewbieBuff")) {
             NewbieCommonBuffData.getInstance().getList(npc, player);
             return null;
@@ -492,29 +295,8 @@ public class NewbieHelper extends Quest {
                 ThreadPool.schedule(() -> callSkill(player, player, FrequentSkill.BLESSING_OF_PROTECTION.getSkill()), 1000);
                 return null;
             }
-        } else if (event.startsWith("NpcLocationInfo")) {
-            final int npcId = Integer.parseInt(event.substring(16));
-
-            if (!ArraysUtil.contains(RADARS, npcId))
-                return null;
-
-            for (Spawn spawn : SpawnTable.getInstance().getSpawns()) {
-                if (npcId == spawn.getNpcId()) {
-                    player.getRadarList().addMarker(spawn.getLoc());
-                    break;
-                }
-            }
-            htmltext = "newbie_guide_move_to_loc.htm";
         }
         return htmltext;
-    }
-
-    public void setNewbieEffects(Npc npc, Player player, boolean isMage, int playerLevel) {
-
-        for (NewbieBuffHolder buff : NewbieBuffData.getInstance().getValidBuffs(isMage, playerLevel)) {
-            final L2Skill skill = buff.getSkill();
-            skill.getEffects(npc, player);
-        }
     }
 
     @Override
@@ -529,8 +311,14 @@ public class NewbieHelper extends Quest {
 
         final int npcId = npc.getNpcId();
 
-        if (npcId == 31076 || npcId == 31077)
-            return npcId + ".htm";
+        if (npcId == 31076 || npcId == 31077) {
+            final NpcHtmlMessage html = new NpcHtmlMessage(npc.getObjectId());
+            html.setFile("data/html/script/feature/NewbieHelper/" + npcId + ".htm");
+            html.replace("%npcName%", npc.getName());
+            html.replace("%price%", NewbieBuffData.getInstance().calculatePrice(player));
+            player.sendPacket(html);
+            return null;
+        }
 
         if (npcId >= 30598 && npcId <= 30602) {
             if (!st.isCompleted()) {
