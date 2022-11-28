@@ -10,6 +10,7 @@ import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.holder.NewbieBuffHolder;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
 import net.sf.l2j.gameserver.network.serverpackets.MagicSkillUse;
+import net.sf.l2j.gameserver.network.serverpackets.PlaySound;
 import net.sf.l2j.gameserver.skills.L2Skill;
 import net.sf.l2j.gameserver.taskmanager.GameTimeTaskManager;
 import org.w3c.dom.Document;
@@ -75,6 +76,10 @@ public class NewbieBuffData implements IXmlReader {
         return _buffs.stream().filter(b -> b.isMagicClassBuff() == isMage && level >= b.getLowerLevel() && level <= b.getUpperLevel()).collect(Collectors.toList());
     }
 
+    public List<NewbieBuffHolder> getValidBuffs(boolean isMage) {
+        return _buffs.stream().filter(b -> b.isMagicClassBuff() == isMage).collect(Collectors.toList());
+    }
+
     public int getLowestBuffLevel(boolean isMage) {
         return (isMage) ? _magicLowestLevel : _physicLowestLevel;
     }
@@ -113,6 +118,7 @@ public class NewbieBuffData implements IXmlReader {
             return null;
         }
         player.broadcastPacket(new MagicSkillUse(npc, player, 1036, 1, 1000, 0));
+        player.sendPacket(new PlaySound(2, "test", player));
         ThreadPool.schedule(() -> setNewbieEffects(npc, player, isMage, playerLevel), 1000);
         NewbieCommonBuffData.getInstance().getList(npc, player);
         return null;

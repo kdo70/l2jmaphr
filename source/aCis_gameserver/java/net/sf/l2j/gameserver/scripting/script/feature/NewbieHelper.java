@@ -2,9 +2,7 @@ package net.sf.l2j.gameserver.scripting.script.feature;
 
 import net.sf.l2j.commons.pool.ThreadPool;
 import net.sf.l2j.commons.random.Rnd;
-import net.sf.l2j.commons.util.ArraysUtil;
 import net.sf.l2j.gameserver.data.SkillTable.FrequentSkill;
-import net.sf.l2j.gameserver.data.sql.SpawnTable;
 import net.sf.l2j.gameserver.data.xml.NewbieBuffData;
 import net.sf.l2j.gameserver.data.xml.NewbieCommonBuffData;
 import net.sf.l2j.gameserver.data.xml.TeleportData;
@@ -17,14 +15,11 @@ import net.sf.l2j.gameserver.model.actor.Npc;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.actor.instance.Monster;
 import net.sf.l2j.gameserver.model.holder.IntIntHolder;
-import net.sf.l2j.gameserver.model.holder.NewbieBuffHolder;
 import net.sf.l2j.gameserver.model.location.Location;
-import net.sf.l2j.gameserver.model.spawn.Spawn;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
 import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 import net.sf.l2j.gameserver.scripting.Quest;
 import net.sf.l2j.gameserver.scripting.QuestState;
-import net.sf.l2j.gameserver.skills.L2Skill;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -255,6 +250,11 @@ public class NewbieHelper extends Quest {
                 htmltext += "_m20.htm";
         } else if (event.startsWith("SupportMagic")) {
             htmltext = NewbieBuffData.getInstance().supportMagic(npc, player);
+        } else if (event.startsWith("AboutBuff")) {
+            final StringTokenizer string = new StringTokenizer(event, " ");
+            string.nextToken();
+            int page = string.hasMoreTokens() ? Integer.parseInt(string.nextToken()) : 1;
+            NewbieCommonBuffData.getInstance().getDescriptionList(npc, player, page);
         } else if (event.startsWith("CommonNewbieBuff")) {
             NewbieCommonBuffData.getInstance().getList(npc, player);
             return null;

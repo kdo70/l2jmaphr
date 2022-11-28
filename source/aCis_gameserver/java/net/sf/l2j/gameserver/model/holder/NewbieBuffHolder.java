@@ -14,6 +14,8 @@ public class NewbieBuffHolder extends IntIntHolder
 	private final boolean _isMagicClass;
 	private final int _priceId;
 	private final int _priceCount;
+	private final String _icon;
+	private final String _desc;
 
 	public NewbieBuffHolder(StatSet set)
 	{
@@ -24,6 +26,8 @@ public class NewbieBuffHolder extends IntIntHolder
 		_isMagicClass = set.getBool("isMagicClass");
 		_priceId = set.getInteger("priceId");
 		_priceCount = set.getInteger("priceCount");
+		_icon = set.getString("icon");
+		_desc = set.getString("desc");
 	}
 	
 	/**
@@ -64,5 +68,21 @@ public class NewbieBuffHolder extends IntIntHolder
 	 */
 	public int getPriceCount() {
 		return _priceCount;
+	}
+
+	/**
+	 * Gets icon.
+	 * @return the icon
+	 */
+	public String getIcon() {
+		return _icon;
+	}
+
+	/**
+	 * Gets desc.
+	 * @return the desc
+	 */
+	public String getDesc() {
+		return _desc;
 	}
 }
