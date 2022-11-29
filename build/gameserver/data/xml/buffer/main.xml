@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+    <!-- Warrior buff line №1 -->
+    <buff skillId="1204" skillLevel="2" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill1204" onlyNight="false" desc="Увеличивает скорость бега на 33"/>
+    <buff skillId="1040" skillLevel="3" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill1040" onlyNight="false" desc="Увеличивает защиту от физических повреждений на 15%"/>
+    <buff skillId="1036" skillLevel="2" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill1036" onlyNight="false" desc="Увеличивает защиту от магических повреждений на 30%"/>
+    <buff skillId="1045" skillLevel="6" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill1045" onlyNight="false" desc="Увеличивает максимальное количество HP на 35%"/>
+    <buff skillId="1048" skillLevel="6" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill1048" onlyNight="false" desc="Увеличивает максимальное количество MP на 35%"/>
+
+    <buff skillId="1068" skillLevel="3" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill1068" onlyNight="false" desc="Увеличивает силу физической атаки на 15%"/>
+    <buff skillId="1086" skillLevel="2" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill1086" onlyNight="false" desc="Увеличивает скорость физической атаки на 33%"/>
+    <buff skillId="1077" skillLevel="3" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill1077" onlyNight="false" desc="Увеличивает шанс нанести критический удар, физической атакой на 30%"/>
+    <buff skillId="1240" skillLevel="3" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill1240" onlyNight="false" desc="Увеличивает точность физической атаки на 4"/>
+    <buff skillId="264" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill0264" onlyNight="false" desc="Увеличивает защиту от физических повреждений на 25%"/>
+    <buff skillId="267" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill0267" onlyNight="false" desc="Увеличивает защиту от магических повреждений на 30%"/>
+    <buff skillId="268" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill0268" onlyNight="false" desc="Увеличивает скорость бега на 20"/>
+
+    <!-- Warrior buff line №2 -->
+    <buff skillId="304" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill0304" onlyNight="false" desc="Увеличивает максимальное количество HP на 30%"/>
+    <buff skillId="364" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill0364" onlyNight="false" desc="Снижает для физических навыков потребление MP на 20% и время повторного использования на 30%"/>
+    <buff skillId="271" skillLevel="1" lowerLevel="20" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill0271" onlyNight="false" desc="Увеличивает силу физической атаки на 12%"/>
+    <buff skillId="274" skillLevel="1" lowerLevel="20" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill0274" onlyNight="false" desc="Увеличивает силу критического удара, физической атаки на 35%"/>
+    <buff skillId="275" skillLevel="1" lowerLevel="20" upperLevel="75" priceId="57" priceCount="125" isMagicClass="false" icon="icon.skill0275" onlyNight="false" desc="Увеличивает скорость физической атаки на 15%"/>
+
+    <!-- Mystic buff line №1 -->
+    <buff skillId="1204" skillLevel="2" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill1204" onlyNight="false" desc="Увеличивает скорость бега на 33"/>
+    <buff skillId="1040" skillLevel="3" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill1040" onlyNight="false" desc="Увеличивает защиту от физических повреждений на 15%"/>
+    <buff skillId="1036" skillLevel="2" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill1036" onlyNight="false" desc="Увеличивает защиту от магических повреждений на 30%"/>
+    <buff skillId="1045" skillLevel="6" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill1045" onlyNight="false" desc="Увеличивает максимальное количество HP на 35%"/>
+    <buff skillId="1048" skillLevel="6" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill1048" onlyNight="false" desc="Увеличивает максимальное количество MP на 35%"/>
+
+    <buff skillId="1085" skillLevel="3" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill1085" onlyNight="false" desc="Увеличивает скорость чтения заклинаний на 15%"/>
+    <buff skillId="1059" skillLevel="3" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill1059" onlyNight="false" desc="Увеличивает магическую атаку на 55%"/>
+    <buff skillId="1303" skillLevel="2" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill1303" onlyNight="false" desc="Увеличивает шанс критической атаки магией на 4"/>
+    <buff skillId="1078" skillLevel="6" lowerLevel="6" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill1078" onlyNight="false" desc="Уменьшает шанс прерывания чтения заклинаний на 53"/>
+    <buff skillId="264" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill0264" onlyNight="false" desc="Увеличивает физическую защиту на 25%"/>
+    <buff skillId="267" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill0267" onlyNight="false" desc="Увеличивает магическую защиту на 30%"/>
+    <buff skillId="268" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill0268" onlyNight="false" desc="Увеличивает скорость передвижения на 20"/>
+
+    <!-- Mystic buff line №2 -->
+    <buff skillId="304" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill0304" onlyNight="false" desc="Увеличивает максимальное количество HP на 30%"/>
+    <buff skillId="349" skillLevel="1" lowerLevel="15" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill0349" onlyNight="false" desc="Снижает для всех навыков потребление MP на 10% и время повторного использования на 20%"/>
+    <buff skillId="273" skillLevel="1" lowerLevel="20" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill0273" onlyNight="false" desc="Увеличивает магическую атаку на 20%"/>
+    <buff skillId="276" skillLevel="1" lowerLevel="20" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill0276" onlyNight="false" desc="Увеличивает скорость чтения заклинаний на 30% и уменьшает шанс прерывания чтения заклинаний на 40"/>
+    <buff skillId="365" skillLevel="1" lowerLevel="20" upperLevel="75" priceId="57" priceCount="125" isMagicClass="true" icon="icon.skill0365" onlyNight="false" desc="Увеличивает шанс критической атаки магией на 100%"/>
+</list>
