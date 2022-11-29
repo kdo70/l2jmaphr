@@ -229,13 +229,13 @@ public class NewbieHelper extends Quest {
             sb.append("<table width=280 bgcolor=000000>");
             sb.append("<tr><td width=35><img src=\"");
             sb.append(buff.getIcon());
-            sb.append("\" width=32 height=32><img height=5></td><td width=200>");
+            sb.append("\" width=32 height=32><img height=5></td><td width=170>");
             sb.append(skill.getName());
             sb.append("<font color=A3A0A3> Lv.</font> <font color=B09878>");
             sb.append(skill.getLevel());
             sb.append("</font><br1><font color=B09878>Доступно с ");
             sb.append(buff.getLowerLevel());
-            sb.append(" уровня</font></td><td width=120></td></tr></table><table width=280 bgcolor=000000><tr><td width=115><font color=A3A0A3>");
+            sb.append(" уровня</font></td><td width=70></td></tr></table><table width=280 bgcolor=000000><tr><td width=224><font color=A3A0A3>");
             sb.append(buff.getDesc());
             sb.append("</font></td><td width=1></td></tr></table><img src=L2UI.SquareGray width=280 height=1>");
             item_in_page++;
@@ -267,7 +267,6 @@ public class NewbieHelper extends Quest {
 
         html.setFile("data/html/script/feature/NewbieHelper/guide_for_newbie006.htm");
         html.replace("%list%", sb.toString());
-
         player.sendPacket(html);
         return null;
     }
