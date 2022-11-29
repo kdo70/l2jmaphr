@@ -29,16 +29,8 @@ public class NewbieHelper extends Quest {
 
     public NewbieHelper() {
         super(-1, "feature");
-
-        addTalkId(30009, 30019, 30131, 30400, 30530,
-                30575, 30008, 30017, 30129, 30370, 30528, 30573,
-                30598, 30599, 30600, 30601, 30602, 31076, 31077
-        );
-
-        addFirstTalkId(30009, 30019, 30131, 30400, 30530,
-                30575, 30008, 30017, 30129, 30370, 30528, 30573,
-                30598, 30599, 30600, 30601, 30602, 31076, 31077
-        );
+        addTalkId(30009, 30019, 30131, 30400, 30530, 30575, 30008, 30017, 30129, 30370, 30528, 30573, 30598, 30599, 30600, 30601, 30602, 31076, 31077);
+        addFirstTalkId(30009, 30019, 30131, 30400, 30530, 30575, 30008, 30017, 30129, 30370, 30528, 30573, 30598, 30599, 30600, 30601, 30602, 31076, 31077);
     }
 
     @Override
@@ -57,20 +49,21 @@ public class NewbieHelper extends Quest {
             return supportMagic(player, npc);
         }
 
-        if (event.startsWith("AboutBuff")) {
-            final StringTokenizer string = new StringTokenizer(event, " ");
-            string.nextToken();
-            int page = string.hasMoreTokens() ? Integer.parseInt(string.nextToken()) : 1;
-            getDescriptionList(npc, player, page);
+        if (event.startsWith("GetMagic")) {
+            return getBuff(npc, player, getIndex(event));
         }
-        if (event.startsWith("GetBuff")) {
-            final StringTokenizer string = new StringTokenizer(event, " ");
-            string.nextToken();
-            int index = string.hasMoreTokens() ? Integer.parseInt(string.nextToken()) : 1;
-            getBuff(npc, player, index);
-            return null;
+
+        if (event.startsWith("AboutMagic")) {
+            return getDescriptionList(npc, player, getIndex(event));
         }
+
         return null;
+    }
+
+    public int getIndex(String command) {
+        final StringTokenizer string = new StringTokenizer(command, " ");
+        string.nextToken();
+        return string.hasMoreTokens() ? Integer.parseInt(string.nextToken()) : 1;
     }
 
     public String onFirstTalk(Npc npc, Player player) {
@@ -78,9 +71,7 @@ public class NewbieHelper extends Quest {
     }
 
     private boolean playerIsMage(Player player) {
-        return player.isMageClass()
-                && player.getClassId() != ClassId.ORC_MYSTIC
-                && player.getClassId() != ClassId.ORC_SHAMAN;
+        return player.isMageClass() && player.getClassId() != ClassId.ORC_MYSTIC && player.getClassId() != ClassId.ORC_SHAMAN;
     }
 
     private String supportMagic(Player player, Npc npc) {
@@ -89,23 +80,10 @@ public class NewbieHelper extends Quest {
         }
 
         final boolean playerIsMage = playerIsMage(player);
-
         final int playerLevel = player.getStatus().getLevel();
 
-        final boolean lowerLevel =
-                player.getStatus().getLevel() < NewbieBuffData.getInstance().getLowestBuffLevel(playerIsMage)
-                        || player.isSubClassActive();
-
-        final boolean upperLevel =
-                player.getStatus().getLevel() > NewbieBuffData.getInstance().getUpperBuffLevel(playerIsMage)
-                        || player.isSubClassActive();
-
-        if (lowerLevel) {
-            return "guide_for_newbie002.htm";
-        }
-
-        if (upperLevel) {
-            return "guide_for_newbie003.htm";
+        if (playerIsLowerLevel(player, playerIsMage) || playerIsUpperLevel(player, playerIsMage)) {
+            return playerIsLowerLevel(player, playerIsMage) ? "guide_for_newbie002.htm" : "guide_for_newbie003.htm";
         }
 
         boolean needPayment = !Config.FREE_BUFFER && player.getStatus().getLevel() > Config.FREE_BUFFER_LVL;
@@ -121,96 +99,92 @@ public class NewbieHelper extends Quest {
         return null;
     }
 
-    public void getList(Npc npc, Player player) {
-        final NpcHtmlMessage html = new NpcHtmlMessage(npc.getObjectId());
-        final boolean isMage = player.isMageClass() && player.getClassId() != ClassId.ORC_MYSTIC && player.getClassId() != ClassId.ORC_SHAMAN;
-        int visibleCount = 0;
-        if (player.getStatus().getLevel() < NewbieBuffData.getInstance().getLowestBuffLevel(isMage)) {
-            html.setFile("data/html/script/feature/NewbieHelper/guide_for_newbie002.htm");
-        } else if (player.isSubClassActive() || player.getStatus().getLevel() > NewbieBuffData.getInstance().getUpperBuffLevel(isMage)) {
-            html.setFile("data/html/script/feature/NewbieHelper/guide_for_newbie003.htm");
-        } else {
-
-            final StringBuilder sb = new StringBuilder();
-            List<NewbieBuffHolder> buffs = NewbieCommonBuffData.getInstance().getBuffs();
-            for (int index = 0; index < buffs.size(); index++) {
-                final NewbieBuffHolder buff = buffs.get(index);
-                if (player.getStatus().getLevel() < buff.getLowerLevel() || player.getStatus().getLevel() > buff.getUpperLevel()) {
-                    continue;
-                }
-                if (buff.isOnlyNight() && !GameTimeTaskManager.getInstance().isNight()) {
-                    continue;
-                }
-                Item item = ItemData.getInstance().getTemplate(buff.getPriceId());
-                StringTokenizer tokenizer = new StringTokenizer(item.getName());
-                String itemName = tokenizer.nextToken();
-                StringUtil.append(sb, "<table width=285 bgcolor=000000>" +
-                        "<tr>" +
-                        "<td width=35><img src=\"", buff.getIcon(), "\" width=32 height=16><img height=7></td>" +
-                        "<td width=105>", buff.getSkill().getName(), "</td>" +
-                        "<td width=45><font color=A3A0A3>", String.format(Locale.US, "%,d", calculatePrice(buff, player)), "</font></td>" +
-                        "<td width=35><font color=B09878>", itemName, "</font></td>" +
-                        "<td width=60><a action=\"bypass -h Quest NewbieHelper GetBuff ", index, "\">Применить</a></td>" +
-                        "</tr>" +
-                        "</table>" +
-                        "<img src=L2UI.SquareGray width=280 height=1>");
-                visibleCount++;
-            }
-
-            StringUtil.append(sb, "<table width=285 bgcolor=000000><tr>" +
-                    "<td width=285 align=\"center\"><img height=2>" +
-                    "<a action=\"bypass -h Quest NewbieHelper AboutBuff\">" +
-                    "Узнать больше о магической поддержке" +
-                    "</a>" +
-                    "<img height=2> </td>" +
-                    "</tr></table>");
-
-            if (visibleCount < 13) {
-                StringUtil.append(sb, "<img height=", 26 * (13 - visibleCount), ">");
-            }
-            html.setFile("data/html/script/feature/NewbieHelper/guide_for_newbie005.htm");
-            html.replace("%list%", sb.toString());
-        }
-        html.replace("%npcName%", npc.getName());
-        player.sendPacket(html);
+    private boolean playerIsLowerLevel(Player player, boolean playerIsMage) {
+        return player.getStatus().getLevel() < NewbieBuffData.getInstance().getLowestBuffLevel(playerIsMage) || player.isSubClassActive();
     }
 
-    public void getBuff(Npc npc, Player player, int index) {
-        List<NewbieBuffHolder> buffs = NewbieCommonBuffData.getInstance().getBuffs();
-        final NewbieBuffHolder buff = buffs.get(index);
+    private boolean playerIsUpperLevel(Player player, boolean playerIsMage) {
+        return player.getStatus().getLevel() > NewbieBuffData.getInstance().getUpperBuffLevel(playerIsMage) || player.isSubClassActive();
+    }
 
-        final boolean lowerLevel = player.getStatus().getLevel() < buff.getLowerLevel();
-        final boolean upperLevel = player.getStatus().getLevel() > buff.getUpperLevel();
+    public String getList(Npc npc, Player player) {
+        final boolean playerIsMage = playerIsMage(player);
 
-        if (lowerLevel || upperLevel || player.isSubClassActive()) {
-            player.sendPacket(ActionFailed.STATIC_PACKET);
-            return;
+        if (playerIsLowerLevel(player, playerIsMage) || playerIsUpperLevel(player, playerIsMage)) {
+            return playerIsLowerLevel(player, playerIsMage) ? "guide_for_newbie002.htm" : "guide_for_newbie003.htm";
         }
 
+        final NpcHtmlMessage html = new NpcHtmlMessage(npc.getObjectId());
+        final StringBuilder sb = new StringBuilder();
+
+        List<NewbieBuffHolder> buffs = NewbieCommonBuffData.getInstance().getBuffs();
+        int visibleCount = 0;
+
+        for (int index = 0; index < buffs.size(); index++) {
+            final NewbieBuffHolder buff = buffs.get(index);
+
+            if (buff.isOnlyNight() && !GameTimeTaskManager.getInstance().isNight()) {
+                continue;
+            }
+
+            Item item = ItemData.getInstance().getTemplate(buff.getPriceId());
+            StringTokenizer tokenizer = new StringTokenizer(item.getName());
+            String itemName = tokenizer.nextToken();
+
+            StringUtil.append(sb, "<table width=285 bgcolor=000000>" + "<tr>" + "<td width=35><img src=\"", buff.getIcon(), "\" width=32 height=16><img height=7></td>" + "<td width=105>", buff.getSkill().getName(), "</td>" + "<td width=45>" + "<font color=A3A0A3>", String.format(Locale.US, "%,d", calculatePrice(buff, player)), "</font></td>" + "<td width=35><font color=B09878>", itemName, "</font></td>" + "<td width=60><a action=\"bypass -h Quest NewbieHelper GetMagic ", index, "\">Применить</a></td>" + "</tr>" + "</table>" + "<img src=L2UI.SquareGray width=280 height=1>");
+            visibleCount++;
+        }
+
+        StringUtil.append(sb, "<table width=285 bgcolor=000000><tr>" + "<td width=285 align=\"center\"><img height=2>" + "<a action=\"bypass -h Quest NewbieHelper AboutMagic\">" + "Узнать больше о магической поддержке" + "</a>" + "<img height=2> </td>" + "</tr></table>");
+
+        if (visibleCount < 13) {
+            StringUtil.append(sb, "<img height=", 26 * (13 - visibleCount), ">");
+        }
+
+        html.setFile("data/html/script/feature/NewbieHelper/guide_for_newbie005.htm");
+        html.replace("%list%", sb.toString());
+        html.replace("%npcName%", npc.getName());
+        player.sendPacket(html);
+        return null;
+    }
+
+    public String getBuff(Npc npc, Player player, int index) {
+        final boolean playerIsMage = playerIsMage(player);
+        if (playerIsLowerLevel(player, playerIsMage) || playerIsUpperLevel(player, playerIsMage)) {
+            return actionFailed(player);
+        }
+
+        List<NewbieBuffHolder> buffs = NewbieCommonBuffData.getInstance().getBuffs();
+
+        final NewbieBuffHolder buff = buffs.get(index);
         int visualSkillId = buff.getSkill().getId();
         int skillLvl = buff.getSkill().getLevel();
 
-        if (visualSkillId == 4699) visualSkillId = 4700;
-        if (visualSkillId == 4702) visualSkillId = 4703;
+
+        if (visualSkillId == 4699 || visualSkillId == 4702) {
+            visualSkillId = visualSkillId == 4699 ? 4700 : 4703;
+        }
 
         boolean needPayment = !Config.FREE_BUFFER && player.getStatus().getLevel() > Config.FREE_BUFFER_LVL;
 
         if (needPayment && !player.destroyItemByItemId("NewbieCommonBuff", buff.getPriceId(), calculatePrice(buff, player), npc, true)) {
             player.sendPacket(ActionFailed.STATIC_PACKET);
-            return;
+            return null;
         }
 
         if (visualSkillId == 1323) {
-            player.sendPacket(new PlaySound(2, "test", player));
+            player.sendPacket(new PlaySound(2, "newbie_blessing", player));
         }
 
         MagicSkillUse packet = new MagicSkillUse(npc, player, visualSkillId, skillLvl, 1000, 0);
         player.broadcastPacket(packet);
         ThreadPool.schedule(() -> setEffect(npc, player, buff.getSkill()), 1000);
         this.getList(npc, player);
+
+        return null;
     }
 
-    public void getDescriptionList(Npc npc, Player player, int page) {
+    public String getDescriptionList(Npc npc, Player player, int page) {
         final NpcHtmlMessage html = new NpcHtmlMessage(npc.getObjectId());
         final StringBuilder sb = new StringBuilder();
         int currentPage = 1;
@@ -220,9 +194,7 @@ public class NewbieHelper extends Quest {
         boolean has_more = false;
 
         // Orc Mage and Orc Shaman should receive fighter buffs since IL, although they are mage classes.
-        final boolean isMage = player.isMageClass()
-                && player.getClassId() != ClassId.ORC_MYSTIC
-                && player.getClassId() != ClassId.ORC_SHAMAN;
+        final boolean isMage = player.isMageClass() && player.getClassId() != ClassId.ORC_MYSTIC && player.getClassId() != ClassId.ORC_SHAMAN;
 
         final List<NewbieBuffHolder> _buffs = NewbieBuffData.getInstance().getValidBuffs(isMage);
         _buffs.addAll(NewbieCommonBuffData.getInstance().getBuffs());
@@ -249,23 +221,7 @@ public class NewbieHelper extends Quest {
                 break;
             }
 
-            StringUtil.append(sb, "<table width=280 bgcolor=000000>" +
-                    "<tr>" +
-                    "<td width=35>" +
-                    "<img src=\"" + buff.getIcon() + "\" width=32 height=32><img height=5>" +
-                    "</td>" +
-                    "<td width=200>" + skill.getName() + "<font color=A3A0A3> Lv.</font> <font color=B09878>" + skill.getLevel() + "</font>" +
-                    "<br1><font color=B09878>Доступно с " + buff.getLowerLevel() + " уровня</font>" +
-                    "</td>" +
-                    "<td width=120></td>" +
-                    "</tr>" +
-                    "</table>" +
-                    "<table width=280 bgcolor=000000>" +
-                    "<tr>" +
-                    "<td width=115><font color=A3A0A3>" + buff.getDesc() + "</font></td><td width=1></td>" +
-                    "</tr>" +
-                    "</table>" +
-                    "<img src=L2UI.SquareGray width=280 height=1>");
+            StringUtil.append(sb, "<table width=280 bgcolor=000000>" + "<tr>" + "<td width=35>" + "<img src=\"" + buff.getIcon() + "\" width=32 height=32><img height=5>" + "</td>" + "<td width=200>" + skill.getName() + "<font color=A3A0A3> Lv.</font> <font color=B09878>" + skill.getLevel() + "</font>" + "<br1><font color=B09878>Доступно с " + buff.getLowerLevel() + " уровня</font>" + "</td>" + "<td width=120></td>" + "</tr>" + "</table>" + "<table width=280 bgcolor=000000>" + "<tr>" + "<td width=115><font color=A3A0A3>" + buff.getDesc() + "</font></td><td width=1></td>" + "</tr>" + "</table>" + "<img src=L2UI.SquareGray width=280 height=1>");
             item_in_page++;
         }
 
@@ -274,7 +230,7 @@ public class NewbieHelper extends Quest {
         sb.append("<td width=100></td>");
         sb.append("<td align=center width=30>");
         sb.append("<table width=1 height=2 bgcolor=000000></table>");
-        sb.append("<button action=\"bypass -h Quest NewbieHelper AboutBuff");
+        sb.append("<button action=\"bypass -h Quest NewbieHelper AboutMagic");
         sb.append(" ");
         sb.append(page - (page > 1 ? 1 : 0));
         sb.append("\" width=16 height=16 back=L2UI_ch3.prev1_over fore=L2UI_ch3.prev1>");
@@ -284,7 +240,7 @@ public class NewbieHelper extends Quest {
         sb.append("</td>");
         sb.append("<td align=center width=30>");
         sb.append("<table width=1 height=2 bgcolor=000000></table>");
-        sb.append("<button action=\"bypass -h Quest NewbieHelper AboutBuff");
+        sb.append("<button action=\"bypass -h Quest NewbieHelper AboutMagic");
         sb.append(" ");
         sb.append(page + (has_more ? 1 : 0));
         sb.append("\" width=16 height=16 back=L2UI_ch3.next1_over fore=L2UI_ch3.next1>");
@@ -296,6 +252,7 @@ public class NewbieHelper extends Quest {
         html.setFile("data/html/script/feature/NewbieHelper/guide_for_newbie006.htm");
         html.replace("%list%", sb.toString());
         player.sendPacket(html);
+        return null;
     }
 
     public static void setEffect(Npc npc, Player player, L2Skill skill) {
