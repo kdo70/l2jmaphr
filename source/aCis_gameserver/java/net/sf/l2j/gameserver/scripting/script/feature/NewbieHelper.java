@@ -55,6 +55,10 @@ public class NewbieHelper extends Quest {
             return actionFailed(player);
         }
 
+        if (event.startsWith("Index")) {
+            return onFirstTalk(npc, player);
+        }
+
         if (event.startsWith("SupportMagic")) {
             return supportMagic(player, npc);
         }
@@ -74,6 +78,7 @@ public class NewbieHelper extends Quest {
         final NpcHtmlMessage html = new NpcHtmlMessage(npc.getObjectId());
         html.setFile("data/html/script/feature/NewbieHelper/" + npc.getNpcId() + ".htm");
         html.replace("%npcName%", npc.getName());
+        html.replace("%price%", String.format(Locale.US, "%,d", calculatePrice(player)));
         player.sendPacket(html);
         return null;
     }
@@ -141,6 +146,7 @@ public class NewbieHelper extends Quest {
                 "<tr>" +
                 "<td width=285 align=\"center\"><img height=2><a action=\"bypass -h Quest NewbieHelper AboutMagic\">Узнать больше о магической поддержке</a><img height=2> </td>" +
                 "</tr>" +
+                "</table><table width=285 bgcolor=000000><tr><td width=285 align=\"center\"><img height=2><a action=\"bypass -h Quest NewbieHelper Index\">Вернуться назад</a><img height=2></td></tr>" +
                 "</table>");
 
         if (visibleCount < 13) {
@@ -150,6 +156,7 @@ public class NewbieHelper extends Quest {
         html.setFile("data/html/script/feature/NewbieHelper/guide_for_newbie005.htm");
         html.replace("%list%", sb.toString());
         html.replace("%npcName%", npc.getName());
+        html.replace("%objectId%", npc.getObjectId());
         player.sendPacket(html);
 
         return null;
@@ -233,21 +240,25 @@ public class NewbieHelper extends Quest {
             sb.append(skill.getName());
             sb.append("<font color=A3A0A3> Lv.</font> <font color=B09878>");
             sb.append(skill.getLevel());
-            sb.append("</font><br1><font color=B09878>Доступно с ");
-            sb.append(buff.getLowerLevel());
-            sb.append(" уровня</font></td><td width=70></td></tr></table><table width=280 bgcolor=000000><tr><td width=224><font color=A3A0A3>");
+            sb.append("</font><br1><font color=B09878>");
+            if (buff.isOnlyNight()) {
+                sb.append("Доступно только ночью");
+            } else {
+                sb.append("Доступно с ");
+                sb.append(buff.getLowerLevel());
+                sb.append(" уровня");
+            }
+            sb.append("</font></td><td width=70></td></tr></table><table width=280 bgcolor=000000><tr><td width=224><font color=A3A0A3>");
             sb.append(buff.getDesc());
             sb.append("</font></td><td width=1></td></tr></table><img src=L2UI.SquareGray width=280 height=1>");
             item_in_page++;
         }
 
-        sb.append("<img src=L2UI.SquareGray width=280 height=1>");
         sb.append("<table width=280 bgcolor=000000><tr>");
         sb.append("<td width=100></td>");
         sb.append("<td align=center width=30>");
         sb.append("<table width=1 height=2 bgcolor=000000></table>");
-        sb.append("<button action=\"bypass -h Quest NewbieHelper AboutMagic");
-        sb.append(" ");
+        sb.append("<button action=\"bypass -h Quest NewbieHelper AboutMagic ");
         sb.append(page - (page > 1 ? 1 : 0));
         sb.append("\" width=16 height=16 back=L2UI_ch3.prev1_over fore=L2UI_ch3.prev1>");
         sb.append("</td>");
@@ -256,8 +267,7 @@ public class NewbieHelper extends Quest {
         sb.append("</td>");
         sb.append("<td align=center width=30>");
         sb.append("<table width=1 height=2 bgcolor=000000></table>");
-        sb.append("<button action=\"bypass -h Quest NewbieHelper AboutMagic");
-        sb.append(" ");
+        sb.append("<button action=\"bypass -h Quest NewbieHelper AboutMagic ");
         sb.append(page + (has_more ? 1 : 0));
         sb.append("\" width=16 height=16 back=L2UI_ch3.next1_over fore=L2UI_ch3.next1>");
         sb.append("</td>");
@@ -267,6 +277,8 @@ public class NewbieHelper extends Quest {
 
         html.setFile("data/html/script/feature/NewbieHelper/guide_for_newbie006.htm");
         html.replace("%list%", sb.toString());
+        html.replace("%npcName%", npc.getName());
+        html.replace("%objectId%", npc.getObjectId());
         player.sendPacket(html);
         return null;
     }
@@ -286,7 +298,7 @@ public class NewbieHelper extends Quest {
     }
 
     private int calculatePrice(Player player) {
-        int calculatedPrice = 100;
+        int calculatedPrice = Config.BUFF_PRICE_PER_UNIT;
         calculatedPrice *= player.getStatus().getLevel();
         float currentHour = GameTimeTaskManager.getInstance().getGameHour();
         currentHour = 1 + currentHour / 100;
