@@ -22,7 +22,8 @@ public class ItemSkills implements IItemHandler
 	{
 		2031, // Lesser Healing Potion
 		2032, // Healing potion
-		2037 // Greater Healing Potion
+		2037, // Greater Healing Potion
+		2279 // Greater Mana Potion
 	};
 	
 	@Override
