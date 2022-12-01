@@ -1610,7 +1610,7 @@ public abstract class Creature extends WorldObject
 	{
 		if (skill == null)
 			return;
-		
+
 		_disabledSkills.put(skill.getReuseHashCode(), (delay > 10) ? System.currentTimeMillis() + delay : Long.MAX_VALUE);
 	}
 	

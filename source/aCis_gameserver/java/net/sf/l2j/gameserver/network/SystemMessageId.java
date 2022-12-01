@@ -13764,7 +13764,7 @@ public final class SystemMessageId
 		S1_CANNOT_PARTICIPATE_IN_OLYMPIAD_DURING_TELEPORT = new SystemMessageId(2029);
 		CURRENTLY_LOGGING_IN = new SystemMessageId(2030);
 		PLEASE_WAIT_A_MOMENT = new SystemMessageId(2031);
-		
+
 		buildFastLookupTable();
 	}
 	

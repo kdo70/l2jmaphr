@@ -621,7 +621,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="etcitem_type" val="QUEST" />
 	</item>
-	<item id="1073" type="EtcItem" name="Mana Potion Lv. 12">
+	<item id="1073" type="EtcItem" name="Mana Potion">
 		<set name="default_action" val="skill_reduce"/>
 		<set name="etcitem_type" val="POTION"/>
 		<set name="material" val="LIQUID"/>
