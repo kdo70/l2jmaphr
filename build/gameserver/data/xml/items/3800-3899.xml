@@ -684,15 +684,19 @@
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="3889" type="EtcItem" name="Potion of Recovery">
-		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="POTION" />
-		<set name="material" val="LIQUID" />
-		<set name="weight" val="180" />
-		<set name="is_stackable" val="true" />
-		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="ItemSkills" />
-		<set name="item_skill" val="2060-1" />
+	<item id="3889" type="EtcItem" name="Healing Potion Lv. 9">
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="material" val="LIQUID"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="1080"/>
+		<set name="reuse_delay" val="10000" />
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2037-9"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+		<set name="shared_reuse_group" val="10"/>
 	</item>
 	<item id="3890" type="EtcItem" name="Herald of Slayer">
 		<set name="material" val="STEEL" />

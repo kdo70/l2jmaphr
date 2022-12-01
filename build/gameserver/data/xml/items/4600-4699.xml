@@ -648,42 +648,47 @@
 		<set name="is_stackable" val="true" />
 		<set name="etcitem_type" val="QUEST" />
 	</item>
-	<item id="4677" type="EtcItem" name="Potion of Critical Escape">
-		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="POTION" />
-		<set name="material" val="PAPER" />
-		<set name="weight" val="120" />
-		<set name="reuse_delay" val="500" />
-		<set name="is_stackable" val="true" />
-		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="ItemSkills" />
-		<set name="item_skill" val="2074-1" />
-		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
-	</item>
-	<item id="4678" type="EtcItem" name="Decrease Haste Potion">
-		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="POTION" />
-		<set name="material" val="LIQUID" />
-		<set name="weight" val="180" />
+	<item id="4677" type="EtcItem" name="Healing Potion Lv. 10">
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="material" val="LIQUID"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="1080"/>
 		<set name="reuse_delay" val="10000" />
-		<set name="is_stackable" val="true" />
-		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="ItemSkills" />
-		<set name="item_skill" val="2075-1" />
-		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2037-10"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+		<set name="shared_reuse_group" val="10"/>
 	</item>
-	<item id="4679" type="EtcItem" name="Bless of Eva">
-		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="POTION" />
-		<set name="material" val="LIQUID" />
-		<set name="weight" val="180" />
-		<set name="price" val="500" />
-		<set name="reuse_delay" val="500" />
-		<set name="is_stackable" val="true" />
-		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="ItemSkills" />
-		<set name="item_skill" val="2076-1" />
-		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
+	<item id="4678" type="EtcItem" name="Healing Potion Lv. 11">
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="material" val="LIQUID"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="1080"/>
+		<set name="reuse_delay" val="10000" />
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2037-11"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+		<set name="shared_reuse_group" val="10"/>
+	</item>
+	<item id="4679" type="EtcItem" name="Healing Potion Lv. 12">
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="material" val="LIQUID"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="1080"/>
+		<set name="reuse_delay" val="10000" />
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2037-12"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+		<set name="shared_reuse_group" val="10"/>
 	</item>
 	<item id="4680" type="EtcItem" name="Potion of Revenge">
 		<set name="default_action" val="skill_reduce" />

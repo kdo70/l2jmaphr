@@ -289,49 +289,61 @@
             <baseadd stat="pDef" val="36"/>
         </for>
     </item>
-    <item id="725" type="EtcItem" name="Healing Drug">
+    <item id="725" type="EtcItem" name="Mana Potion Lv. 2">
         <set name="default_action" val="skill_reduce"/>
         <set name="etcitem_type" val="POTION"/>
         <set name="material" val="LIQUID"/>
-        <set name="weight" val="180"/>
-        <set name="price" val="50"/>
-        <set name="is_stackable" val="true"/>
-        <set name="is_oly_restricted" val="true"/>
-        <set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
-    </item>
-    <item id="726" type="EtcItem" name="Mana Drug">
-        <set name="default_action" val="skill_reduce"/>
-        <set name="etcitem_type" val="POTION"/>
-        <set name="material" val="LIQUID"/>
-        <set name="weight" val="180"/>
-        <set name="price" val="80"/>
+        <set name="weight" val="5"/>
+        <set name="price" val="1080"/>
+        <set name="reuse_delay" val="10000" />
         <set name="is_stackable" val="true"/>
         <set name="is_oly_restricted" val="true"/>
         <set name="handler" val="ItemSkills"/>
-        <set name="item_skill" val="2279-1"/>
+        <set name="item_skill" val="2279-2"/>
         <set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+        <set name="shared_reuse_group" val="10"/>
     </item>
-    <item id="727" type="EtcItem" name="Healing Potion">
+    <item id="726" type="EtcItem" name="Mana Potion Lv. 3">
         <set name="default_action" val="skill_reduce"/>
         <set name="etcitem_type" val="POTION"/>
         <set name="material" val="LIQUID"/>
-        <set name="weight" val="180"/>
-        <set name="price" val="80"/>
-        <set name="is_stackable" val="true"/>
-        <set name="is_oly_restricted" val="true"/>
-        <set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
-    </item>
-    <item id="728" type="EtcItem" name="Mana Potion">
-        <set name="default_action" val="skill_reduce"/>
-        <set name="etcitem_type" val="POTION"/>
-        <set name="material" val="LIQUID"/>
-        <set name="weight" val="180"/>
-        <set name="price" val="2000"/>
+        <set name="weight" val="5"/>
+        <set name="price" val="1080"/>
+        <set name="reuse_delay" val="10000" />
         <set name="is_stackable" val="true"/>
         <set name="is_oly_restricted" val="true"/>
         <set name="handler" val="ItemSkills"/>
-        <set name="item_skill" val="2279-10"/>
+        <set name="item_skill" val="2279-3"/>
         <set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+        <set name="shared_reuse_group" val="10"/>
+    </item>
+    <item id="727" type="EtcItem" name="Mana Potion Lv. 4">
+        <set name="default_action" val="skill_reduce"/>
+        <set name="etcitem_type" val="POTION"/>
+        <set name="material" val="LIQUID"/>
+        <set name="weight" val="5"/>
+        <set name="price" val="1080"/>
+        <set name="reuse_delay" val="10000" />
+        <set name="is_stackable" val="true"/>
+        <set name="is_oly_restricted" val="true"/>
+        <set name="handler" val="ItemSkills"/>
+        <set name="item_skill" val="2279-4"/>
+        <set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+        <set name="shared_reuse_group" val="10"/>
+    </item>
+    <item id="728" type="EtcItem" name="Mana Potion Lv. 5">
+        <set name="default_action" val="skill_reduce"/>
+        <set name="etcitem_type" val="POTION"/>
+        <set name="material" val="LIQUID"/>
+        <set name="weight" val="5"/>
+        <set name="price" val="1080"/>
+        <set name="reuse_delay" val="10000" />
+        <set name="is_stackable" val="true"/>
+        <set name="is_oly_restricted" val="true"/>
+        <set name="handler" val="ItemSkills"/>
+        <set name="item_skill" val="2279-5"/>
+        <set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+        <set name="shared_reuse_group" val="10"/>
     </item>
     <item id="729" type="EtcItem" name="Scroll: Enchant Weapon (Grade A)">
         <set name="default_action" val="skill_reduce"/>
@@ -371,42 +383,47 @@
         <set name="is_oly_restricted" val="true"/>
         <set name="handler" val="EnchantScrolls"/>
     </item>
-    <item id="733" type="EtcItem" name="Endeavor Potion">
+    <item id="733" type="EtcItem" name="Mana Potion Lv. 6">
         <set name="default_action" val="skill_reduce"/>
         <set name="etcitem_type" val="POTION"/>
         <set name="material" val="LIQUID"/>
-        <set name="weight" val="180"/>
-        <set name="price" val="500"/>
+        <set name="weight" val="5"/>
+        <set name="price" val="1080"/>
+        <set name="reuse_delay" val="10000" />
         <set name="is_stackable" val="true"/>
         <set name="is_oly_restricted" val="true"/>
         <set name="handler" val="ItemSkills"/>
-        <set name="item_skill" val="2010-1"/>
-    </item>
-    <item id="734" type="EtcItem" name="Haste Potion">
-        <set name="default_action" val="skill_reduce"/>
-        <set name="etcitem_type" val="POTION"/>
-        <set name="material" val="LIQUID"/>
-        <set name="weight" val="20"/>
-        <set name="price" val="1200"/>
-        <set name="reuse_delay" val="500"/>
-        <set name="is_stackable" val="true"/>
-        <set name="is_oly_restricted" val="true"/>
-        <set name="handler" val="ItemSkills"/>
-        <set name="item_skill" val="2011-1"/>
+        <set name="item_skill" val="2279-6"/>
         <set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+        <set name="shared_reuse_group" val="10"/>
     </item>
-    <item id="735" type="EtcItem" name="Potion of Alacrity">
+    <item id="734" type="EtcItem" name="Mana Potion Lv. 7">
         <set name="default_action" val="skill_reduce"/>
         <set name="etcitem_type" val="POTION"/>
         <set name="material" val="LIQUID"/>
-        <set name="weight" val="20"/>
-        <set name="price" val="2400"/>
-        <set name="reuse_delay" val="500"/>
+        <set name="weight" val="5"/>
+        <set name="price" val="1080"/>
+        <set name="reuse_delay" val="10000" />
         <set name="is_stackable" val="true"/>
         <set name="is_oly_restricted" val="true"/>
         <set name="handler" val="ItemSkills"/>
-        <set name="item_skill" val="2012-1"/>
+        <set name="item_skill" val="2279-7"/>
         <set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+        <set name="shared_reuse_group" val="10"/>
+    </item>
+    <item id="735" type="EtcItem" name="Mana Potion Lv. 8">
+        <set name="default_action" val="skill_reduce"/>
+        <set name="etcitem_type" val="POTION"/>
+        <set name="material" val="LIQUID"/>
+        <set name="weight" val="5"/>
+        <set name="price" val="1080"/>
+        <set name="reuse_delay" val="10000" />
+        <set name="is_stackable" val="true"/>
+        <set name="is_oly_restricted" val="true"/>
+        <set name="handler" val="ItemSkills"/>
+        <set name="item_skill" val="2279-8"/>
+        <set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+        <set name="shared_reuse_group" val="10"/>
     </item>
     <item id="736" type="EtcItem" name="Scroll of Escape">
         <set name="default_action" val="skill_reduce"/>

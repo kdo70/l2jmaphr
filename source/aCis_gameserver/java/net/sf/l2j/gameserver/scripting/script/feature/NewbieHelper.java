@@ -59,6 +59,10 @@ public class NewbieHelper extends Quest {
             return onFirstTalk(npc, player);
         }
 
+        if (event.startsWith("GetMagicList")) {
+            return getList(npc, player);
+        }
+
         if (event.startsWith("SupportMagic")) {
             return supportMagic(player, npc);
         }

@@ -489,43 +489,47 @@
 		<set name="weight" val="120" />
 		<set name="price" val="500" />
 	</item>
-	<item id="1060" type="EtcItem" name="Lesser Healing Potion">
-		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="POTION" />
-		<set name="material" val="LIQUID" />
-		<set name="weight" val="5" />
-		<set name="price" val="90" />
+	<item id="1060" type="EtcItem" name="Mana Potion Lv. 9">
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="material" val="LIQUID"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="1080"/>
 		<set name="reuse_delay" val="10000" />
-		<set name="is_stackable" val="true" />
-		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="ItemSkills" />
-		<set name="item_skill" val="2031-1" />
-		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
-		<set name="shared_reuse_group" val="8" />
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2279-9"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+		<set name="shared_reuse_group" val="10"/>
 	</item>
-	<item id="1061" type="EtcItem" name="Healing Potion">
-		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="POTION" />
-		<set name="material" val="LIQUID" />
-		<set name="weight" val="5" />
-		<set name="price" val="330" />
+	<item id="1061" type="EtcItem" name="Mana Potion Lv. 10">
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="material" val="LIQUID"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="1080"/>
 		<set name="reuse_delay" val="10000" />
-		<set name="is_stackable" val="true" />
-		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="ItemSkills" />
-		<set name="item_skill" val="2032-1" />
-		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
-		<set name="shared_reuse_group" val="9" />
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2279-10"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+		<set name="shared_reuse_group" val="10"/>
 	</item>
-	<item id="1062" type="EtcItem" name="Haste Potion">
-		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="POTION" />
-		<set name="material" val="LIQUID" />
-		<set name="weight" val="180" />
-		<set name="price" val="5000" />
-		<set name="reuse_delay" val="500" />
-		<set name="is_stackable" val="true" />
-		<set name="is_oly_restricted" val="true" />
+	<item id="1062" type="EtcItem" name="Mana Potion Lv. 11">
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="material" val="LIQUID"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="1080"/>
+		<set name="reuse_delay" val="10000" />
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2279-11"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+		<set name="shared_reuse_group" val="10"/>
 	</item>
 	<item id="1063" type="EtcItem" name="Tutorial Parchment">
 		<set name="material" val="STEEL" />
@@ -617,16 +621,19 @@
 		<set name="is_stackable" val="true" />
 		<set name="etcitem_type" val="QUEST" />
 	</item>
-	<item id="1073" type="EtcItem" name="Beginner's Potion">
-		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="POTION" />
-		<set name="material" val="LIQUID" />
-		<set name="weight" val="5" />
+	<item id="1073" type="EtcItem" name="Mana Potion Lv. 12">
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="material" val="LIQUID"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="1080"/>
 		<set name="reuse_delay" val="10000" />
-		<set name="is_stackable" val="true" />
-		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="ItemSkills" />
-		<set name="item_skill" val="2031-1" />
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2279-12"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+		<set name="shared_reuse_group" val="10"/>
 	</item>
 	<item id="1074" type="EtcItem" name="Boat Ticket: Talking Island to Gludin">
 		<set name="material" val="PAPER" />
