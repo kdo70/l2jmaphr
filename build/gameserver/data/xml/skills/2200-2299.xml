@@ -1378,27 +1378,24 @@
             <effect name="Recovery" val="0" noicon="1"/>
         </for>
     </skill>
-    <skill id="2287" levels="6" name="Elixir of Life">
-        <table name="#power">250 650 1100 1500 1900 2300</table>
-        <table name="#minLvl">0 20 40 52 61 76</table>
-        <table name="#maxLvl">20 40 52 61 76 86</table>
-        <set name="power" val="#power"/>
+    <skill id="2287" levels="3" name="Hunter Potion">
+        <table name="#stackOrder">1 2 3</table>
+        <table name="#power">2 3 4</table>
+        <table name="#time">900 600 300</table>
+        <table name="#reuseDelay">1800000 1200000 600000</table>
         <set name="target" val="SELF"/>
-        <set name="skillType" val="HEAL_STATIC"/>
+        <set name="skillType" val="MPHOT"/>
         <set name="operateType" val="ACTIVE"/>
-        <set name="reuseDelay" val="300000"/>
-        <set name="staticReuse" val="true"/>
-        <set name="sharedReuse" val="2287-1"/>
         <set name="isPotion" val="true"/>
+        <set name="reuseDelay" val="#reuseDelay"/>
         <cond msgId="113" addName="1">
-            <and>
-                <player flying="False"/>
-                <player level="#minLvl"/>
-                <not>
-                    <player level="#maxLvl"/>
-                </not>
-            </and>
+            <player flying="False"/>
         </cond>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="#stackOrder" stackType="pve_dmg">
+                <mul stat="pveDmg" val="#power"/>
+            </effect>
+        </for>
     </skill>
     <skill id="2288" levels="6" name="Elixir of Mental Strength">
         <table name="#power">60 140 220 290 360 420</table>

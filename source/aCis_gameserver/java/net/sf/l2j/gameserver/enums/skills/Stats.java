@@ -153,7 +153,8 @@ public enum Stats
 	P_BUY_LIM("PrivateBuyLimit", false),
 	REC_D_LIM("DwarfRecipeLimit", false),
 	REC_C_LIM("CommonRecipeLimit", false),
-	
+	PVE_DMG("pveDmg", true),
+
 	// C4 Stats
 	PHYSICAL_MP_CONSUME_RATE("PhysicalMpConsumeRate", false),
 	MAGICAL_MP_CONSUME_RATE("MagicalMpConsumeRate", false),
