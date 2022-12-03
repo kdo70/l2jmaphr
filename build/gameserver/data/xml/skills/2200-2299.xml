@@ -1382,7 +1382,7 @@
         <table name="#stackOrder">1 2 3</table>
         <table name="#power">2 3 4</table>
         <table name="#time">900 600 300</table>
-        <table name="#reuseDelay">1800000 1200000 600000</table>
+        <table name="#reuseDelay">900000 600000 300000</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="MPHOT"/>
         <set name="operateType" val="ACTIVE"/>

@@ -10518,6 +10518,7 @@
 		<product id="5181"/>
 	</buyList>
 	<buyList id="3001" npcId="-1">
+		<!--MP-->
 		<product id="65"/>
 		<product id="725"/>
 		<product id="726"/>
@@ -10530,6 +10531,7 @@
 		<product id="1061"/>
 		<product id="1062"/>
 		<product id="1073"/>
+		<!--HP-->
 		<product id="1374"/>
 		<product id="1375"/>
 		<product id="1539"/>
@@ -10542,6 +10544,7 @@
 		<product id="4677"/>
 		<product id="4678"/>
 		<product id="4679"/>
+		<!--CP-->
 		<product id="4680"/>
 		<product id="5234"/>
 		<product id="5283"/>
@@ -10554,6 +10557,12 @@
 		<product id="8624"/>
 		<product id="8625"/>
 		<product id="8626"/>
+		<!--HUNTER-->
+		<product id="8627"/>
+		<product id="8628"/>
+		<product id="8629"/>
+
+		<!--&&-->
 		<product id="5235"/>
 		<product id="5236"/>
 		<product id="5237"/>
@@ -10570,9 +10579,6 @@
 		<product id="5248"/>
 		<product id="5560"/>
 		<product id="5561"/>
-		<product id="8627"/>
-		<product id="8628"/>
-		<product id="8629"/>
 		<product id="8630"/>
 		<product id="8631"/>
 		<product id="8632"/>

@@ -867,8 +867,8 @@
 		<set name="default_action" val="skill_reduce"/>
 		<set name="etcitem_type" val="POTION"/>
 		<set name="material" val="LIQUID"/>
-		<set name="weight" val="5"/>
-		<set name="price" val="1080"/>
+		<set name="weight" val="100"/>
+		<set name="price" val="1000"/>
 		<set name="reuse_delay" val="10000" />
 		<set name="is_stackable" val="true"/>
 		<set name="is_oly_restricted" val="true"/>
