@@ -10561,6 +10561,10 @@
 		<product id="8627"/>
 		<product id="8628"/>
 		<product id="8629"/>
+		<!--KNOWLEDGE-->
+		<product id="8630"/>
+		<product id="8631"/>
+		<product id="8632"/>
 
 		<!--&&-->
 		<product id="5235"/>
@@ -10579,9 +10583,6 @@
 		<product id="5248"/>
 		<product id="5560"/>
 		<product id="5561"/>
-		<product id="8630"/>
-		<product id="8631"/>
-		<product id="8632"/>
 		<product id="8633"/>
 		<product id="8634"/>
 		<product id="8635"/>

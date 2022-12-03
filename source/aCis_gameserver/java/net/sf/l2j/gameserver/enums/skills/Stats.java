@@ -154,6 +154,8 @@ public enum Stats
 	REC_D_LIM("DwarfRecipeLimit", false),
 	REC_C_LIM("CommonRecipeLimit", false),
 	PVE_DMG("pveDmg", true),
+	PERSONAL_RATE_XP("personalRateXp", true),
+	PERSONAL_RATE_SP("personalRateSp", true),
 
 	// C4 Stats
 	PHYSICAL_MP_CONSUME_RATE("PhysicalMpConsumeRate", false),

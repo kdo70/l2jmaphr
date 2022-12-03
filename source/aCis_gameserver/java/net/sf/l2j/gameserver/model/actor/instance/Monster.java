@@ -7,6 +7,7 @@ import net.sf.l2j.commons.random.Rnd;
 import net.sf.l2j.gameserver.data.manager.CursedWeaponManager;
 import net.sf.l2j.gameserver.data.xml.HerbDropData;
 import net.sf.l2j.gameserver.enums.BossInfoType;
+import net.sf.l2j.gameserver.enums.skills.Stats;
 import net.sf.l2j.gameserver.geoengine.GeoEngine;
 import net.sf.l2j.gameserver.model.actor.*;
 import net.sf.l2j.gameserver.model.actor.container.monster.OverhitState;
@@ -155,11 +156,15 @@ public class Monster extends Attackable {
 
                     exp *= 1 - penalty;
 
+
                     // Test over-hit.
                     if (_overhitState.isValidOverhit(attacker)) {
                         attacker.sendPacket(SystemMessageId.OVER_HIT);
                         exp += _overhitState.calculateOverhitExp(exp);
                     }
+
+                    exp *= attacker.getStatus().calcStat(Stats.PERSONAL_RATE_XP, 1, null, null);
+                    sp *= attacker.getStatus().calcStat(Stats.PERSONAL_RATE_SP, 1, null, null);
 
                     // Set new karma.
                     attacker.updateKarmaLoss(exp);
