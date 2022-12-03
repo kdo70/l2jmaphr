@@ -256,7 +256,7 @@
 		<set name="handler" val="ItemSkills" />
 		<set name="item_skill" val="2036-1" />
 	</item>
-	<item id="1539" type="EtcItem" name="Healing Potion Lv. 3">
+	<item id="1539" type="EtcItem" name="Healing Potion">
 		<set name="default_action" val="skill_reduce"/>
 		<set name="etcitem_type" val="POTION"/>
 		<set name="material" val="LIQUID"/>
@@ -270,7 +270,7 @@
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
 		<set name="shared_reuse_group" val="10"/>
 	</item>
-	<item id="1540" type="EtcItem" name="Healing Potion Lv. 4">
+	<item id="1540" type="EtcItem" name="Healing Potion">
 		<set name="default_action" val="skill_reduce"/>
 		<set name="etcitem_type" val="POTION"/>
 		<set name="material" val="LIQUID"/>

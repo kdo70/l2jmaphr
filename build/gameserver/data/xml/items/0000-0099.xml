@@ -863,7 +863,7 @@
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
-	<item id="65" type="EtcItem" name="Mana Potion Lv. 1">
+	<item id="65" type="EtcItem" name="Mana Potion">
 		<set name="default_action" val="skill_reduce"/>
 		<set name="etcitem_type" val="POTION"/>
 		<set name="material" val="LIQUID"/>

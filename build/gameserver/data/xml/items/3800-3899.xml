@@ -684,7 +684,7 @@
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="3889" type="EtcItem" name="Healing Potion Lv. 9">
+	<item id="3889" type="EtcItem" name="Healing Potion">
 		<set name="default_action" val="skill_reduce"/>
 		<set name="etcitem_type" val="POTION"/>
 		<set name="material" val="LIQUID"/>

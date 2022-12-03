@@ -268,7 +268,7 @@
 		<set name="item_skill" val="2041-1" />
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
-	<item id="1831" type="EtcItem" name="Healing Potion Lv. 5">
+	<item id="1831" type="EtcItem" name="Healing Potion">
 		<set name="default_action" val="skill_reduce"/>
 		<set name="etcitem_type" val="POTION"/>
 		<set name="material" val="LIQUID"/>
@@ -282,7 +282,7 @@
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
 		<set name="shared_reuse_group" val="10"/>
 	</item>
-	<item id="1832" type="EtcItem" name="Healing Potion Lv. 6">
+	<item id="1832" type="EtcItem" name="Healing Potion">
 		<set name="default_action" val="skill_reduce"/>
 		<set name="etcitem_type" val="POTION"/>
 		<set name="material" val="LIQUID"/>
@@ -296,7 +296,7 @@
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
 		<set name="shared_reuse_group" val="10"/>
 	</item>
-	<item id="1833" type="EtcItem" name="Healing Potion Lv. 7">
+	<item id="1833" type="EtcItem" name="Healing Potion">
 		<set name="default_action" val="skill_reduce"/>
 		<set name="etcitem_type" val="POTION"/>
 		<set name="material" val="LIQUID"/>
@@ -310,7 +310,7 @@
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
 		<set name="shared_reuse_group" val="10"/>
 	</item>
-	<item id="1834" type="EtcItem" name="Healing Potion Lv. 8">
+	<item id="1834" type="EtcItem" name="Healing Potion">
 		<set name="default_action" val="skill_reduce"/>
 		<set name="etcitem_type" val="POTION"/>
 		<set name="material" val="LIQUID"/>

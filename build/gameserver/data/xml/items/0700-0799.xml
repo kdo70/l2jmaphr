@@ -289,7 +289,7 @@
             <baseadd stat="pDef" val="36"/>
         </for>
     </item>
-    <item id="725" type="EtcItem" name="Mana Potion Lv. 2">
+    <item id="725" type="EtcItem" name="Mana Potion">
         <set name="default_action" val="skill_reduce"/>
         <set name="etcitem_type" val="POTION"/>
         <set name="material" val="LIQUID"/>
@@ -303,7 +303,7 @@
         <set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
         <set name="shared_reuse_group" val="10"/>
     </item>
-    <item id="726" type="EtcItem" name="Mana Potion Lv. 3">
+    <item id="726" type="EtcItem" name="Mana Potion">
         <set name="default_action" val="skill_reduce"/>
         <set name="etcitem_type" val="POTION"/>
         <set name="material" val="LIQUID"/>
@@ -317,7 +317,7 @@
         <set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
         <set name="shared_reuse_group" val="10"/>
     </item>
-    <item id="727" type="EtcItem" name="Mana Potion Lv. 4">
+    <item id="727" type="EtcItem" name="Mana Potion">
         <set name="default_action" val="skill_reduce"/>
         <set name="etcitem_type" val="POTION"/>
         <set name="material" val="LIQUID"/>
@@ -331,7 +331,7 @@
         <set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
         <set name="shared_reuse_group" val="10"/>
     </item>
-    <item id="728" type="EtcItem" name="Mana Potion Lv. 5">
+    <item id="728" type="EtcItem" name="Mana Potion">
         <set name="default_action" val="skill_reduce"/>
         <set name="etcitem_type" val="POTION"/>
         <set name="material" val="LIQUID"/>
@@ -383,7 +383,7 @@
         <set name="is_oly_restricted" val="true"/>
         <set name="handler" val="EnchantScrolls"/>
     </item>
-    <item id="733" type="EtcItem" name="Mana Potion Lv. 6">
+    <item id="733" type="EtcItem" name="Mana Potion">
         <set name="default_action" val="skill_reduce"/>
         <set name="etcitem_type" val="POTION"/>
         <set name="material" val="LIQUID"/>
@@ -397,7 +397,7 @@
         <set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
         <set name="shared_reuse_group" val="10"/>
     </item>
-    <item id="734" type="EtcItem" name="Mana Potion Lv. 7">
+    <item id="734" type="EtcItem" name="Mana Potion">
         <set name="default_action" val="skill_reduce"/>
         <set name="etcitem_type" val="POTION"/>
         <set name="material" val="LIQUID"/>
@@ -411,7 +411,7 @@
         <set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
         <set name="shared_reuse_group" val="10"/>
     </item>
-    <item id="735" type="EtcItem" name="Mana Potion Lv. 8">
+    <item id="735" type="EtcItem" name="Mana Potion">
         <set name="default_action" val="skill_reduce"/>
         <set name="etcitem_type" val="POTION"/>
         <set name="material" val="LIQUID"/>

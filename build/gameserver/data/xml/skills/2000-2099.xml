@@ -705,18 +705,20 @@
 			</effect>
 		</for>
 	</skill>
-	<skill id="2077" levels="1" name="Potion of Revenge">
-		<set name="target" val="SELF" />
-		<set name="skillType" val="BUFF" />
-		<set name="operateType" val="ACTIVE" />
-		<set name="isPotion" val="true" />
+	<skill id="2077" levels="12" name="Combat Potion">
+		<table name="#stackOrder">1 2 3 4 5 6 7 8 9 10 11 12</table>
+		<table name="#power">4 5 6 7 8 10 12 15 18 22 27 33</table>
+		<set name="target" val="SELF"/>
+		<set name="skillType" val="MPHOT"/>
+		<set name="operateType" val="ACTIVE"/>
+		<set name="isPotion" val="true"/>
+		<set name="reuseDelay" val="10000"/>
 		<cond msgId="113" addName="1">
-			<player flying="False" />
+			<player flying="False"/>
 		</cond>
 		<for>
-			<effect name="Buff" time="300" val="0" stackOrder="1" stackType="counter_skill">
-				<add stat="vengeancePdam" val="40" />
-				<mul stat="pDef" val="0.85"/>
+			<effect name="Buff" time="15" val="0" stackOrder="#stackOrder" stackType="cp_recover">
+				<mul stat="regCp" val="#power"/>
 			</effect>
 		</for>
 	</skill>

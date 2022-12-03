@@ -859,7 +859,7 @@
 		<set name="price" val="600" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="1374" type="EtcItem" name="Healing Potion Lv. 1">
+	<item id="1374" type="EtcItem" name="Healing Potion">
 		<set name="default_action" val="skill_reduce"/>
 		<set name="etcitem_type" val="POTION"/>
 		<set name="material" val="LIQUID"/>
@@ -873,7 +873,7 @@
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
 		<set name="shared_reuse_group" val="10"/>
 	</item>
-	<item id="1375" type="EtcItem" name="Healing Potion Lv. 2">
+	<item id="1375" type="EtcItem" name="Healing Potion">
 		<set name="default_action" val="skill_reduce"/>
 		<set name="etcitem_type" val="POTION"/>
 		<set name="material" val="LIQUID"/>
