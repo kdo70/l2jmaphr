@@ -60,6 +60,12 @@ public class Monster extends Attackable {
     private boolean _isRaid;
     private boolean _isMinion;
 
+    /**
+     * Instantiates a new Monster.
+     *
+     * @param objectId the object id
+     * @param template the template
+     */
     public Monster(int objectId, NpcTemplate template) {
         super(objectId, template);
     }
@@ -353,14 +359,29 @@ public class Monster extends Attackable {
         _isMinion = true;
     }
 
+    /**
+     * Gets overhit state.
+     *
+     * @return the overhit state
+     */
     public OverhitState getOverhitState() {
         return _overhitState;
     }
 
+    /**
+     * Gets spoil state.
+     *
+     * @return the spoil state
+     */
     public SpoilState getSpoilState() {
         return _spoilState;
     }
 
+    /**
+     * Gets seed state.
+     *
+     * @return the seed state
+     */
     public SeedState getSeedState() {
         return _seedState;
     }
@@ -406,6 +427,12 @@ public class Monster extends Attackable {
         }
     }
 
+    /**
+     * Gets absorb info.
+     *
+     * @param npcObjectId the npc object id
+     * @return the absorb info
+     */
     public AbsorbInfo getAbsorbInfo(int npcObjectId) {
         return _absorbersList.get(npcObjectId);
     }
@@ -444,14 +471,29 @@ public class Monster extends Attackable {
                 };
     }
 
+    /**
+     * Sets master.
+     *
+     * @param master the master
+     */
     public void setMaster(Monster master) {
         _master = master;
     }
 
+    /**
+     * Has minions boolean.
+     *
+     * @return the boolean
+     */
     public boolean hasMinions() {
         return _minionList != null;
     }
 
+    /**
+     * Gets minion list.
+     *
+     * @return the minion list
+     */
     public MinionList getMinionList() {
         if (_minionList == null)
             _minionList = new MinionList(this);
@@ -476,290 +518,31 @@ public class Monster extends Attackable {
         teleportTo(spawnLoc, 0);
     }
 
-    /**
-     * Calculate the quantity for a specific drop.
-     *
-     * @param drop          : The {@link DropData} informations to use.
-     * @param levelModifier : The level modifier (will be subtracted from drop chance).
-     * @param isSweep       : If True, use the spoil drop chance.
-     * @return An {@link IntIntHolder} corresponding to the item id and count.
-     */
-    private IntIntHolder calculateRewardItem(DropData drop, int levelModifier, boolean isSweep) {
-        // Get default drop chance
-        double dropChance = drop.getChance();
-
-        if (Config.DEEPBLUE_DROP_RULES) {
-            int deepBlueDrop = 1;
-            if (levelModifier > 0) {
-                // We should multiply by the server's drop rate, so we always get a low chance of drop for deep blue mobs.
-                // NOTE: This is valid only for adena drops! Others drops will still obey server's rate
-                deepBlueDrop = 3;
-                if (drop.getItemId() == 57) {
-                    deepBlueDrop *= (isRaidBoss()) ? (int) Config.RATE_DROP_ITEMS_BY_RAID : (int) Config.RATE_DROP_ITEMS;
-                    if (deepBlueDrop == 0) // avoid div by 0
-                        deepBlueDrop = 1;
-                }
-            }
-
-            // Check if we should apply our maths so deep blue mobs will not drop that easy
-            dropChance = ((drop.getChance() - ((drop.getChance() * levelModifier) / 100)) / deepBlueDrop);
+    private IntIntHolder calculateRewardItem(Creature creature, DropCategory cat) {
+        final DropData drop = cat.dropOne(creature.getActingPlayer(), this);
+        if (drop == null) {
+            return null;
         }
-
-        // Applies Drop rates
-        if (drop.getItemId() == 57) {
-            dropChance *= Config.RATE_DROP_ADENA;
-            if (isChampion())
-                dropChance *= Config.CHAMP_MUL_ADENA;
-        } else if (isSweep) {
-            dropChance *= Config.RATE_DROP_SPOIL;
-            if (isChampion())
-                dropChance *= Config.CHAMP_MUL_SPOIL;
-        } else {
-            if (isRaidBoss()) {
-                dropChance *= Config.RATE_DROP_ITEMS_BY_RAID;
-            } else {
-                dropChance *= Config.RATE_DROP_ITEMS;
-                if (isChampion())
-                    dropChance *= Config.CHAMP_MUL_ITEMS;
-
-            }
-        }
-
-
-        // Set our limits for chance of drop
-        if (dropChance < 1)
-            dropChance = 1;
-
-        // Get min and max Item quantity that can be dropped in one time
-        final int minCount = drop.getMinDrop();
-        final int maxCount = drop.getMaxDrop();
-
-        // Get the item quantity dropped
-        int itemCount = 0;
-
-        // Check if the Item must be dropped
-        int random = Rnd.get(DropData.MAX_CHANCE);
-        while (random < dropChance) {
-            // Get the item quantity dropped
-            if (minCount < maxCount)
-                itemCount += Rnd.get(minCount, maxCount);
-            else if (minCount == maxCount)
-                itemCount += minCount;
-            else
-                itemCount++;
-
-            // Prepare for next iteration if dropChance > DropData.MAX_CHANCE
-            dropChance -= DropData.MAX_CHANCE;
-        }
-
-        if (itemCount > 0)
+        int dropChance = drop.calculateDropChance(creature.getActingPlayer(), this, cat);
+        int itemCount = drop.calculateDropCount(dropChance);
+        if (itemCount > 0) {
             return new IntIntHolder(drop.getItemId(), itemCount);
-
+        }
         return null;
     }
 
-    /**
-     * Calculate the quantity for a specific drop, according its {@link DropCategory}.<br>
-     * <br>
-     * Only a maximum of ONE item from a {@link DropCategory} is allowed to be dropped.
-     *
-     * @param cat           : The {@link DropCategory} informations to use.
-     * @param levelModifier : The level modifier (will be subtracted from drop chance).
-     * @return An {@link IntIntHolder} corresponding to the item id and count.
-     */
-    private IntIntHolder calculateCategorizedRewardItem(DropCategory cat, int levelModifier) {
-        if (cat == null)
-            return null;
-
-        // Get default drop chance for the category (that's the sum of chances for all items in the category)
-        // keep track of the base category chance as it'll be used later, if an item is drop from the category.
-        // for everything else, use the total "categoryDropChance"
-        int baseCategoryDropChance = cat.getCategoryChance();
-        int categoryDropChance = baseCategoryDropChance;
-
-        if (Config.DEEPBLUE_DROP_RULES) {
-            int deepBlueDrop = (levelModifier > 0) ? 3 : 1;
-
-            // Check if we should apply our maths so deep blue mobs will not drop that easy
-            categoryDropChance = ((categoryDropChance - ((categoryDropChance * levelModifier) / 100)) / deepBlueDrop);
-        }
-
-        // Applies Drop rates
-        categoryDropChance *= (isRaidBoss()) ? Config.RATE_DROP_ITEMS_BY_RAID : Config.RATE_DROP_ITEMS;
-
-        if (isChampion())
-            categoryDropChance *= Config.CHAMP_MUL_ITEMS;
-
-        // Set our limits for chance of drop
-        if (categoryDropChance < 1)
-            categoryDropChance = 1;
-
-        // Check if an Item from this category must be dropped
+    private IntIntHolder calculateCategorizedRewardItem(Creature creature, DropCategory cat) {
+        int categoryDropChance = cat.calculateCategoryChance(creature.getActingPlayer(), this);
         if (Rnd.get(DropData.MAX_CHANCE) < categoryDropChance) {
-            final DropData drop = cat.dropOne(isRaidBoss());
-            if (drop == null)
-                return null;
-
-            // Now decide the quantity to drop based on the rates and penalties. To get this value
-            // simply divide the modified categoryDropChance by the base category chance. This
-            // results in a chance that will dictate the drops amounts: for each amount over 100
-            // that it is, it will give another chance to add to the min/max quantities.
-            //
-            // For example, If the final chance is 120%, then the item should drop between
-            // its min and max one time, and then have 20% chance to drop again. If the final
-            // chance is 330%, it will similarly give 3 times the min and max, and have a 30%
-            // chance to give a 4th time.
-            // At least 1 item will be dropped for sure. So the chance will be adjusted to 100%
-            // if smaller.
-
-            double dropChance = drop.getChance();
-            if (drop.getItemId() == 57) {
-                dropChance *= Config.RATE_DROP_ADENA;
-                if (isChampion())
-                    dropChance *= Config.CHAMP_MUL_ADENA;
-            } else {
-                if (isRaidBoss()) {
-                    dropChance *= Config.RATE_DROP_ITEMS_BY_RAID;
-                } else {
-                    dropChance *= Config.RATE_DROP_ITEMS;
-                    if (isChampion())
-                        dropChance *= Config.CHAMP_MUL_ITEMS;
-
-                }
-            }
-
-            if (dropChance < DropData.MAX_CHANCE)
-                dropChance = DropData.MAX_CHANCE;
-
-            // Get min and max Item quantity that can be dropped in one time
-            final int min = drop.getMinDrop();
-            final int max = drop.getMaxDrop();
-
-            // Get the item quantity dropped
-            int itemCount = 0;
-
-            // Check if the Item must be dropped
-            int random = Rnd.get(DropData.MAX_CHANCE);
-            while (random < dropChance) {
-                // Get the item quantity dropped
-                if (min < max)
-                    itemCount += Rnd.get(min, max);
-                else if (min == max)
-                    itemCount += min;
-                else
-                    itemCount++;
-
-                // Prepare for next iteration if dropChance > DropData.MAX_CHANCE
-                dropChance -= DropData.MAX_CHANCE;
-            }
-
-            if (itemCount > 0)
-                return new IntIntHolder(drop.getItemId(), itemCount);
+            return calculateRewardItem(creature, cat);
         }
         return null;
     }
 
+
     /**
-     * Calculate the quantity for a specific herb, according its {@link DropCategory}.
+     * Calculate level modifier for drop int.
      *
-     * @param cat           : The {@link DropCategory} informations to use.
-     * @param levelModifier : The level modifier (will be subtracted from drop chance).
-     * @return An {@link IntIntHolder} corresponding to the item id and count.
-     */
-    private static IntIntHolder calculateCategorizedHerbItem(DropCategory cat, int levelModifier) {
-        if (cat == null)
-            return null;
-
-        int categoryDropChance = cat.getCategoryChance();
-
-        // Applies Drop rates
-        switch (cat.getCategoryType()) {
-            case 1:
-                categoryDropChance *= Config.RATE_DROP_HP_HERBS;
-                break;
-
-            case 2:
-                categoryDropChance *= Config.RATE_DROP_MP_HERBS;
-                break;
-
-            case 3:
-                categoryDropChance *= Config.RATE_DROP_SPECIAL_HERBS;
-                break;
-
-            default:
-                categoryDropChance *= Config.RATE_DROP_COMMON_HERBS;
-        }
-
-        // Drop chance is affected by deep blue drop rule.
-        if (Config.DEEPBLUE_DROP_RULES) {
-            int deepBlueDrop = (levelModifier > 0) ? 3 : 1;
-
-            // Check if we should apply our maths so deep blue mobs will not drop that easy
-            categoryDropChance = ((categoryDropChance - ((categoryDropChance * levelModifier) / 100)) / deepBlueDrop);
-        }
-
-        // Check if an Item from this category must be dropped
-        if (Rnd.get(DropData.MAX_CHANCE) < Math.max(1, categoryDropChance)) {
-            final DropData drop = cat.dropOne(false);
-            if (drop == null)
-                return null;
-
-            /*
-             * Now decide the quantity to drop based on the rates and penalties. To get this value, simply divide the modified categoryDropChance by the base category chance. This results in a chance that will dictate the drops amounts : for each amount over 100 that it is, it will give another
-             * chance to add to the min/max quantities. For example, if the final chance is 120%, then the item should drop between its min and max one time, and then have 20% chance to drop again. If the final chance is 330%, it will similarly give 3 times the min and max, and have a 30% chance to
-             * give a 4th time. At least 1 item will be dropped for sure. So the chance will be adjusted to 100% if smaller.
-             */
-            double dropChance = drop.getChance();
-
-            switch (cat.getCategoryType()) {
-                case 1:
-                    dropChance *= Config.RATE_DROP_HP_HERBS;
-                    break;
-
-                case 2:
-                    dropChance *= Config.RATE_DROP_MP_HERBS;
-                    break;
-
-                case 3:
-                    dropChance *= Config.RATE_DROP_SPECIAL_HERBS;
-                    break;
-
-                default:
-                    dropChance *= Config.RATE_DROP_COMMON_HERBS;
-            }
-
-            if (dropChance < DropData.MAX_CHANCE)
-                dropChance = DropData.MAX_CHANCE;
-
-            // Get min and max Item quantity that can be dropped in one time
-            final int min = drop.getMinDrop();
-            final int max = drop.getMaxDrop();
-
-            // Get the item quantity dropped
-            int itemCount = 0;
-
-            // Check if the Item must be dropped
-            int random = Rnd.get(DropData.MAX_CHANCE);
-            while (random < dropChance) {
-                // Get the item quantity dropped
-                if (min < max)
-                    itemCount += Rnd.get(min, max);
-                else if (min == max)
-                    itemCount += min;
-                else
-                    itemCount++;
-
-                // Prepare for next iteration if dropChance > L2DropData.MAX_CHANCE
-                dropChance -= DropData.MAX_CHANCE;
-            }
-
-            if (itemCount > 0)
-                return new IntIntHolder(drop.getItemId(), itemCount);
-        }
-        return null;
-    }
-
-    /**
      * @param player : The {@link Player} to test.
      * @return The level modifier for drop purpose, based on this instance and the {@link Player} set as parameter.
      */
@@ -805,16 +588,14 @@ public class Monster extends Attackable {
 
         // now throw all categorized drops and handle spoil.
         for (DropCategory cat : template.getDropData()) {
-            IntIntHolder holder = null;
+            IntIntHolder holder;
             if (cat.isSweep()) {
                 if (getSpoilState().isSpoiled()) {
-                    for (DropData drop : cat.getAllDrops()) {
-                        holder = calculateRewardItem(drop, levelModifier, true);
-                        if (holder == null)
-                            continue;
+                    holder = calculateRewardItem(creature, cat);
+                    if (holder == null)
+                        continue;
 
-                        getSpoilState().add(holder);
-                    }
+                    getSpoilState().add(holder);
                 }
             } else {
                 if (getSeedState().isSeeded()) {
@@ -822,9 +603,9 @@ public class Monster extends Attackable {
                     if (drop == null)
                         continue;
 
-                    holder = calculateRewardItem(drop, levelModifier, false);
+                    holder = calculateRewardItem(creature, cat);
                 } else
-                    holder = calculateCategorizedRewardItem(cat, levelModifier);
+                    holder = calculateCategorizedRewardItem(creature, cat);
 
                 if (holder == null)
                     continue;
@@ -851,17 +632,6 @@ public class Monster extends Attackable {
                     player.addItem("ChampionLoot", item.getId(), item.getValue(), this, true);
                 else
                     dropItem(player, item);
-            }
-        }
-
-        // Herbs.
-        if (getTemplate().getDropHerbGroup() > 0) {
-            for (DropCategory cat : HerbDropData.getInstance().getHerbDroplist(getTemplate().getDropHerbGroup())) {
-                final IntIntHolder holder = calculateCategorizedHerbItem(cat, levelModifier);
-                if (holder == null)
-                    continue;
-
-                dropOrAutoLootItem(player, holder, false);
             }
         }
     }

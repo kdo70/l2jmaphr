@@ -1412,32 +1412,29 @@
         </cond>
         <for>
             <effect name="Buff" time="#time" val="0" stackOrder="#stackOrder" stackType="rate_xp_sp">
-                <mul stat="personalRateXp" val="#power"/>
-                <mul stat="personalRateSp" val="#power"/>
+                <mul stat="rateXp" val="#power"/>
+                <mul stat="rateSp" val="#power"/>
             </effect>
         </for>
     </skill>
-    <skill id="2289" levels="6" name="Elixir of CP">
-        <table name="#power">150 350 600 800 1000 1200</table>
-        <table name="#minLvl">0 20 40 52 61 76</table>
-        <table name="#maxLvl">20 40 52 61 76 86</table>
-        <set name="power" val="#power"/>
+    <skill id="2289" levels="3" name="Wealth Potion">
+        <table name="#stackOrder">1 2 3</table>
+        <table name="#power">1.15 1.25 1.50</table>
+        <table name="#time">900 600 300</table>
+        <table name="#reuseDelay">900000 600000 300000</table>
         <set name="target" val="SELF"/>
-        <set name="skillType" val="COMBATPOINTHEAL"/>
+        <set name="skillType" val="MPHOT"/>
         <set name="operateType" val="ACTIVE"/>
-        <set name="reuseDelay" val="300000"/>
-        <set name="sharedReuse" val="2289-1"/>
-        <set name="staticReuse" val="true"/>
         <set name="isPotion" val="true"/>
+        <set name="reuseDelay" val="#reuseDelay"/>
         <cond msgId="113" addName="1">
-            <and>
-                <player flying="False"/>
-                <player level="#minLvl"/>
-                <not>
-                    <player level="#maxLvl"/>
-                </not>
-            </and>
+            <player flying="False"/>
         </cond>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="#stackOrder" stackType="rate_drop">
+                <mul stat="dropItems" val="#power"/>
+            </effect>
+        </for>
     </skill>
     <skill id="2290" levels="1" name="Halloween Box">
         <table name="#extractableItems">

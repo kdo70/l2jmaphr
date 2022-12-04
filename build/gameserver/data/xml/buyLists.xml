@@ -10565,6 +10565,10 @@
 		<product id="8630"/>
 		<product id="8631"/>
 		<product id="8632"/>
+		<!--WEALTH-->
+		<product id="8633"/>
+		<product id="8634"/>
+		<product id="8635"/>
 
 		<!--&&-->
 		<product id="5235"/>
@@ -10583,9 +10587,6 @@
 		<product id="5248"/>
 		<product id="5560"/>
 		<product id="5561"/>
-		<product id="8633"/>
-		<product id="8634"/>
-		<product id="8635"/>
 		<product id="8636"/>
 		<product id="8637"/>
 		<product id="8638"/>

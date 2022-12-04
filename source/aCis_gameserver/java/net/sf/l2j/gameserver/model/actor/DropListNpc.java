@@ -1,6 +1,5 @@
 package net.sf.l2j.gameserver.model.actor;
 
-import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.data.xml.IconData;
 import net.sf.l2j.gameserver.data.xml.ItemData;
 import net.sf.l2j.gameserver.data.xml.NpcData;
@@ -11,8 +10,10 @@ import net.sf.l2j.gameserver.model.item.DropData;
 import net.sf.l2j.gameserver.model.item.kind.Item;
 import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 
-import java.text.DecimalFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * The type Drop list npc.
@@ -150,13 +151,14 @@ public class DropListNpc {
      * @param category the category
      */
     public void buildCategoryHtml(DropCategory category) {
+
         _html.append("<br><center><font color=B09878>&nbsp;Category ")
                 .append("#")
                 .append(CATEGORY_ITERATION)
                 .append("&nbsp;Type: ")
                 .append(category.isSweep() ? "Spoil " : "Drop ")
                 .append("&nbsp;Chance: ")
-                .append(category.getChance(_player, _monster, _npc.isChampion()))
+                .append(category.getChanceHtml(category.calculateCategoryChance(_player, _monster)))
                 .append("%</font></center><img src=L2UI.SquareGray width=280 height=1>");
     }
 
@@ -179,8 +181,7 @@ public class DropListNpc {
                 break;
             }
 
-            double chance = calculateChance(category, drop);
-            buildDropHtml(drop, chance);
+            buildDropHtml(category, drop);
             ITEMS_IN_PAGE++;
         }
     }
@@ -199,26 +200,16 @@ public class DropListNpc {
         ITERATION = 0;
     }
 
-    /**
-     * Build drop html.
-     *
-     * @param drop   the drop
-     * @param chance the chance
-     */
-    public void buildDropHtml(DropData drop, double chance) {
 
-        double min = drop.getMinDrop();
-        double max = drop.getMaxDrop();
+    public void buildDropHtml(DropCategory category, DropData drop) {
+        int chance = drop.calculateDropChance(_player, _monster, category);
+        String chanceHtml = drop.getChanceHtml(chance);
 
-        if ((int) chance > 100) {
-            min = (min * chance) / 100;
-            max = ((max * chance) / 100) + 1;
-        }
+        double min = drop.modifyCount(drop.getMinDrop(), chance);
+        double max = drop.modifyCount(drop.getMaxDrop(), chance);
 
-        String roundMin = percent(Math.floor(min));
-        String roundMax = percent(Math.ceil(max));
-
-        chance = chance > 100 ? 99 : chance;
+        String roundMin = DropData.getPercent(Math.floor(min));
+        String roundMax = DropData.getPercent(Math.ceil(max));
 
         Item item = ItemData.getInstance().getTemplate(drop.getItemId());
         String name = item.getName();
@@ -236,7 +227,7 @@ public class DropListNpc {
         _html.append(name);
         _html.append("<br1>");
         _html.append("<font color=B09878>Chance: ");
-        _html.append(percent(chance));
+        _html.append(chanceHtml);
         _html.append("% Count: ");
         _html.append(roundMin);
         _html.append(min == max ? "" : " - " + roundMax);
@@ -296,71 +287,6 @@ public class DropListNpc {
     }
 
     /**
-     * Calculate chance double.
-     *
-     * @param category the category
-     * @param drop     the drop
-     * @return the double
-     */
-    public Double calculateChance(DropCategory category, DropData drop) {
-        double chance = drop.getChance();
-        if (drop.getItemId() == 57) {
-            chance = calculateAdena(chance);
-        } else if (category.isSweep()) {
-            chance = calculateSweep(chance);
-        } else {
-            chance = calculateItems(chance);
-        }
-        return chance / 10000;
-    }
-
-    /**
-     * Calculate adena double.
-     *
-     * @param chance the chance
-     * @return the double
-     */
-    public Double calculateAdena(double chance) {
-        chance *= Config.RATE_DROP_ADENA;
-        if (_npc.isChampion()) {
-            chance *= Config.CHAMP_MUL_ADENA;
-        }
-        return chance;
-    }
-
-    /**
-     * Calculate sweep double.
-     *
-     * @param chance the chance
-     * @return the double
-     */
-    public Double calculateSweep(double chance) {
-        chance *= Config.RATE_DROP_SPOIL;
-        if (_npc.isChampion()) {
-            chance *= Config.CHAMP_MUL_SPOIL;
-        }
-        return chance;
-    }
-
-    /**
-     * Calculate items double.
-     *
-     * @param chance the chance
-     * @return the double
-     */
-    public Double calculateItems(double chance) {
-        if (Objects.equals(_template.getType(), "RaidBoss")) {
-            chance *= Config.RATE_DROP_ITEMS_BY_RAID;
-        } else {
-            chance *= Config.RATE_DROP_ITEMS;
-            if (_npc.isChampion()) {
-                chance *= Config.CHAMP_MUL_ITEMS;
-            }
-        }
-        return chance;
-    }
-
-    /**
      * Drop category list.
      *
      * @return the list
@@ -383,23 +309,5 @@ public class DropListNpc {
         dropList.sort(Comparator.comparing(DropData::getChance));
         Collections.reverse(dropList);
         return dropList;
-    }
-
-    /**
-     * Percent string.
-     *
-     * @param chance the chance
-     * @return the string
-     */
-    public static String percent(Double chance) {
-        String percent;
-        if (chance <= 0.001) {
-            percent = (new DecimalFormat("#.####")).format(chance);
-        } else if (chance <= 0.01) {
-            percent = (new DecimalFormat("#.###")).format(chance);
-        } else {
-            percent = (new DecimalFormat("##.##")).format(chance);
-        }
-        return percent;
     }
 }
