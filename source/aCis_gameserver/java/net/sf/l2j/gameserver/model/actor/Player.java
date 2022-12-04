@@ -1653,10 +1653,6 @@ public final class Player extends Playable
 		if (count > 0)
 		{
 			_inventory.addAdena(process, count, this, reference);
-			
-			final InventoryUpdate iu = new InventoryUpdate();
-			iu.addItem(_inventory.getAdenaInstance());
-			sendPacket(iu);
 		}
 	}
 	
@@ -1710,10 +1706,6 @@ public final class Player extends Playable
 		if (count > 0)
 		{
 			_inventory.addAncientAdena(process, count, this, reference);
-			
-			final InventoryUpdate iu = new InventoryUpdate();
-			iu.addItem(_inventory.getAncientAdenaInstance());
-			sendPacket(iu);
 		}
 	}
 	

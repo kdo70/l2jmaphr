@@ -161,6 +161,10 @@ public enum Stats {
     PERSONAL_DROP_ITEMS("dropItems", true),
     PERSONAL_SPOIL_ITEMS("spoilItems", true),
 
+    PERSONAL_ENCHANT_MAG("enchantMagic", true),
+    PERSONAL_ENCHANT_WARRIOR("enchantWarrior", true),
+    PERSONAL_ENCHANT_ARMOR("enchantArmor", true),
+
     // C4 Stats
     PHYSICAL_MP_CONSUME_RATE("PhysicalMpConsumeRate", false),
     MAGICAL_MP_CONSUME_RATE("MagicalMpConsumeRate", false),
