@@ -10569,6 +10569,10 @@
 		<product id="8633"/>
 		<product id="8634"/>
 		<product id="8635"/>
+		<!--EXTRACTION-->
+		<product id="8636"/>
+		<product id="8637"/>
+		<product id="8638"/>
 
 		<!--&&-->
 		<product id="5235"/>
@@ -10587,9 +10591,6 @@
 		<product id="5248"/>
 		<product id="5560"/>
 		<product id="5561"/>
-		<product id="8636"/>
-		<product id="8637"/>
-		<product id="8638"/>
 		<product id="8639"/>
 	</buyList>
 	<buyList id="3002" npcId="-1">

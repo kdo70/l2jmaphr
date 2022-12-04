@@ -159,6 +159,7 @@ public enum Stats {
     PERSONAL_RATE_SP("rateSp", true),
 
     PERSONAL_DROP_ITEMS("dropItems", true),
+    PERSONAL_SPOIL_ITEMS("spoilItems", true),
 
     // C4 Stats
     PHYSICAL_MP_CONSUME_RATE("PhysicalMpConsumeRate", false),

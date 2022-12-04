@@ -357,47 +357,47 @@
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
 		<set name="shared_reuse_group" val="10"/>
 	</item>
-	<item id="8636" type="EtcItem" name="Elixir of CP (C-Grade)">
-		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="ELIXIR" />
-		<set name="crystal_type" val="C" />
-		<set name="material" val="LIQUID" />
-		<set name="weight" val="5" />
-		<set name="price" val="3000" />
-		<set name="reuse_delay" val="300000" />
-		<set name="shared_reuse_group" val="7" />
-		<set name="is_stackable" val="true" />
-		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixirs" />
-		<set name="item_skill" val="2289-3" />
+	<item id="8636" type="EtcItem" name="Extraction Potion">
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="material" val="LIQUID"/>
+		<set name="weight" val="100"/>
+		<set name="price" val="1000"/>
+		<set name="reuse_delay" val="900000" />
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2285-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+		<set name="shared_reuse_group" val="10"/>
 	</item>
-	<item id="8637" type="EtcItem" name="Elixir of CP (B-Grade)">
-		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="ELIXIR" />
-		<set name="crystal_type" val="B" />
-		<set name="material" val="LIQUID" />
-		<set name="weight" val="5" />
-		<set name="price" val="4000" />
-		<set name="reuse_delay" val="300000" />
-		<set name="shared_reuse_group" val="7" />
-		<set name="is_stackable" val="true" />
-		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixirs" />
-		<set name="item_skill" val="2289-4" />
+	<item id="8637" type="EtcItem" name="Extraction Potion">
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="material" val="LIQUID"/>
+		<set name="weight" val="100"/>
+		<set name="price" val="1000"/>
+		<set name="reuse_delay" val="600000" />
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2285-2"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+		<set name="shared_reuse_group" val="10"/>
 	</item>
-	<item id="8638" type="EtcItem" name="Elixir of CP (A-Grade)">
-		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="ELIXIR" />
-		<set name="crystal_type" val="A" />
-		<set name="material" val="LIQUID" />
-		<set name="weight" val="5" />
-		<set name="price" val="5000" />
+	<item id="8638" type="EtcItem" name="Extraction Potion">
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="material" val="LIQUID"/>
+		<set name="weight" val="100"/>
+		<set name="price" val="1000"/>
 		<set name="reuse_delay" val="300000" />
-		<set name="shared_reuse_group" val="7" />
-		<set name="is_stackable" val="true" />
-		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixirs" />
-		<set name="item_skill" val="2289-5" />
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2285-3"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+		<set name="shared_reuse_group" val="10"/>
 	</item>
 	<item id="8639" type="EtcItem" name="Elixir of CP (S-Grade)">
 		<set name="default_action" val="skill_reduce" />

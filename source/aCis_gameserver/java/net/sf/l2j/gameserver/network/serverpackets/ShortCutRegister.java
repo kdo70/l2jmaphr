@@ -58,7 +58,10 @@ public class ShortCutRegister extends L2GameServerPacket
 					{
 						// Retrieve the first Skill only.
 						final L2Skill itemSkill = skills[0].getSkill();
-						
+						if (itemSkill == null){
+							writeD(0x00);
+							writeD(0x00);
+						}
 						final Timestamp timestamp = _player.getReuseTimeStamp().get(itemSkill.getReuseHashCode());
 						if (timestamp == null)
 						{

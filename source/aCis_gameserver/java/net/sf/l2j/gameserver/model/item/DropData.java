@@ -85,10 +85,8 @@ public class DropData {
             chance *= Config.RATE_DROP_ITEMS;
         }
 
-        System.out.println("cat.getCategoryType() == 0 && monster.isChampion() " + (cat.getCategoryType() == 0 && npc.isChampion()));
         if (cat.getCategoryType() == 0 && npc.isChampion()) {
             chance *= Config.CHAMP_MUL_ADENA;
-            System.out.println(chance);
         } else if (cat.getCategoryType() == -1 && npc.isChampion()) {
             chance *= Config.CHAMP_MUL_SPOIL;
         } else if (npc.isChampion()) {
@@ -97,6 +95,8 @@ public class DropData {
 
         if (!npc.isRaidBoss() && !(cat.getCategoryType() == -1)) {
             chance *= player.getStatus().calcStat(Stats.PERSONAL_DROP_ITEMS, 1, null, null);
+        } else if (!npc.isRaidBoss() && cat.getCategoryType() == -1) {
+            chance *= player.getStatus().calcStat(Stats.PERSONAL_SPOIL_ITEMS, 1, null, null);
         }
 
         return chance;

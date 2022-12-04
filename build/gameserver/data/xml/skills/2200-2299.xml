@@ -1342,20 +1342,22 @@
             </effect>
         </for>
     </skill>
-    <skill id="2285" levels="1" name="Herb of Speed">
-        <set name="hitTime" val="100"/>
-        <set name="staticHitTime" val="true"/>
+    <skill id="2285" levels="3" name="Extraction Potion">
+        <table name="#stackOrder">1 2 3</table>
+        <table name="#power">1.25 1.50 2</table>
+        <table name="#time">900 600 300</table>
+        <table name="#reuseDelay">900000 600000 300000</table>
         <set name="target" val="SELF"/>
-        <set name="reuseDelay" val="2000"/>
-        <set name="skillType" val="BUFF"/>
+        <set name="skillType" val="MPHOT"/>
         <set name="operateType" val="ACTIVE"/>
         <set name="isPotion" val="true"/>
+        <set name="reuseDelay" val="#reuseDelay"/>
         <cond msgId="113" addName="1">
             <player flying="False"/>
         </cond>
         <for>
-            <effect name="Buff" time="120" val="0" stackOrder="1.9" stackType="speed_up">
-                <add stat="runSpd" val="33"/>
+            <effect name="Buff" time="#time" val="0" stackOrder="#stackOrder" stackType="rate_spoil">
+                <mul stat="spoilItems" val="#power"/>
             </effect>
         </for>
     </skill>
