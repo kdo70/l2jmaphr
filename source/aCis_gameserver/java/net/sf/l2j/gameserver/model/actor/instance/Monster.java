@@ -5,7 +5,6 @@ import net.sf.l2j.commons.math.MathUtil;
 import net.sf.l2j.commons.pool.ThreadPool;
 import net.sf.l2j.commons.random.Rnd;
 import net.sf.l2j.gameserver.data.manager.CursedWeaponManager;
-import net.sf.l2j.gameserver.data.xml.HerbDropData;
 import net.sf.l2j.gameserver.enums.BossInfoType;
 import net.sf.l2j.gameserver.enums.skills.Stats;
 import net.sf.l2j.gameserver.geoengine.GeoEngine;
@@ -524,6 +523,9 @@ public class Monster extends Attackable {
             return null;
         }
         int dropChance = drop.calculateDropChance(creature.getActingPlayer(), this, cat);
+        if (dropChance <= 0) {
+            return null;
+        }
         int itemCount = drop.calculateDropCount(dropChance);
         if (itemCount > 0) {
             return new IntIntHolder(drop.getItemId(), itemCount);
@@ -533,6 +535,9 @@ public class Monster extends Attackable {
 
     private IntIntHolder calculateCategorizedRewardItem(Creature creature, DropCategory cat) {
         int categoryDropChance = cat.calculateCategoryChance(creature.getActingPlayer(), this);
+        if (categoryDropChance <= 0) {
+            return null;
+        }
         if (Rnd.get(DropData.MAX_CHANCE) < categoryDropChance) {
             return calculateRewardItem(creature, cat);
         }

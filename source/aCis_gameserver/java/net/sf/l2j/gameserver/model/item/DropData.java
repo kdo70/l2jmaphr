@@ -68,6 +68,11 @@ public class DropData {
     public static int calculateChance(Player player, Monster monster, DropCategory cat, int chance) {
         final int levelModifier = monster.calculateLevelModifierForDrop(player);
 
+        if (Config.DEEPBLUE_DROP_RULES) {
+            int deepBlueDrop = (levelModifier > 0) ? 3 : 1;
+            chance = ((chance - ((chance * levelModifier) / 100)) / deepBlueDrop);
+        }
+
         if (cat.getCategoryType() == 0) {
             chance *= Config.RATE_DROP_ADENA;
         } else if (cat.getCategoryType() == -1) {
@@ -90,11 +95,6 @@ public class DropData {
             chance *= player.getStatus().calcStat(Stats.PERSONAL_DROP_ITEMS, 1, null, null);
         }
 
-        if (Config.DEEPBLUE_DROP_RULES) {
-            int deepBlueDrop = (levelModifier > 0) ? 3 : 1;
-            chance = ((chance - ((chance * levelModifier) / 100)) / deepBlueDrop);
-        }
-
         return chance;
     }
 
@@ -113,8 +113,12 @@ public class DropData {
         return Rnd.get(min, max);
     }
 
-    public String getChanceHtml(int chance) {
-        return getPercent(Math.min((double) chance / 10000, 100));
+    public static String getChanceHtml(int chance) {
+        double modifyChance = Math.min((double) chance / 10000, 100);
+        if (modifyChance <= 0) {
+            return "0";
+        }
+        return getPercent(modifyChance);
     }
 
     public static String getPercent(double chance) {

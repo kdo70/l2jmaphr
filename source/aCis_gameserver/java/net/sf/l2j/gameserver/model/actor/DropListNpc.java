@@ -158,7 +158,7 @@ public class DropListNpc {
                 .append("&nbsp;Type: ")
                 .append(category.isSweep() ? "Spoil " : "Drop ")
                 .append("&nbsp;Chance: ")
-                .append(category.getChanceHtml(category.calculateCategoryChance(_player, _monster)))
+                .append(DropData.getChanceHtml(category.calculateCategoryChance(_player, _monster)))
                 .append("%</font></center><img src=L2UI.SquareGray width=280 height=1>");
     }
 

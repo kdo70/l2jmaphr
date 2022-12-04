@@ -88,10 +88,6 @@ public class DropCategory {
         return null;
     }
 
-    public String getChanceHtml(int chance) {
-        return DropData.getPercent(Math.min((double) chance / 10000, 100));
-    }
-
     public int getDropChance() {
         if (getCategoryType() >= 0) {
             return _categoryChance;
