@@ -1,6 +1,7 @@
 package net.sf.l2j.gameserver.model.item;
 
 import net.sf.l2j.commons.random.Rnd;
+import net.sf.l2j.gameserver.model.actor.Npc;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.actor.instance.Monster;
 
@@ -95,7 +96,7 @@ public class DropCategory {
         return 0;
     }
 
-    public int calculateCategoryChance(Player player, Monster monster) {
-        return DropData.calculateChance(player, monster, this, getCategoryChance());
+    public int calculateCategoryChance(Player player, Npc npc) {
+        return DropData.calculateChance(player, npc, this, getCategoryChance());
     }
 }

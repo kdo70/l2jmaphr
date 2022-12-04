@@ -47,11 +47,6 @@ public class DropListNpc {
     private final NpcTemplate _template;
 
     /**
-     * The Monster.
-     */
-    private final Monster _monster;
-
-    /**
      * The Items per list.
      */
     public int ITEMS_PER_LIST = 8;
@@ -105,7 +100,6 @@ public class DropListNpc {
         _objectId = objectId;
         _page = page;
         _template = NpcData.getInstance().getTemplate(_npc.getNpcId());
-        _monster = new Monster(_objectId, _template);
         _html = new StringBuilder();
         _message = new NpcHtmlMessage(_npc.getNpcId());
     }
@@ -158,7 +152,7 @@ public class DropListNpc {
                 .append("&nbsp;Type: ")
                 .append(category.isSweep() ? "Spoil " : "Drop ")
                 .append("&nbsp;Chance: ")
-                .append(DropData.getChanceHtml(category.calculateCategoryChance(_player, _monster)))
+                .append(DropData.getChanceHtml(category.calculateCategoryChance(_player, _npc)))
                 .append("%</font></center><img src=L2UI.SquareGray width=280 height=1>");
     }
 
@@ -202,7 +196,7 @@ public class DropListNpc {
 
 
     public void buildDropHtml(DropCategory category, DropData drop) {
-        int chance = drop.calculateDropChance(_player, _monster, category);
+        int chance = drop.calculateDropChance(_player, _npc, category);
         String chanceHtml = drop.getChanceHtml(chance);
 
         double min = drop.modifyCount(drop.getMinDrop(), chance);

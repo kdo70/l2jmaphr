@@ -3,6 +3,7 @@ package net.sf.l2j.gameserver.model.item;
 import net.sf.l2j.Config;
 import net.sf.l2j.commons.random.Rnd;
 import net.sf.l2j.gameserver.enums.skills.Stats;
+import net.sf.l2j.gameserver.model.actor.Npc;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.actor.instance.Monster;
 
@@ -61,11 +62,12 @@ public class DropData {
         return _chance;
     }
 
-    public int calculateDropChance(Player player, Monster monster, DropCategory cat) {
-        return calculateChance(player, monster, cat, getChance());
+    public int calculateDropChance(Player player, Npc npc, DropCategory cat) {
+        return calculateChance(player, npc, cat, getChance());
     }
 
-    public static int calculateChance(Player player, Monster monster, DropCategory cat, int chance) {
+    public static int calculateChance(Player player, Npc npc, DropCategory cat, int chance) {
+        Monster monster = new Monster(npc.getObjectId(), npc.getTemplate());
         final int levelModifier = monster.calculateLevelModifierForDrop(player);
 
         if (Config.DEEPBLUE_DROP_RULES) {
@@ -77,21 +79,23 @@ public class DropData {
             chance *= Config.RATE_DROP_ADENA;
         } else if (cat.getCategoryType() == -1) {
             chance *= Config.RATE_DROP_SPOIL;
-        } else if (monster.isRaidBoss()) {
+        } else if (npc.isRaidBoss()) {
             chance *= Config.RATE_DROP_ITEMS_BY_RAID;
         } else {
             chance *= Config.RATE_DROP_ITEMS;
         }
 
-        if (cat.getCategoryType() == 0 && monster.isChampion()) {
+        System.out.println("cat.getCategoryType() == 0 && monster.isChampion() " + (cat.getCategoryType() == 0 && npc.isChampion()));
+        if (cat.getCategoryType() == 0 && npc.isChampion()) {
             chance *= Config.CHAMP_MUL_ADENA;
-        } else if (cat.getCategoryType() == -1 && monster.isChampion()) {
+            System.out.println(chance);
+        } else if (cat.getCategoryType() == -1 && npc.isChampion()) {
             chance *= Config.CHAMP_MUL_SPOIL;
-        } else if (monster.isChampion()) {
+        } else if (npc.isChampion()) {
             chance *= Config.CHAMP_MUL_ITEMS;
         }
 
-        if (!monster.isRaidBoss() && !(cat.getCategoryType() == -1)) {
+        if (!npc.isRaidBoss() && !(cat.getCategoryType() == -1)) {
             chance *= player.getStatus().calcStat(Stats.PERSONAL_DROP_ITEMS, 1, null, null);
         }
 
