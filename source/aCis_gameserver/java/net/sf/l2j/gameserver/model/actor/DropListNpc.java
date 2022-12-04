@@ -1,9 +1,9 @@
 package net.sf.l2j.gameserver.model.actor;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.data.xml.IconData;
 import net.sf.l2j.gameserver.data.xml.ItemData;
 import net.sf.l2j.gameserver.data.xml.NpcData;
-import net.sf.l2j.gameserver.model.actor.instance.Monster;
 import net.sf.l2j.gameserver.model.actor.template.NpcTemplate;
 import net.sf.l2j.gameserver.model.item.DropCategory;
 import net.sf.l2j.gameserver.model.item.DropData;
@@ -112,6 +112,10 @@ public class DropListNpc {
             return;
         }
 
+        if (_npc.isChampion()) {
+            champion();
+        }
+
         categories();
         buildPaginationHtml();
         buildMessage();
@@ -139,13 +143,46 @@ public class DropListNpc {
         }
     }
 
+    public void champion() {
+        _html.append("<br><center><font color=B09878>&nbsp;Category ")
+                .append("#Champion")
+                .append("&nbsp;Type: ")
+                .append("Drop")
+                .append("&nbsp;Chance: ")
+                .append(DropData.getChanceHtml(Config.CHAMP_ITEM_DROP_CHANCE * 10000))
+                .append("%</font></center><img src=L2UI.SquareGray width=280 height=1>");
+
+        Item item = ItemData.getInstance().getTemplate(Config.CHAMP_ITEM_DROP_ID);
+        String name = item.getName();
+
+        if (name.length() >= 40) name = name.substring(0, 37) + "...";
+        String chanceHtml = DropData.getChanceHtml(Config.CHAMP_ITEM_DROP_CHANCE * 10000);
+
+        _html.append("<table width=280 bgcolor=000000><tr>");
+        _html.append("<td width=44 height=41 align=center>");
+        _html.append("<table bgcolor=ff0000 cellpadding=6 cellspacing=-5>");
+        _html.append("<tr><td><button width=32 height=32 back=");
+        _html.append(IconData.getIcon(Config.CHAMP_ITEM_DROP_ID)).append(" fore=");
+        _html.append(IconData.getIcon(Config.CHAMP_ITEM_DROP_ID));
+        _html.append("></td></tr></table></td>");
+        _html.append("<td width=260>");
+        _html.append(name);
+        _html.append("<br1>");
+        _html.append("<font color=B09878>Chance: ");
+        _html.append(chanceHtml);
+        _html.append("% Count: ");
+        _html.append(Config.CHAMP_ITEM_DROP_COUNT);
+        _html.append("</font></td>");
+        _html.append("</tr></table>");
+        _html.append("<img src=L2UI.SquareGray width=280 height=1>");
+    }
+
     /**
      * Build category html.
      *
      * @param category the category
      */
     public void buildCategoryHtml(DropCategory category) {
-
         _html.append("<br><center><font color=B09878>&nbsp;Category ")
                 .append("#")
                 .append(CATEGORY_ITERATION)
@@ -163,6 +200,7 @@ public class DropListNpc {
      */
     public void dropList(DropCategory category) {
         final List<DropData> dropList = dropData(category);
+
         for (DropData drop : dropList) {
 
             if (CURRENT_PAGE != _page) {
@@ -176,6 +214,7 @@ public class DropListNpc {
             }
 
             buildDropHtml(category, drop);
+
             ITEMS_IN_PAGE++;
         }
     }
@@ -197,7 +236,7 @@ public class DropListNpc {
 
     public void buildDropHtml(DropCategory category, DropData drop) {
         int chance = drop.calculateDropChance(_player, _npc, category);
-        String chanceHtml = drop.getChanceHtml(chance);
+        String chanceHtml = DropData.getChanceHtml(chance);
 
         double min = drop.modifyCount(drop.getMinDrop(), chance);
         double max = drop.modifyCount(drop.getMaxDrop(), chance);
