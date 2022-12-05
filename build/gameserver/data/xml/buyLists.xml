@@ -10573,6 +10573,10 @@
 		<product id="8636"/>
 		<product id="8637"/>
 		<product id="8638"/>
+		<!--ENCHANT-->
+		<product id="8639"/>
+		<product id="8640"/>
+		<product id="8641"/>
 
 		<!--&&-->
 		<product id="5235"/>
@@ -10591,7 +10595,6 @@
 		<product id="5248"/>
 		<product id="5560"/>
 		<product id="5561"/>
-		<product id="8639"/>
 	</buyList>
 	<buyList id="3002" npcId="-1">
 		<product id="729"/>

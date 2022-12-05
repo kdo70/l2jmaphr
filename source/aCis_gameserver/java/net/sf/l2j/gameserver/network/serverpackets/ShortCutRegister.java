@@ -61,6 +61,7 @@ public class ShortCutRegister extends L2GameServerPacket
 						if (itemSkill == null){
 							writeD(0x00);
 							writeD(0x00);
+							break;
 						}
 						final Timestamp timestamp = _player.getReuseTimeStamp().get(itemSkill.getReuseHashCode());
 						if (timestamp == null)

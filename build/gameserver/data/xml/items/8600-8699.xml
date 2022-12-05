@@ -399,35 +399,47 @@
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
 		<set name="shared_reuse_group" val="10"/>
 	</item>
-	<item id="8639" type="EtcItem" name="Elixir of CP (S-Grade)">
-		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="ELIXIR" />
-		<set name="crystal_type" val="S" />
-		<set name="material" val="LIQUID" />
-		<set name="weight" val="5" />
-		<set name="price" val="6000" />
-		<set name="reuse_delay" val="300000" />
-		<set name="shared_reuse_group" val="7" />
-		<set name="is_stackable" val="true" />
-		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixirs" />
-		<set name="item_skill" val="2289-6" />
+	<item id="8639" type="EtcItem" name="Enchant Potion">
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="material" val="LIQUID"/>
+		<set name="weight" val="100"/>
+		<set name="price" val="1000"/>
+		<set name="reuse_delay" val="60000" />
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2290-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+		<set name="shared_reuse_group" val="10"/>
 	</item>
-	<item id="8640" type="EtcItem" name="Recipe: Elixir of Life (No Grade) (100%)">
-		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="RECIPE" />
-		<set name="material" val="PAPER" />
-		<set name="weight" val="30" />
-		<set name="is_stackable" val="true" />
-		<set name="handler" val="Recipes" />
+	<item id="8640" type="EtcItem" name="Enchant Potion">
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="material" val="LIQUID"/>
+		<set name="weight" val="100"/>
+		<set name="price" val="1000"/>
+		<set name="reuse_delay" val="60000" />
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2284-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+		<set name="shared_reuse_group" val="10"/>
 	</item>
-	<item id="8641" type="EtcItem" name="Recipe: Elixir of Life (D-Grade)">
-		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="RECIPE" />
-		<set name="material" val="PAPER" />
-		<set name="weight" val="30" />
-		<set name="is_stackable" val="true" />
-		<set name="handler" val="Recipes" />
+	<item id="8641" type="EtcItem" name="Enchant Potion">
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="material" val="LIQUID"/>
+		<set name="weight" val="100"/>
+		<set name="price" val="1000"/>
+		<set name="reuse_delay" val="60000" />
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2283-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}"/>
+		<set name="shared_reuse_group" val="10"/>
 	</item>
 	<item id="8642" type="EtcItem" name="Recipe: Elixir of Life (C-Grade) (100%)">
 		<set name="default_action" val="recipe" />
@@ -575,7 +587,6 @@
 		<set name="default_action" val="capsule" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="item_skill" val="2290-1" />
 	</item>
 	<item id="8660" type="Armor" name="Demon Horns">
 		<set name="default_action" val="equip" />
