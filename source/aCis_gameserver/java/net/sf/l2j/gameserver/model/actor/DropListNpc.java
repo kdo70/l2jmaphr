@@ -144,6 +144,10 @@ public class DropListNpc {
     }
 
     public void champion() {
+        if (_page > 1) {
+            return;
+        }
+
         _html.append("<br><center><font color=B09878>&nbsp;Category ")
                 .append("#Champion")
                 .append("&nbsp;Type: ")

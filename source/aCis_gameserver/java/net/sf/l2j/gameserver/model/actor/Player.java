@@ -239,7 +239,7 @@ public final class Player extends Playable
 	private static final String DELETE_SKILL_SAVE = "DELETE FROM character_skills_save WHERE char_obj_id=? AND class_index=?";
 	
 	private static final String INSERT_CHARACTER = "INSERT INTO characters (account_name,obj_Id,char_name,level,maxHp,curHp,maxCp,curCp,maxMp,curMp,face,hairStyle,hairColor,sex,exp,sp,karma,pvpkills,pkkills,clanid,race,classid,deletetime,cancraft,title,accesslevel,online,isin7sdungeon,clan_privs,wantspeace,base_class,nobless,power_grade) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-	private static final String UPDATE_CHARACTER = "UPDATE characters SET level=?,maxHp=?,curHp=?,maxCp=?,curCp=?,maxMp=?,curMp=?,face=?,hairStyle=?,hairColor=?,sex=?,heading=?,x=?,y=?,z=?,exp=?,expBeforeDeath=?,sp=?,karma=?,pvpkills=?,pkkills=?,clanid=?,race=?,classid=?,deletetime=?,title=?,accesslevel=?,online=?,isin7sdungeon=?,clan_privs=?,wantspeace=?,base_class=?,onlinetime=?,punish_level=?,punish_timer=?,nobless=?,power_grade=?,subpledge=?,lvl_joined_academy=?,apprentice=?,sponsor=?,varka_ketra_ally=?,clan_join_expiry_time=?,clan_create_expiry_time=?,char_name=?,death_penalty_level=? WHERE obj_id=?";
+	private static final String UPDATE_CHARACTER = "UPDATE characters SET level=?,maxHp=?,curHp=?,maxCp=?,curCp=?,maxMp=?,curMp=?,face=?,hairStyle=?,hairColor=?,sex=?,heading=?,x=?,y=?,z=?,exp=?,expBeforeDeath=?,sp=?,karma=?,pvpkills=?,pkkills=?,clanid=?,race=?,classid=?,deletetime=?,title=?,accesslevel=?,online=?,isin7sdungeon=?,clan_privs=?,wantspeace=?,base_class=?,onlinetime=?,punish_level=?,punish_timer=?,nobless=?,power_grade=?,subpledge=?,lvl_joined_academy=?,apprentice=?,sponsor=?,varka_ketra_ally=?,clan_join_expiry_time=?,clan_create_expiry_time=?,char_name=?,death_penalty_level=?,death=?,monsterKills=? WHERE obj_id=?";
 	private static final String RESTORE_CHARACTER = "SELECT * FROM characters WHERE obj_id=?";
 	
 	private static final String RESTORE_CHAR_SUBCLASSES = "SELECT class_id,exp,sp,level,class_index FROM character_subclasses WHERE char_obj_id=? ORDER BY class_index ASC";
@@ -392,7 +392,10 @@ public final class Player extends Playable
 	private boolean _wantsPeace;
 	
 	private int _deathPenaltyBuffLevel;
-	
+	private int _death;
+
+	private int _monsterKills;
+
 	private final AtomicInteger _charges = new AtomicInteger();
 	private ScheduledFuture<?> _chargeTask;
 	
@@ -2701,7 +2704,9 @@ public final class Player extends Playable
 		
 		if (isMounted())
 			stopFeed();
-		
+
+		setDeath(getDeath() + 1);
+
 		// Clean player charges on death.
 		clearCharges();
 		
@@ -4324,7 +4329,9 @@ public final class Player extends Playable
 					player.setAllianceWithVarkaKetra(rs.getInt("varka_ketra_ally"));
 					
 					player.setDeathPenaltyBuffLevel(rs.getInt("death_penalty_level"));
-					
+					player.setDeath(rs.getInt("death"));
+					player.setMonsterKills(rs.getInt("monsterKills"));
+
 					// Set the position of the Player.
 					player.getPosition().set(rs.getInt("x"), rs.getInt("y"), rs.getInt("z"), rs.getInt("heading"));
 					
@@ -4555,7 +4562,9 @@ public final class Player extends Playable
 			ps.setLong(44, getClanCreateExpiryTime());
 			ps.setString(45, getName());
 			ps.setLong(46, getDeathPenaltyBuffLevel());
-			ps.setInt(47, getObjectId());
+			ps.setLong(47, getDeath());
+			ps.setLong(48, getMonsterKills());
+			ps.setInt(49, getObjectId());
 			
 			ps.execute();
 		}
@@ -6708,6 +6717,26 @@ public final class Player extends Playable
 	public void setDeathPenaltyBuffLevel(int level)
 	{
 		_deathPenaltyBuffLevel = level;
+	}
+
+	public int getDeath()
+	{
+		return _death;
+	}
+
+	public void setDeath(int count)
+	{
+		_death = count;
+	}
+
+	public int getMonsterKills()
+	{
+		return _monsterKills;
+	}
+
+	public void setMonsterKills(int count)
+	{
+		_monsterKills = count;
 	}
 	
 	/**

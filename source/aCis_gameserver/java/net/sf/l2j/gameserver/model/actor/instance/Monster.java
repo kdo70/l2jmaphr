@@ -582,6 +582,9 @@ public class Monster extends Attackable {
 
         // Don't drop anything if the last attacker or owner isn't a Player.
         final Player player = creature.getActingPlayer();
+
+        player.setMonsterKills(player.getMonsterKills() + 1);
+
         if (player == null)
             return;
 
