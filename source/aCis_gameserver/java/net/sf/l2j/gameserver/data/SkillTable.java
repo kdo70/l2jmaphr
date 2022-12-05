@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.skills.L2Skill;
 
 public class SkillTable
@@ -201,6 +202,7 @@ public class SkillTable
 		FIREWORK(5965, 1),
 		LARGE_FIREWORK(2025, 1),
 		SPECIAL_TREE_RECOVERY_BONUS(2139, 1),
+		TREE_EFFECT(Config.TREE_EFFECT_ID, Config.TREE_EFFECT_LVL),
 		
 		ANTHARAS_JUMP(4106, 1),
 		ANTHARAS_TAIL(4107, 1),

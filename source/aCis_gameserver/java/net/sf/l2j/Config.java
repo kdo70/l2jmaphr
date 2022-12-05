@@ -29,6 +29,7 @@ public final class Config {
     public static final String PLAYERS_FILE = "./config/players.properties";
     public static final String SERVER_FILE = "./config/server.properties";
     public static final String SIEGE_FILE = "./config/siege.properties";
+    public static final String EVENTS_TREE_FILE = "./config/events/tree.properties";
 
     // --------------------------------------------------
     // Clans settings
@@ -740,6 +741,41 @@ public final class Config {
     public static int CLIENT_PACKET_QUEUE_MAX_UNDERFLOWS_PER_MIN = 1; // default 1
     public static int CLIENT_PACKET_QUEUE_MAX_UNKNOWN_PER_MIN = 5; // default 5
 
+    /**
+     * Events
+     */
+    public static boolean TREE_ENABLED;
+    public static boolean TREE_DEBUG;
+    public static int TREE_TASK_DELAY;
+    public static int TREE_RADIUS;
+    public static int TREE_SKILL_ID;
+    public static int TREE_HIT_TIME;
+    public static boolean TREE_XP_SP_REWARD_ENABLED;
+    public static boolean TREE_XP_SP_NEED_SITTING;
+    public static int TREE_XP_SP_LVL_MIN;
+    public static int TREE_XP_SP_LVL_MAX;
+    public static int TREE_XP_SP_REWARD_CHANCE;
+    public static int TREE_XP_MIN;
+    public static int TREE_XP_MAX;
+    public static int TREE_SP_MIN;
+    public static int TREE_SP_MAX;
+    public static boolean TREE_REWARD_MUL_LVL;
+    public static boolean TREE_EFFECT_REWARD_ENABLED;
+    public static boolean TREE_EFFECT_NEED_SITTING;
+    public static int TREE_EFFECT_LVL_MIN;
+    public static int TREE_EFFECT_LVL_MAX;
+    public static int TREE_EFFECT_REWARD_CHANCE;
+    public static int TREE_EFFECT_ID;
+    public static int TREE_EFFECT_LVL;
+    public static boolean TREE_ITEM_REWARD_ENABLED;
+    public static boolean TREE_ITEM_NEED_SITTING;
+    public static int TREE_ITEM_LVL_MIN;
+    public static int TREE_ITEM_LVL_MAX;
+    public static int TREE_ITEM_REWARD_CHANCE;
+    public static int TREE_ITEM_ID;
+    public static int TREE_ITEM_COUNT_MIN;
+    public static int TREE_ITEM_COUNT_MAX;
+
     // --------------------------------------------------
 
     /**
@@ -920,6 +956,8 @@ public final class Config {
         FISH_CHAMPIONSHIP_REWARD_3 = events.getProperty("FishChampionshipReward3", 300000);
         FISH_CHAMPIONSHIP_REWARD_4 = events.getProperty("FishChampionshipReward4", 200000);
         FISH_CHAMPIONSHIP_REWARD_5 = events.getProperty("FishChampionshipReward5", 100000);
+
+        loadEventTree();
     }
 
     /**
@@ -1363,6 +1401,47 @@ public final class Config {
         L2WALKER_PROTECTION = server.getProperty("L2WalkerProtection", false);
         ZONE_TOWN = server.getProperty("ZoneTown", 0);
         SERVER_NEWS = server.getProperty("ShowServerNews", false);
+    }
+
+    private static final void loadEventTree() {
+        final ExProperties tree = initProperties(EVENTS_TREE_FILE);
+
+        TREE_ENABLED = tree.getProperty("TreeEnabled", true);
+        TREE_DEBUG = tree.getProperty("TreeDebug", true);
+        TREE_TASK_DELAY = tree.getProperty("TreeTaskDelay", 1) * 1000;
+        TREE_RADIUS = tree.getProperty("TreeRadius", 200);
+
+        TREE_SKILL_ID = tree.getProperty("TreeSkillId", 2241);
+        TREE_HIT_TIME = tree.getProperty("TreeHitTime", 0);
+
+        TREE_XP_SP_REWARD_ENABLED = tree.getProperty("TreeXpSpRewardEnabled", true);
+        TREE_XP_SP_NEED_SITTING = tree.getProperty("TreeXpSpNeedSitting", true);
+        TREE_XP_SP_LVL_MIN = tree.getProperty("TreeXpSpLvlMin", 1);
+        TREE_XP_SP_LVL_MAX = tree.getProperty("TreeXpSpLvlMax", 80);
+        TREE_XP_SP_REWARD_CHANCE = tree.getProperty("TreeXpSpRewardChance", 50);
+        TREE_XP_MIN = tree.getProperty("TreeXpMin", 1);
+        TREE_XP_MAX = tree.getProperty("TreeXpMax", 2);
+        TREE_SP_MIN = tree.getProperty("TreeSpMin", 1);
+        TREE_SP_MAX = tree.getProperty("TreeSpMax", 2);
+
+        TREE_REWARD_MUL_LVL = tree.getProperty("TreeRewardMulLvl", true);
+
+        TREE_EFFECT_REWARD_ENABLED = tree.getProperty("TreeEffectRewardEnabled", true);
+        TREE_EFFECT_NEED_SITTING = tree.getProperty("TreeEffectNeedSitting", false);
+        TREE_EFFECT_LVL_MIN = tree.getProperty("TreeEffectLvlMin", 1);
+        TREE_EFFECT_LVL_MAX = tree.getProperty("TreeEffectLvlMax", 80);
+        TREE_EFFECT_REWARD_CHANCE = tree.getProperty("TreeEffectRewardChance", 50);
+        TREE_EFFECT_ID = tree.getProperty("TreeEffectId", 1068);
+        TREE_EFFECT_LVL = tree.getProperty("TreeEffectLvl", 1);
+
+        TREE_ITEM_REWARD_ENABLED = tree.getProperty("TreeItemRewardEnabled", true);
+        TREE_ITEM_NEED_SITTING = tree.getProperty("TreeItemNeedSitting", true);
+        TREE_ITEM_LVL_MIN = tree.getProperty("TreeItemLvlMin", 1);
+        TREE_ITEM_LVL_MAX = tree.getProperty("TreeItemLvlMax", 80);
+        TREE_ITEM_REWARD_CHANCE = tree.getProperty("TreeItemRewardChance", 50);
+        TREE_ITEM_ID = tree.getProperty("TreeItemId", 57);
+        TREE_ITEM_COUNT_MIN = tree.getProperty("TreeItemCountMin", 1);
+        TREE_ITEM_COUNT_MAX = tree.getProperty("TreeItemCountMax", 2);
     }
 
     /**

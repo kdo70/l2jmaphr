@@ -12,73 +12,77 @@ public final class Rnd
 	{
 		return ThreadLocalRandom.current().nextDouble();
 	}
-	
+
 	public static int nextInt(int n)
 	{
 		return ThreadLocalRandom.current().nextInt(n);
 	}
-	
+
 	public static int nextInt()
 	{
 		return ThreadLocalRandom.current().nextInt();
 	}
-	
+
 	public static int get(int n)
 	{
 		return nextInt(n);
 	}
-	
+
 	public static int get(int min, int max)
 	{
 		return ThreadLocalRandom.current().nextInt(min, max == Integer.MAX_VALUE ? max : max + 1);
 	}
-	
+
+	public static boolean chance(int chance) {
+		return nextInt(99) + 1 <= chance;
+	}
+
 	public static long nextLong(long n)
 	{
 		return ThreadLocalRandom.current().nextLong(n);
 	}
-	
+
 	public static long nextLong()
 	{
 		return ThreadLocalRandom.current().nextLong();
 	}
-	
+
 	public static long get(long n)
 	{
 		return nextLong(n);
 	}
-	
+
 	public static long get(long min, long max)
 	{
 		return ThreadLocalRandom.current().nextLong(min, max == Long.MAX_VALUE ? max : max + 1L);
 	}
-	
+
 	public static boolean calcChance(double applicableUnits, int totalUnits)
 	{
 		return applicableUnits > nextInt(totalUnits);
 	}
-	
+
 	public static double nextGaussian()
 	{
 		return ThreadLocalRandom.current().nextGaussian();
 	}
-	
+
 	public static boolean nextBoolean()
 	{
 		return ThreadLocalRandom.current().nextBoolean();
 	}
-	
+
 	public static byte[] nextBytes(int count)
 	{
 		return nextBytes(new byte[count]);
 	}
-	
+
 	public static byte[] nextBytes(byte[] array)
 	{
 		ThreadLocalRandom.current().nextBytes(array);
 		return array;
 	}
-	
+
 	/**
 	 * Returns a randomly selected element taken from the given list.
 	 * @param <T> type of list elements.
@@ -89,10 +93,10 @@ public final class Rnd
 	{
 		if (list == null || list.isEmpty())
 			return null;
-		
+
 		return list.get(get(list.size()));
 	}
-	
+
 	/**
 	 * Returns a randomly selected element taken from the given array.
 	 * @param array an array.
@@ -102,7 +106,7 @@ public final class Rnd
 	{
 		return array[get(array.length)];
 	}
-	
+
 	/**
 	 * Returns a randomly selected element taken from the given array.
 	 * @param <T> type of array elements.
