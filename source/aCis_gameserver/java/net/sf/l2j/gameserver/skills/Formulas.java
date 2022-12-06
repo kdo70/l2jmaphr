@@ -280,7 +280,7 @@ public final class Formulas {
         final double critDamPosMul = ((attacker.getStatus().calcStat(Stats.CRITICAL_DAMAGE_POS, 1, target, skill) - 1) / 2 + 1); // Divided by 2 for blow types.
         final double posMul = getPosMul(attacker, target, true); // Divided by 2 for blow types.
         final double pvpMul = (isPvP) ? attacker.getStatus().calcStat(Stats.PVP_PHYS_SKILL_DMG, 1, null, null) : 1.;
-        final double pveMul = (!isPvP) ? attacker.getStatus().calcStat(Stats.PVE_DMG, 1, null, null) : 1.;
+        final double pveMul = (!isPvP) ? attacker.getStatus().calcStat(Stats.PVE_PHYS_SKILL_DMG, 1, null, null) : 1.;
 
         final double critVuln = target.getStatus().calcStat(Stats.CRIT_VULN, 1, target, skill);
         final double daggerVuln = target.getStatus().calcStat(Stats.DAGGER_WPN_VULN, 1, target, null);
@@ -289,7 +289,7 @@ public final class Formulas {
 
 
         if (!isPvP) {
-            damage /= target.getStatus().calcStat(Stats.PVE_DEF, 1, null, null);
+            damage /= target.getStatus().calcStat(Stats.PVE_PHYS_SKILL_DEF, 1, null, null);
         }
         if (isPvP) {
             damage /= target.getStatus().calcStat(Stats.PVP_PHYS_SKILL_DEF, 1, null, null);
@@ -338,7 +338,7 @@ public final class Formulas {
         double addCritPower = 0.;
 
         final double pvpMul = (isPvP) ? attacker.getStatus().calcStat(Stats.PVP_PHYSICAL_DMG, 1, null, null) : 1.;
-        final double pveMul = (!isPvP) ? attacker.getStatus().calcStat(Stats.PVE_DMG, 1, null, null) : 1.;
+        final double pveMul = (!isPvP) ? attacker.getStatus().calcStat(Stats.PVE_PHYSICAL_DMG, 1, null, null) : 1.;
         final double posMul = getPosMul(attacker, target, crit);
         final double elemMul = calcElementalPhysicalAttackModifier(attacker, target);
         final double rndMul = attacker.getRandomDamageMultiplier();
@@ -400,7 +400,7 @@ public final class Formulas {
             damage = 1;
 
         if (!isPvP) {
-            damage /= target.getStatus().calcStat(Stats.PVE_DEF, 1, null, null);
+            damage /= target.getStatus().calcStat(Stats.PVE_PHYSICAL_DEF, 1, null, null);
         }
         if (isPvP) {
             damage /= target.getStatus().calcStat(Stats.PVP_PHYSICAL_DEF, 1, null, null);
@@ -442,7 +442,7 @@ public final class Formulas {
         double skillPower = skill.getPower(attacker);
 
         final double pvpMul = (isPvP) ? attacker.getStatus().calcStat(Stats.PVP_PHYS_SKILL_DMG, 1, null, null) : 1.;
-        final double pveMul = (!isPvP) ? attacker.getStatus().calcStat(Stats.PVE_DMG, 1, null, null) : 1.;
+        final double pveMul = (!isPvP) ? attacker.getStatus().calcStat(Stats.PVE_PHYS_SKILL_DMG, 1, null, null) : 1.;
         final double elemMul = calcElementalSkillModifier(attacker, target, skill);
 
         double ssMul = 1.;
@@ -482,7 +482,7 @@ public final class Formulas {
             damage *= 2.;
 
         if (!isPvP) {
-            damage /= target.getStatus().calcStat(Stats.PVE_DEF, 1, null, null);
+            damage /= target.getStatus().calcStat(Stats.PVE_PHYS_SKILL_DEF, 1, null, null);
         }
         if (isPvP) {
             damage /= target.getStatus().calcStat(Stats.PVP_PHYS_SKILL_DEF, 1, null, null);
@@ -565,8 +565,8 @@ public final class Formulas {
                 damage /= target.getStatus().calcStat(Stats.PVP_PHYS_SKILL_DEF, 1, null, null);
             }
         } else {
-            damage *= attacker.getStatus().calcStat(Stats.PVE_DMG, 1, null, null);
-            damage /= target.getStatus().calcStat(Stats.PVE_DEF, 1, null, null);
+            damage *= attacker.getStatus().calcStat(Stats.PVE_MAGICAL_DMG, 1, null, null);
+            damage /= target.getStatus().calcStat(Stats.PVE_MAGICAL_DEF, 1, null, null);
         }
 
         damage *= calcElementalSkillModifier(attacker, target, skill);

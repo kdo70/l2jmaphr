@@ -156,12 +156,18 @@ public enum Stats {
     REC_D_LIM("DwarfRecipeLimit", false),
     REC_C_LIM("CommonRecipeLimit", false),
 
-    PVE_DMG("pveDmg", true),
-    PVE_DEF("pveDef", true),
+    PVE_PHYSICAL_DMG("pvePhysDmg", false),
+    PVE_MAGICAL_DMG("pveMagicalDmg", false),
+    PVE_PHYS_SKILL_DMG("pvePhysSkillsDmg", false),
+
+    PVE_PHYSICAL_DEF("pvePhysDef", false),
+    PVE_MAGICAL_DEF("pveMagicalDef", false),
+    PVE_PHYS_SKILL_DEF("pvePhysSkillsDef", false),
 
     PERSONAL_RATE_XP("rateXp", true),
     PERSONAL_RATE_SP("rateSp", true),
 
+    PERSONAL_DROP_ADENA("dropAdena", true),
     PERSONAL_DROP_ITEMS("dropItems", true),
     PERSONAL_SPOIL_ITEMS("spoilItems", true),
 

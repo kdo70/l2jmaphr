@@ -93,7 +93,9 @@ public class DropData {
             chance *= Config.CHAMP_MUL_ITEMS;
         }
 
-        if (!npc.isRaidBoss() && !(cat.getCategoryType() == -1)) {
+        if (!npc.isRaidBoss() && cat.getCategoryType() == 0) {
+            chance *= player.getStatus().calcStat(Stats.PERSONAL_DROP_ADENA, 1, null, null);
+        } else if (!npc.isRaidBoss() && !(cat.getCategoryType() == -1)) {
             chance *= player.getStatus().calcStat(Stats.PERSONAL_DROP_ITEMS, 1, null, null);
         } else if (!npc.isRaidBoss() && cat.getCategoryType() == -1) {
             chance *= player.getStatus().calcStat(Stats.PERSONAL_SPOIL_ITEMS, 1, null, null);
