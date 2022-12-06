@@ -34,6 +34,9 @@ public enum Stats {
     PVP_PHYSICAL_DMG("pvpPhysDmg", false),
     PVP_MAGICAL_DMG("pvpMagicalDmg", false),
     PVP_PHYS_SKILL_DMG("pvpPhysSkillsDmg", false),
+
+    PVP_PHYSICAL_DEF("pvpPhysDef", false),
+    PVP_MAGICAL_DEF("pvpMagicalDef", false),
     PVP_PHYS_SKILL_DEF("pvpPhysSkillsDef", false),
 
     // Atk & Def rates
@@ -154,6 +157,7 @@ public enum Stats {
     REC_C_LIM("CommonRecipeLimit", false),
 
     PVE_DMG("pveDmg", true),
+    PVE_DEF("pveDef", true),
 
     PERSONAL_RATE_XP("rateXp", true),
     PERSONAL_RATE_SP("rateSp", true),

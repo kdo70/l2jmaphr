@@ -285,7 +285,15 @@ public final class Formulas {
         final double critVuln = target.getStatus().calcStat(Stats.CRIT_VULN, 1, target, skill);
         final double daggerVuln = target.getStatus().calcStat(Stats.DAGGER_WPN_VULN, 1, target, null);
 
-        final double damage = ((attackPower + skillPower) * critDamMul * rndMul * critDamPosMul * posMul * pvpMul * pveMul * critVuln * daggerVuln + addCritPower) * ((isPvP) ? 70. : 77.) / defence;
+        double damage = ((attackPower + skillPower) * critDamMul * rndMul * critDamPosMul * posMul * pvpMul * pveMul * critVuln * daggerVuln + addCritPower) * ((isPvP) ? 70. : 77.) / defence;
+
+
+        if (!isPvP) {
+            damage /= target.getStatus().calcStat(Stats.PVE_DEF, 1, null, null);
+        }
+        if (isPvP) {
+            damage /= target.getStatus().calcStat(Stats.PVP_PHYS_SKILL_DEF, 1, null, null);
+        }
 
         if (Config.DEVELOPER) {
             StringUtil.printSection("Blow damage");
@@ -295,6 +303,7 @@ public final class Formulas {
             LOGGER.info("Vulnerabilities: criticalVuln: {}, daggerVuln: {}", critVuln, daggerVuln);
             LOGGER.info("Final blow damage: {}", damage);
         }
+
         return Math.max(1, damage);
     }
 
@@ -390,6 +399,13 @@ public final class Formulas {
         else if (damage < 1)
             damage = 1;
 
+        if (!isPvP) {
+            damage /= target.getStatus().calcStat(Stats.PVE_DEF, 1, null, null);
+        }
+        if (isPvP) {
+            damage /= target.getStatus().calcStat(Stats.PVP_PHYSICAL_DEF, 1, null, null);
+        }
+
         return damage;
     }
 
@@ -465,6 +481,13 @@ public final class Formulas {
         if (crit)
             damage *= 2.;
 
+        if (!isPvP) {
+            damage /= target.getStatus().calcStat(Stats.PVE_DEF, 1, null, null);
+        }
+        if (isPvP) {
+            damage /= target.getStatus().calcStat(Stats.PVP_PHYS_SKILL_DEF, 1, null, null);
+        }
+
         if (Config.DEVELOPER) {
             StringUtil.printSection("Physical skill damage");
             LOGGER.info("crit:{}, ss:{}, shield:{}, isPvp:{}, defence:{}", crit, ss, sDef, isPvP, defence);
@@ -533,12 +556,17 @@ public final class Formulas {
 
         // Pvp bonuses for dmg
         if (attacker instanceof Playable && target instanceof Playable) {
-            if (skill.isMagic())
+            if (skill.isMagic()){
                 damage *= attacker.getStatus().calcStat(Stats.PVP_MAGICAL_DMG, 1, null, null);
-            else
+                damage /= target.getStatus().calcStat(Stats.PVP_MAGICAL_DEF, 1, null, null);
+            }
+            else{
                 damage *= attacker.getStatus().calcStat(Stats.PVP_PHYS_SKILL_DMG, 1, null, null);
+                damage /= target.getStatus().calcStat(Stats.PVP_PHYS_SKILL_DEF, 1, null, null);
+            }
         } else {
             damage *= attacker.getStatus().calcStat(Stats.PVE_DMG, 1, null, null);
+            damage /= target.getStatus().calcStat(Stats.PVE_DEF, 1, null, null);
         }
 
         damage *= calcElementalSkillModifier(attacker, target, skill);
