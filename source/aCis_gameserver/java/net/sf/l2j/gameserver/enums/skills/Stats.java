@@ -46,6 +46,7 @@ public enum Stats {
     BLOW_RATE("blowRate", false),
     LETHAL_RATE("lethalRate", false),
     MCRITICAL_RATE("mCritRate", false),
+    MCRITICAL_POWER("mCritPower", false),
     ATTACK_CANCEL("cancel", false),
 
     // Accuracy and range

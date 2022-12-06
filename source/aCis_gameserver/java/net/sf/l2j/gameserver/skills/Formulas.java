@@ -552,7 +552,7 @@ public final class Formulas {
                     target.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.RESISTED_S1_MAGIC).addCharName(attacker));
             }
         } else if (mcrit)
-            damage *= 4;
+            damage *= 4 * attacker.getStatus().calcStat(Stats.MCRITICAL_POWER, 1, null, null);
 
         // Pvp bonuses for dmg
         if (attacker instanceof Playable && target instanceof Playable) {
