@@ -13405,27 +13405,16 @@
 		<product id="1509"/>
 		<product id="6325"/>
 		<product id="6328"/>
+		<product id="6725"/>
+		<product id="9209"/>
+		<product id="9210"/>
+		<product id="9211"/>
+		<product id="9212"/>
+	</buyList>
+	<buyList id="9109" npcId="-1">
 		<product id="6658"/>
 		<product id="6660"/>
 		<product id="6662"/>
-		<product id="6725"/>
-	</buyList>
-	<buyList id="9109" npcId="-1">
-		<product id="848"/>
-		<product id="879"/>
-		<product id="911"/>
-		<product id="850"/>
-		<product id="881"/>
-		<product id="913"/>
-		<product id="849"/>
-		<product id="882"/>
-		<product id="912"/>
-		<product id="847"/>
-		<product id="890"/>
-		<product id="910"/>
-		<product id="851"/>
-		<product id="880"/>
-		<product id="914"/>
 	</buyList>
 	<buyList id="9110" npcId="-1">
 		<product id="852"/>

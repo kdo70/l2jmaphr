@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list>
 	<item id="9200" type="Armor" name="Jester Hat - Firework">
 		<set name="default_action" val="equip" />
@@ -101,5 +101,53 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+	</item>
+	<item id="9209" type="Armor" name="Immortal Ring">
+		<set name="item_skill" val="5259-1" />
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="50" />
+		<for>
+			<baseadd stat="mDef" val="15" />
+			<baseadd stat="maxMp" val="100" />
+		</for>
+	</item>
+	<item id="9210" type="Armor" name="Octavis' Ring">
+		<set name="item_skill" val="5260-1" />
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="50" />
+		<for>
+			<baseadd stat="mDef" val="15" />
+			<baseadd stat="maxMp" val="100" />
+		</for>
+	</item>
+	<item id="9211" type="Armor" name="Istina's Ring">
+		<set name="item_skill" val="5261-1" />
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="50" />
+		<for>
+			<baseadd stat="mDef" val="15" />
+			<baseadd stat="maxMp" val="100" />
+		</for>
+	</item>
+	<item id="9212" type="Armor" name="Eternal Ring">
+		<set name="item_skill" val="5262-1" />
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="50" />
+		<for>
+			<baseadd stat="mDef" val="15" />
+			<baseadd stat="maxMp" val="100" />
+		</for>
 	</item>
 </list>

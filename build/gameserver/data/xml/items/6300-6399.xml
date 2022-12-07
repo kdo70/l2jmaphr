@@ -349,17 +349,16 @@
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
-	<item id="6325" type="Armor" name="Sealed Phoenix Ring">
+	<item id="6325" type="Armor" name="Twilight Ring">
+		<set name="item_skill" val="5256-1" />
 		<set name="default_action" val="equip" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="crystal_type" val="A" />
-		<set name="crystal_count" val="69" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
-		<set name="price" val="871000" />
+		<set name="price" val="50" />
 		<for>
-			<baseadd stat="mDef" val="38" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="15" />
+			<baseadd stat="maxMp" val="100" />
 		</for>
 	</item>
 	<item id="6326" type="Armor" name="Sealed Majestic Necklace">
@@ -388,17 +387,16 @@
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
-	<item id="6328" type="Armor" name="Sealed Majestic Ring">
+	<item id="6328" type="Armor" name="Earth Wyrm Heart Ring">
+		<set name="item_skill" val="5257-1" />
 		<set name="default_action" val="equip" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="crystal_type" val="A" />
-		<set name="crystal_count" val="104" />
-		<set name="material" val="SILVER" />
+		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
-		<set name="price" val="1300000" />
+		<set name="price" val="50" />
 		<for>
-			<baseadd stat="mDef" val="40" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="15" />
+			<baseadd stat="maxMp" val="100" />
 		</for>
 	</item>
 	<item id="6329" type="EtcItem" name="Recipe: Sealed Phoenix Necklace(70%)">

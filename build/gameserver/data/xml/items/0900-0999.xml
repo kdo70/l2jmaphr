@@ -1,82 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list>
 	<item id="900" type="Armor" name="Ring of Grace">
+		<set name="item_skill" val="5248-1" />
 		<set name="default_action" val="equip" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="crystal_type" val="B" />
-		<set name="crystal_count" val="53" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
-		<set name="price" val="404000" />
+		<set name="price" val="50" />
 		<for>
-			<baseadd stat="mDef" val="34" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="15" />
+			<baseadd stat="maxMp" val="100" />
 		</for>
 	</item>
 	<item id="901" type="Armor" name="Ring of Holy Spirit">
+		<set name="item_skill" val="5249-1" />
 		<set name="default_action" val="equip" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="crystal_type" val="B" />
-		<set name="crystal_count" val="82" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
-		<set name="price" val="616000" />
+		<set name="price" val="50" />
 		<for>
-			<baseadd stat="mDef" val="36" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="15" />
+			<baseadd stat="maxMp" val="100" />
 		</for>
 	</item>
 	<item id="902" type="Armor" name="Phoenix Ring">
+		<set name="item_skill" val="5250-1" />
 		<set name="default_action" val="equip" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="crystal_type" val="A" />
-		<set name="crystal_count" val="104" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
-		<set name="price" val="1300000" />
+		<set name="price" val="50" />
 		<for>
-			<baseadd stat="mDef" val="40" />
-			<add stat="maxMp" val="13" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="15" />
+			<baseadd stat="maxMp" val="100" />
 		</for>
 	</item>
 	<item id="903" type="Armor" name="Cerberus Ring">
+		<set name="item_skill" val="5251-1" />
 		<set name="default_action" val="equip" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="crystal_type" val="A" />
-		<set name="crystal_count" val="104" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
-		<set name="price" val="1300000" />
+		<set name="price" val="50" />
 		<for>
-			<baseadd stat="mDef" val="40" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="15" />
+			<baseadd stat="maxMp" val="100" />
 		</for>
 	</item>
 	<item id="904" type="Armor" name="Ring of Aid">
+		<set name="item_skill" val="5252-1" />
 		<set name="default_action" val="equip" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="crystal_type" val="B" />
-		<set name="crystal_count" val="53" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
-		<set name="price" val="404000" />
+		<set name="price" val="50" />
 		<for>
-			<baseadd stat="mDef" val="34" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="15" />
+			<baseadd stat="maxMp" val="100" />
 		</for>
 	</item>
 	<item id="905" type="Armor" name="Ring of Blessing">
+		<set name="item_skill" val="5253-1" />
 		<set name="default_action" val="equip" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="crystal_type" val="B" />
-		<set name="crystal_count" val="53" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
-		<set name="price" val="404000" />
+		<set name="price" val="50" />
 		<for>
-			<baseadd stat="mDef" val="34" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="15" />
+			<baseadd stat="maxMp" val="100" />
 		</for>
 	</item>
 	<item id="906" type="Armor" name="Necklace of Knowledge">

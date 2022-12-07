@@ -233,26 +233,27 @@
 		</for>
 	</item>
 	<item id="116" type="Armor" name="Magic Ring">
+		<set name="item_skill" val="5221-1" />
 		<set name="default_action" val="equip" />
 		<set name="bodypart" val="rfinger;lfinger" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
-		<set name="price" val="33" />
+		<set name="price" val="50" />
 		<for>
-			<baseadd stat="mDef" val="7" />
+			<baseadd stat="mDef" val="15" />
+			<baseadd stat="maxMp" val="100" />
 		</for>
 	</item>
 	<item id="117" type="Armor" name="Ring of Mana">
+		<set name="item_skill" val="5222-1" />
 		<set name="default_action" val="equip" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="crystal_type" val="B" />
-		<set name="crystal_count" val="53" />
-		<set name="material" val="SILVER" />
+		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
-		<set name="price" val="404000" />
+		<set name="price" val="50" />
 		<for>
-			<baseadd stat="mDef" val="34" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="15" />
+			<baseadd stat="maxMp" val="100" />
 		</for>
 	</item>
 	<item id="118" type="Armor" name="Necklace of Magic">
