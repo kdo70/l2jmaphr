@@ -323,30 +323,28 @@
 		<set name="is_stackable" val="true" />
 		<set name="etcitem_type" val="QUEST" />
 	</item>
-	<item id="6323" type="Armor" name="Sealed Phoenix Necklace">
-		<set name="default_action" val="equip" />
-		<set name="bodypart" val="neck" />
-		<set name="crystal_type" val="A" />
-		<set name="crystal_count" val="139" />
-		<set name="material" val="SILVER" />
-		<set name="weight" val="150" />
-		<set name="price" val="1740000" />
+	<item id="6323" type="Armor" name="Twilight Necklace">
+		<set name="item_skill" val="5256-1"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="material" val="GOLD"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="100"/>
 		<for>
-			<baseadd stat="mDef" val="76" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="30"/>
+			<baseadd stat="maxMp" val="200"/>
 		</for>
 	</item>
-	<item id="6324" type="Armor" name="Sealed Phoenix Earring">
-		<set name="default_action" val="equip" />
-		<set name="bodypart" val="rear;lear" />
-		<set name="crystal_type" val="A" />
-		<set name="crystal_count" val="104" />
-		<set name="material" val="SILVER" />
-		<set name="weight" val="150" />
-		<set name="price" val="1310000" />
+	<item id="6324" type="Armor" name="Twilight Earring">
+		<set name="item_skill" val="5255-1"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="material" val="GOLD"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="50"/>
 		<for>
-			<baseadd stat="mDef" val="57" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="15"/>
+			<baseadd stat="maxMp" val="100"/>
 		</for>
 	</item>
 	<item id="6325" type="Armor" name="Twilight Ring">
@@ -361,30 +359,28 @@
 			<baseadd stat="maxMp" val="100" />
 		</for>
 	</item>
-	<item id="6326" type="Armor" name="Sealed Majestic Necklace">
-		<set name="default_action" val="equip" />
-		<set name="bodypart" val="neck" />
-		<set name="crystal_type" val="A" />
-		<set name="crystal_count" val="208" />
-		<set name="material" val="SILVER" />
-		<set name="weight" val="150" />
-		<set name="price" val="2600000" />
+	<item id="6326" type="Armor" name="Seraph Necklace">
+		<set name="item_skill" val="5257-1"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="material" val="GOLD"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="100"/>
 		<for>
-			<baseadd stat="mDef" val="80" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="30"/>
+			<baseadd stat="maxMp" val="200"/>
 		</for>
 	</item>
-	<item id="6327" type="Armor" name="Sealed Majestic Earring">
-		<set name="default_action" val="equip" />
-		<set name="bodypart" val="rear;lear" />
-		<set name="crystal_type" val="A" />
-		<set name="crystal_count" val="156" />
-		<set name="material" val="SILVER" />
-		<set name="weight" val="150" />
-		<set name="price" val="1950000" />
+	<item id="6327" type="Armor" name="Bound Seraph Earring">
+		<set name="item_skill" val="5256-1"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="material" val="GOLD"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="50"/>
 		<for>
-			<baseadd stat="mDef" val="60" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="15"/>
+			<baseadd stat="maxMp" val="100"/>
 		</for>
 	</item>
 	<item id="6328" type="Armor" name="Earth Wyrm Heart Ring">

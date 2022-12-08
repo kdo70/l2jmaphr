@@ -17,7 +17,6 @@ import java.util.List;
 
 /**
  * The type Drop list npc.
- * TODO: проверить дроп камней и их рейтовку
  */
 public class DropListNpc {
 
@@ -145,6 +144,11 @@ public class DropListNpc {
 
     public void champion() {
         if (_page > 1) {
+            return;
+        }
+
+        final int diffLvl = _player.getStatus().getLevel() - _npc.getLevel();
+        if (Config.DEEPBLUE_DROP_RULES && diffLvl > 10) {
             return;
         }
 

@@ -293,17 +293,16 @@
 			<enchant val="0" stat="mAtk" />
 		</for>
 	</item>
-	<item id="6724" type="Armor" name="Sealed Tateossian Earring">
-		<set name="default_action" val="equip" />
-		<set name="bodypart" val="rear;lear" />
-		<set name="crystal_type" val="S" />
-		<set name="crystal_count" val="185" />
-		<set name="material" val="SILVER" />
-		<set name="weight" val="150" />
-		<set name="price" val="3700000" />
+	<item id="6724" type="Armor" name="National Hero's Earring">
+		<set name="item_skill" val="5257-1"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="material" val="GOLD"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="50"/>
 		<for>
-			<baseadd stat="mDef" val="68" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="15"/>
+			<baseadd stat="maxMp" val="100"/>
 		</for>
 	</item>
 	<item id="6725" type="Armor" name="National Hero's Ring">
@@ -318,17 +317,16 @@
 			<baseadd stat="maxMp" val="100" />
 		</for>
 	</item>
-	<item id="6726" type="Armor" name="Sealed Tateossian Necklace">
-		<set name="default_action" val="equip" />
-		<set name="bodypart" val="neck" />
-		<set name="crystal_type" val="S" />
-		<set name="crystal_count" val="247" />
-		<set name="material" val="SILVER" />
-		<set name="weight" val="150" />
-		<set name="price" val="4940000" />
+	<item id="6726" type="Armor" name="National Hero's Necklace">
+		<set name="item_skill" val="5258-1"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="material" val="GOLD"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="100"/>
 		<for>
-			<baseadd stat="mDef" val="91" />
-			<enchant stat="mDef" val="0" />
+			<baseadd stat="mDef" val="30"/>
+			<baseadd stat="maxMp" val="200"/>
 		</for>
 	</item>
 	<item id="6727" type="EtcItem" name="Seed: Alternative Great Coba">
