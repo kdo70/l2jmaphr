@@ -1,0 +1,1403 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <item id="9600" type="Armor" name="Magic Ring">
+        <set name="item_skill" val="5221-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9601" type="Armor" name="Ring of Mana">
+        <set name="item_skill" val="5222-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9602" type="Armor" name="Ring of Knowledge">
+        <set name="item_skill" val="5223-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9603" type="Armor" name="Ring of Anguish">
+        <set name="item_skill" val="5224-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9604" type="Armor" name="Ring of Wisdom">
+        <set name="item_skill" val="5225-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9605" type="Armor" name="Blue Coral Ring">
+        <set name="item_skill" val="5226-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9606" type="Armor" name="Enchanted Ring">
+        <set name="item_skill" val="5227-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9607" type="Armor" name="Black Pearl Ring">
+        <set name="item_skill" val="5228-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9608" type="Armor" name="Elven Ring">
+        <set name="item_skill" val="5229-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9609" type="Armor" name="Mithril Ring">
+        <set name="item_skill" val="5230-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9610" type="Armor" name="Aquastone Ring">
+        <set name="item_skill" val="5231-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9611" type="Armor" name="Ring of Protection">
+        <set name="item_skill" val="5232-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9612" type="Armor" name="Ring of Ages">
+        <set name="item_skill" val="5233-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9613" type="Armor" name="Ring of Binding">
+        <set name="item_skill" val="5234-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9614" type="Armor" name="Adamantite Ring">
+        <set name="item_skill" val="5235-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9615" type="Armor" name="Blessed Ring">
+        <set name="item_skill" val="5236-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9616" type="Armor" name="Tateossian Ring">
+        <set name="item_skill" val="5237-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9617" type="Armor" name="Ring of Devotion">
+        <set name="item_skill" val="5238-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9618" type="Armor" name="Sage's Ring">
+        <set name="item_skill" val="5239-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9619" type="Armor" name="Paradia Ring">
+        <set name="item_skill" val="5240-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9620" type="Armor" name="Majestic Ring">
+        <set name="item_skill" val="5241-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9621" type="Armor" name="Ring of Solar Eclipse">
+        <set name="item_skill" val="5242-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9622" type="Armor" name="Ring of Black Ore">
+        <set name="item_skill" val="5243-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9623" type="Armor" name="Ring of Summoning">
+        <set name="item_skill" val="5244-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9624" type="Armor" name="Otherworldly Ring">
+        <set name="item_skill" val="5245-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9625" type="Armor" name="Elemental Ring">
+        <set name="item_skill" val="5246-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9626" type="Armor" name="Ring of Phantom">
+        <set name="item_skill" val="5247-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9627" type="Armor" name="Ring of Grace">
+        <set name="item_skill" val="5248-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9628" type="Armor" name="Ring of Holy Spirit">
+        <set name="item_skill" val="5249-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9629" type="Armor" name="Phoenix Ring">
+        <set name="item_skill" val="5250-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9630" type="Armor" name="Cerberus Ring">
+        <set name="item_skill" val="5251-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9631" type="Armor" name="Ring of Aid">
+        <set name="item_skill" val="5252-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9632" type="Armor" name="Ring of Blessing">
+        <set name="item_skill" val="5253-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9633" type="Armor" name="Ring of Raccoon">
+        <set name="item_skill" val="5254-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9634" type="Armor" name="Ring of Firefly">
+        <set name="item_skill" val="5255-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9635" type="Armor" name="Twilight Ring">
+        <set name="item_skill" val="5256-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9636" type="Armor" name="Earth Wyrm Heart Ring">
+        <set name="item_skill" val="5257-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9637" type="Armor" name="National Hero's Ring">
+        <set name="item_skill" val="5258-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9638" type="Armor" name="Immortal Ring">
+        <set name="item_skill" val="5259-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9639" type="Armor" name="Octavis' Ring">
+        <set name="item_skill" val="5260-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9640" type="Armor" name="Istina's Ring">
+        <set name="item_skill" val="5261-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9641" type="Armor" name="Eternal Ring">
+        <set name="item_skill" val="5262-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rfinger;lfinger"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9642" type="Armor" name="Apprentice's Earring">
+        <set name="item_skill" val="5221-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9643" type="Armor" name="Mystic's Earring">
+        <set name="item_skill" val="5222-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9644" type="Armor" name="Earring of Strength">
+        <set name="item_skill" val="5223-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9645" type="Armor" name="Earring of Wisdom">
+        <set name="item_skill" val="5224-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9646" type="Armor" name="Cat's Eye Earring">
+        <set name="item_skill" val="5225-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9647" type="Armor" name="Coral Earring">
+        <set name="item_skill" val="5226-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9648" type="Armor" name="Red Crescent Earring">
+        <set name="item_skill" val="5227-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9649" type="Armor" name="Enchanted Earring">
+        <set name="item_skill" val="5228-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9650" type="Armor" name="Tiger's Eye Earring">
+        <set name="item_skill" val="5229-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9651" type="Armor" name="Elven Earring">
+        <set name="item_skill" val="5230-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9652" type="Armor" name="Omen Beast's Eye Earring">
+        <set name="item_skill" val="5231-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9653" type="Armor" name="Moonstone Earring">
+        <set name="item_skill" val="5232-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9654" type="Armor" name="Earring of Protection">
+        <set name="item_skill" val="5233-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9655" type="Armor" name="Earring of Binding">
+        <set name="item_skill" val="5234-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9656" type="Armor" name="Nassen's Earring">
+        <set name="item_skill" val="5235-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9657" type="Armor" name="Adamantite Earring">
+        <set name="item_skill" val="5236-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9658" type="Armor" name="Blessed Earring">
+        <set name="item_skill" val="5237-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9659" type="Armor" name="Tateossian Earring">
+        <set name="item_skill" val="5238-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9660" type="Armor" name="Earring of Mana">
+        <set name="item_skill" val="5239-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9661" type="Armor" name="Sage's Earring">
+        <set name="item_skill" val="5240-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9662" type="Armor" name="Paradia Earring">
+        <set name="item_skill" val="5241-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9663" type="Armor" name="Majestic Earring">
+        <set name="item_skill" val="5242-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9664" type="Armor" name="Earring of Solar Eclipse">
+        <set name="item_skill" val="5243-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9665" type="Armor" name="Earring of Black Ore">
+        <set name="item_skill" val="5244-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9666" type="Armor" name="Earring of Summoning">
+        <set name="item_skill" val="5245-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9667" type="Armor" name="Otherworldly Earring">
+        <set name="item_skill" val="5246-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9668" type="Armor" name="Elemental Earring">
+        <set name="item_skill" val="5247-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9669" type="Armor" name="Earring of Phantom">
+        <set name="item_skill" val="5248-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9670" type="Armor" name="Earring of Grace">
+        <set name="item_skill" val="5249-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9671" type="Armor" name="Earring of Holy Spirit">
+        <set name="item_skill" val="5250-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9672" type="Armor" name="Phoenix Earring">
+        <set name="item_skill" val="5251-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9673" type="Armor" name="Cerberus Earring">
+        <set name="item_skill" val="5252-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9674" type="Armor" name="Earring of Aid">
+        <set name="item_skill" val="5253-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9675" type="Armor" name="Earring of Blessing">
+        <set name="item_skill" val="5254-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9676" type="Armor" name="Twilight Earring">
+        <set name="item_skill" val="5255-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9677" type="Armor" name="Bound Seraph Earring">
+        <set name="item_skill" val="5256-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9678" type="Armor" name="National Hero's Earring">
+        <set name="item_skill" val="5257-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9679" type="Armor" name="Immortal Earring">
+        <set name="item_skill" val="5258-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9680" type="Armor" name="Octavis' Earring">
+        <set name="item_skill" val="5259-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9681" type="Armor" name="Istina's Earring">
+        <set name="item_skill" val="5260-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9682" type="Armor" name="Eternal Earring">
+        <set name="item_skill" val="5261-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9683" type="Armor" name="Guard Earring">
+        <set name="item_skill" val="5262-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="rear;lear"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="125"/>
+        <set name="price" val="18165"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="84"/>
+        <for>
+            <baseadd stat="mDef" val="40"/>
+            <baseadd stat="maxMp" val="15"/>
+        </for>
+    </item>
+    <item id="9684" type="Armor" name="Necklace of Magic">
+        <set name="item_skill" val="5221-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9685" type="Armor" name="Necklace of Binding">
+        <set name="item_skill" val="5222-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9686" type="Armor" name="Necklace of Knowledge">
+        <set name="item_skill" val="5223-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9687" type="Armor" name="Necklace of Anguish">
+        <set name="item_skill" val="5224-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9688" type="Armor" name="Necklace of Wisdom">
+        <set name="item_skill" val="5225-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9689" type="Armor" name="Blue Diamond Necklace">
+        <set name="item_skill" val="5226-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9690" type="Armor" name="Necklace of Devotion">
+        <set name="item_skill" val="5227-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9691" type="Armor" name="Enchanted Necklace">
+        <set name="item_skill" val="5228-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9692" type="Armor" name="Near Forest Necklace">
+        <set name="item_skill" val="5229-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9693" type="Armor" name="Elven Necklace">
+        <set name="item_skill" val="5230-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9694" type="Armor" name="Necklace of Darkness">
+        <set name="item_skill" val="5231-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9695" type="Armor" name="Aquastone Necklace">
+        <set name="item_skill" val="5232-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9696" type="Armor" name="Necklace of Protection">
+        <set name="item_skill" val="5233-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9697" type="Armor" name="Necklace of Mermaid">
+        <set name="item_skill" val="5234-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9698" type="Armor" name="Adamantite Necklace">
+        <set name="item_skill" val="5235-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+    <item id="9699" type="Armor" name="Blessed Necklace">
+        <set name="item_skill" val="5236-5"/>
+        <set name="default_action" val="equip"/>
+        <set name="bodypart" val="neck"/>
+        <set name="material" val="GOLD"/>
+        <set name="weight" val="250"/>
+        <set name="price" val="36330"/>
+        <set name="crystal_type" val="A"/>
+        <set name="crystal_count" val="168"/>
+        <for>
+            <baseadd stat="mDef" val="80"/>
+            <baseadd stat="maxMp" val="30"/>
+        </for>
+    </item>
+</list>
