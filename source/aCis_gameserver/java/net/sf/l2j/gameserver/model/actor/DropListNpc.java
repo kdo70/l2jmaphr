@@ -4,6 +4,7 @@ import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.data.xml.IconData;
 import net.sf.l2j.gameserver.data.xml.ItemData;
 import net.sf.l2j.gameserver.data.xml.NpcData;
+import net.sf.l2j.gameserver.model.actor.instance.Monster;
 import net.sf.l2j.gameserver.model.actor.template.NpcTemplate;
 import net.sf.l2j.gameserver.model.item.DropCategory;
 import net.sf.l2j.gameserver.model.item.DropData;
@@ -147,9 +148,12 @@ public class DropListNpc {
             return;
         }
 
-        final int diffLvl = _player.getStatus().getLevel() - _npc.getLevel();
-        if (Config.DEEPBLUE_DROP_RULES && diffLvl > 10) {
-            return;
+        Monster monster = new Monster(_npc.getObjectId(), _npc.getTemplate());
+        final int levelModifier = monster.calculateLevelModifierForDrop(_player);
+        int chance = Config.CHAMP_ITEM_DROP_CHANCE * 10000;
+        if (Config.DEEPBLUE_DROP_RULES) {
+            int deepBlueDrop = (levelModifier > 0) ? 3 : 1;
+            chance = ((chance - ((chance * levelModifier) / 100)) / deepBlueDrop);
         }
 
         _html.append("<br><center><font color=B09878>&nbsp;Category ")
@@ -157,14 +161,13 @@ public class DropListNpc {
                 .append("&nbsp;Type: ")
                 .append("Drop")
                 .append("&nbsp;Chance: ")
-                .append(DropData.getChanceHtml(Config.CHAMP_ITEM_DROP_CHANCE * 10000))
+                .append(DropData.getChanceHtml(chance))
                 .append("%</font></center><img src=L2UI.SquareGray width=280 height=1>");
 
         Item item = ItemData.getInstance().getTemplate(Config.CHAMP_ITEM_DROP_ID);
         String name = item.getName();
 
         if (name.length() >= 40) name = name.substring(0, 37) + "...";
-        String chanceHtml = DropData.getChanceHtml(Config.CHAMP_ITEM_DROP_CHANCE * 10000);
 
         _html.append("<table width=280 bgcolor=000000><tr>");
         _html.append("<td width=44 height=41 align=center>");
@@ -177,7 +180,7 @@ public class DropListNpc {
         _html.append(name);
         _html.append("<br1>");
         _html.append("<font color=B09878>Chance: ");
-        _html.append(chanceHtml);
+        _html.append(DropData.getChanceHtml(chance));
         _html.append("% Count: ");
         _html.append(Config.CHAMP_ITEM_DROP_COUNT);
         _html.append("</font></td>");
