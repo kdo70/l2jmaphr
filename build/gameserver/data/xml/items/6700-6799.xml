@@ -298,23 +298,23 @@
 		<set name="default_action" val="equip"/>
 		<set name="bodypart" val="rear;lear"/>
 		<set name="material" val="GOLD"/>
-		<set name="weight" val="150"/>
-		<set name="price" val="50"/>
+		<set name="weight" val="25"/>
+		<set name="price" val="3633"/>
 		<for>
-			<baseadd stat="mDef" val="15"/>
-			<baseadd stat="maxMp" val="100"/>
+			<baseadd stat="mDef" val="8"/>
+			<baseadd stat="maxMp" val="3"/>
 		</for>
 	</item>
 	<item id="6725" type="Armor" name="National Hero's Ring">
 		<set name="item_skill" val="5258-1" />
-		<set name="default_action" val="equip" />
-		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="material" val="GOLD" />
-		<set name="weight" val="150" />
-		<set name="price" val="50" />
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="material" val="GOLD"/>
+		<set name="weight" val="25"/>
+		<set name="price" val="3633"/>
 		<for>
-			<baseadd stat="mDef" val="15" />
-			<baseadd stat="maxMp" val="100" />
+			<baseadd stat="mDef" val="8"/>
+			<baseadd stat="maxMp" val="3"/>
 		</for>
 	</item>
 	<item id="6726" type="Armor" name="National Hero's Necklace">
@@ -322,11 +322,11 @@
 		<set name="default_action" val="equip"/>
 		<set name="bodypart" val="neck"/>
 		<set name="material" val="GOLD"/>
-		<set name="weight" val="150"/>
-		<set name="price" val="100"/>
+		<set name="weight" val="50"/>
+		<set name="price" val="7266"/>
 		<for>
-			<baseadd stat="mDef" val="30"/>
-			<baseadd stat="maxMp" val="200"/>
+			<baseadd stat="mDef" val="16"/>
+			<baseadd stat="maxMp" val="6"/>
 		</for>
 	</item>
 	<item id="6727" type="EtcItem" name="Seed: Alternative Great Coba">

@@ -328,11 +328,11 @@
 		<set name="default_action" val="equip"/>
 		<set name="bodypart" val="neck"/>
 		<set name="material" val="GOLD"/>
-		<set name="weight" val="150"/>
-		<set name="price" val="100"/>
+		<set name="weight" val="50"/>
+		<set name="price" val="7266"/>
 		<for>
-			<baseadd stat="mDef" val="30"/>
-			<baseadd stat="maxMp" val="200"/>
+			<baseadd stat="mDef" val="16"/>
+			<baseadd stat="maxMp" val="6"/>
 		</for>
 	</item>
 	<item id="6324" type="Armor" name="Twilight Earring">
@@ -340,23 +340,23 @@
 		<set name="default_action" val="equip"/>
 		<set name="bodypart" val="rear;lear"/>
 		<set name="material" val="GOLD"/>
-		<set name="weight" val="150"/>
-		<set name="price" val="50"/>
+		<set name="weight" val="25"/>
+		<set name="price" val="3633"/>
 		<for>
-			<baseadd stat="mDef" val="15"/>
-			<baseadd stat="maxMp" val="100"/>
+			<baseadd stat="mDef" val="8"/>
+			<baseadd stat="maxMp" val="3"/>
 		</for>
 	</item>
 	<item id="6325" type="Armor" name="Twilight Ring">
 		<set name="item_skill" val="5256-1" />
-		<set name="default_action" val="equip" />
-		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="material" val="GOLD" />
-		<set name="weight" val="150" />
-		<set name="price" val="50" />
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="material" val="GOLD"/>
+		<set name="weight" val="25"/>
+		<set name="price" val="3633"/>
 		<for>
-			<baseadd stat="mDef" val="15" />
-			<baseadd stat="maxMp" val="100" />
+			<baseadd stat="mDef" val="8"/>
+			<baseadd stat="maxMp" val="3"/>
 		</for>
 	</item>
 	<item id="6326" type="Armor" name="Seraph Necklace">
@@ -364,11 +364,11 @@
 		<set name="default_action" val="equip"/>
 		<set name="bodypart" val="neck"/>
 		<set name="material" val="GOLD"/>
-		<set name="weight" val="150"/>
-		<set name="price" val="100"/>
+		<set name="weight" val="50"/>
+		<set name="price" val="7266"/>
 		<for>
-			<baseadd stat="mDef" val="30"/>
-			<baseadd stat="maxMp" val="200"/>
+			<baseadd stat="mDef" val="16"/>
+			<baseadd stat="maxMp" val="6"/>
 		</for>
 	</item>
 	<item id="6327" type="Armor" name="Bound Seraph Earring">
@@ -376,23 +376,23 @@
 		<set name="default_action" val="equip"/>
 		<set name="bodypart" val="rear;lear"/>
 		<set name="material" val="GOLD"/>
-		<set name="weight" val="150"/>
-		<set name="price" val="50"/>
+		<set name="weight" val="25"/>
+		<set name="price" val="3633"/>
 		<for>
-			<baseadd stat="mDef" val="15"/>
-			<baseadd stat="maxMp" val="100"/>
+			<baseadd stat="mDef" val="8"/>
+			<baseadd stat="maxMp" val="3"/>
 		</for>
 	</item>
 	<item id="6328" type="Armor" name="Earth Wyrm Heart Ring">
 		<set name="item_skill" val="5257-1" />
-		<set name="default_action" val="equip" />
-		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="material" val="GOLD" />
-		<set name="weight" val="150" />
-		<set name="price" val="50" />
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="material" val="GOLD"/>
+		<set name="weight" val="25"/>
+		<set name="price" val="3633"/>
 		<for>
-			<baseadd stat="mDef" val="15" />
-			<baseadd stat="maxMp" val="100" />
+			<baseadd stat="mDef" val="8"/>
+			<baseadd stat="maxMp" val="3"/>
 		</for>
 	</item>
 	<item id="6329" type="EtcItem" name="Recipe: Sealed Phoenix Necklace(70%)">

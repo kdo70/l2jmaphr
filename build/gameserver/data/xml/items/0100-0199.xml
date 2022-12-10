@@ -197,11 +197,11 @@
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
-        <set name="weight" val="150"/>
-        <set name="price" val="50"/>
+        <set name="weight" val="25"/>
+        <set name="price" val="3633"/>
         <for>
-            <baseadd stat="mDef" val="15"/>
-            <baseadd stat="maxMp" val="100"/>
+            <baseadd stat="mDef" val="8"/>
+            <baseadd stat="maxMp" val="3"/>
         </for>
     </item>
     <item id="113" type="Armor" name="Mystic's Earring">
@@ -209,11 +209,11 @@
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
-        <set name="weight" val="150"/>
-        <set name="price" val="50"/>
+        <set name="weight" val="25"/>
+        <set name="price" val="3633"/>
         <for>
-            <baseadd stat="mDef" val="15"/>
-            <baseadd stat="maxMp" val="100"/>
+            <baseadd stat="mDef" val="8"/>
+            <baseadd stat="maxMp" val="3"/>
         </for>
     </item>
     <item id="114" type="Armor" name="Earring of Strength">
@@ -221,11 +221,11 @@
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
-        <set name="weight" val="150"/>
-        <set name="price" val="50"/>
+        <set name="weight" val="25"/>
+        <set name="price" val="3633"/>
         <for>
-            <baseadd stat="mDef" val="15"/>
-            <baseadd stat="maxMp" val="100"/>
+            <baseadd stat="mDef" val="8"/>
+            <baseadd stat="maxMp" val="3"/>
         </for>
     </item>
     <item id="115" type="Armor" name="Earring of Wisdom">
@@ -233,11 +233,11 @@
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
-        <set name="weight" val="150"/>
-        <set name="price" val="50"/>
+        <set name="weight" val="25"/>
+        <set name="price" val="3633"/>
         <for>
-            <baseadd stat="mDef" val="15"/>
-            <baseadd stat="maxMp" val="100"/>
+            <baseadd stat="mDef" val="8"/>
+            <baseadd stat="maxMp" val="3"/>
         </for>
     </item>
     <item id="116" type="Armor" name="Magic Ring">
@@ -245,11 +245,11 @@
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
-        <set name="weight" val="150"/>
-        <set name="price" val="50"/>
+        <set name="weight" val="25"/>
+        <set name="price" val="3633"/>
         <for>
-            <baseadd stat="mDef" val="15"/>
-            <baseadd stat="maxMp" val="100"/>
+            <baseadd stat="mDef" val="8"/>
+            <baseadd stat="maxMp" val="3"/>
         </for>
     </item>
     <item id="117" type="Armor" name="Ring of Mana">
@@ -257,11 +257,11 @@
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
-        <set name="weight" val="150"/>
-        <set name="price" val="50"/>
+        <set name="weight" val="25"/>
+        <set name="price" val="3633"/>
         <for>
-            <baseadd stat="mDef" val="15"/>
-            <baseadd stat="maxMp" val="100"/>
+            <baseadd stat="mDef" val="8"/>
+            <baseadd stat="maxMp" val="3"/>
         </for>
     </item>
     <item id="118" type="Armor" name="Necklace of Magic">
@@ -269,23 +269,23 @@
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
-        <set name="weight" val="150"/>
-        <set name="price" val="100"/>
+        <set name="weight" val="50"/>
+        <set name="price" val="7266"/>
         <for>
-            <baseadd stat="mDef" val="30"/>
-            <baseadd stat="maxMp" val="200"/>
+            <baseadd stat="mDef" val="16"/>
+            <baseadd stat="maxMp" val="6"/>
         </for>
     </item>
     <item id="119" type="Armor" name="Necklace of Binding">
-        <set name="item_skill" val="5222-1"/>
+        <set name="item_skill" val="5221-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
-        <set name="weight" val="150"/>
-        <set name="price" val="100"/>
+        <set name="weight" val="50"/>
+        <set name="price" val="7266"/>
         <for>
-            <baseadd stat="mDef" val="30"/>
-            <baseadd stat="maxMp" val="200"/>
+            <baseadd stat="mDef" val="16"/>
+            <baseadd stat="maxMp" val="6"/>
         </for>
     </item>
     <item id="120" type="Weapon" name="Sword of Reflection">
