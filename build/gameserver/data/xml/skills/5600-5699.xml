@@ -1,56 +1,536 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list>
-	<skill id="5605" levels="1" name="Power of Apella">
-		<set name="magicLvl" val="74"/>
-		<set name="power" val="80"/>
-		<set name="lvlDepend" val="1"/>
-		<set name="target" val="ONE"/>
-		<set name="reuseDelay" val="0"/>
-		<set name="hitTime" val="0"/>
-		<set name="skillType" val="ROOT" />
-		<set name="isDebuff" val="true" />
-		<set name="operateType" val="ACTIVE"/>
-		<set name="castRange" val="900"/>
-		<set name="effectRange" val="1350"/>
-		<for>
-			<effect name="Root" time="2" val="0" stackOrder="1" stackType="root_magically"/>
-		</for>
-	</skill>
-	<skill id="5607" levels="2" name="Power of Apella">
-		<set name="magicLvl" val="74" />
-		<set name="power" val="80" />
-		<set name="lvlDepend" val="1" />
-		<set name="target" val="ONE" />
-		<set name="reuseDelay" val="0" />
-		<set name="hitTime" val="0" />
-		<set name="skillType" val="DEBUFF" />
-		<set name="operateType" val="ACTIVE" />
-		<set name="isDebuff" val="true" />
-		<set name="castRange" val="600" />
-		<set name="effectRange" val="1100" />
-		<for>
-			<effect name="Debuff" time="2" val="0" stackOrder="3" stackType="attack_time_up">
-				<mul stat="pAtkSpd" val="0.77"/>
-			</effect>
-		</for>
-	</skill>
-	<skill id="5608" levels="2" name="Power of Apella">
-		<set name="magicLvl" val="74" />
-		<set name="power" val="80" />
-		<set name="lvlDepend" val="1" />
-		<set name="target" val="ONE" />
-		<set name="isMagic" val="true" />
-		<set name="reuseDelay" val="0" />
-		<set name="hitTime" val="0" />
-		<set name="skillType" val="DEBUFF" />
-		<set name="operateType" val="ACTIVE" />
-		<set name="isDebuff" val="true" />
-		<set name="castRange" val="600" />
-		<set name="effectRange" val="1100" />
-		<for>
-			<effect name="Debuff" time="2" val="0" stackOrder="3" stackType="attack_time_up">
-				<mul stat="pAtkSpd" val="0.77"/>
-			</effect>
-		</for>
-	</skill>
+    <skill id="5600" levels="1" name="Item SKill: Necklace of Binding RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5601" levels="1" name="Item SKill: Necklace of Knowledge RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5602" levels="1" name="Item SKill: Necklace of Anguish RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5603" levels="1" name="Item SKill: Necklace of Wisdom RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5604" levels="1" name="Item SKill: Blue Diamond Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5605" levels="1" name="Item SKill: Necklace of Devotion RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5606" levels="1" name="Item SKill: Enchanted Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5607" levels="1" name="Item SKill: Near Forest Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5608" levels="1" name="Item SKill: Elven Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5609" levels="1" name="Item SKill: Necklace of Darkness RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5610" levels="1" name="Item SKill: Aquastone Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5611" levels="1" name="Item SKill: Necklace of Protection RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5612" levels="1" name="Item SKill: Necklace of Mermaid RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5613" levels="1" name="Item SKill: Adamantite Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5614" levels="1" name="Item SKill: Blessed Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5615" levels="1" name="Item SKill: Tateossian Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5616" levels="1" name="Item SKill: Necklace of Mana RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5617" levels="1" name="Item SKill: Sage's Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5618" levels="1" name="Item SKill: Paradia Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5619" levels="1" name="Item SKill: Majestic Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5620" levels="1" name="Item SKill: Necklace of Solar Eclipse RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5621" levels="1" name="Item SKill: Necklace of Black Ore RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5622" levels="1" name="Item SKill: Necklace of Summoning RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5623" levels="1" name="Item SKill: Otherworldly Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5624" levels="1" name="Item SKill: Elemental Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5625" levels="1" name="Item SKill: Necklace of Phantom RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5626" levels="1" name="Item SKill: Necklace of Grace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5627" levels="1" name="Item SKill: Necklace of Holy Spirit RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5628" levels="1" name="Item SKill: Phoenix Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5629" levels="1" name="Item SKill: Cerberus Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5630" levels="1" name="Item SKill: Necklace of Aid RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5631" levels="1" name="Item SKill: Necklace of Blessing RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5632" levels="1" name="Item SKill: Necklace of Courage RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5633" levels="1" name="Item SKill: Necklace of Valor RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5634" levels="1" name="Item SKill: Twilight Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5635" levels="1" name="Item SKill: Seraph Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5636" levels="1" name="Item SKill: National Hero's Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5637" levels="1" name="Item SKill: Immortal Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5638" levels="1" name="Item SKill: Octavis' Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5639" levels="1" name="Item SKill: Istina's Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5640" levels="1" name="Item SKill: Eternal Necklace RARE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvpPhysDmg" val="1.05"/>
+            <mul stat="pvpMagicalDmg" val="1.05"/>
+            <mul stat="pvpPhysSkillsDmg" val="1.05"/>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+        </for>
+    </skill>
 </list>

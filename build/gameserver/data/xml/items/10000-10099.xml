@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list>
     <item id="10000" type="Armor" name="Ring of Black Ore">
-        <set name="item_skill" val="5243-8"/>
+        <set name="item_skill" val="5243-8;5411-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -16,7 +16,7 @@
         </for>
     </item>
     <item id="10001" type="Armor" name="Ring of Summoning">
-        <set name="item_skill" val="5244-8"/>
+        <set name="item_skill" val="5244-8;5412-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -31,7 +31,7 @@
         </for>
     </item>
     <item id="10002" type="Armor" name="Otherworldly Ring">
-        <set name="item_skill" val="5245-8"/>
+        <set name="item_skill" val="5245-8;5413-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -46,7 +46,7 @@
         </for>
     </item>
     <item id="10003" type="Armor" name="Elemental Ring">
-        <set name="item_skill" val="5246-8"/>
+        <set name="item_skill" val="5246-8;5414-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -61,7 +61,7 @@
         </for>
     </item>
     <item id="10004" type="Armor" name="Ring of Phantom">
-        <set name="item_skill" val="5247-8"/>
+        <set name="item_skill" val="5247-8;5415-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -76,7 +76,7 @@
         </for>
     </item>
     <item id="10005" type="Armor" name="Ring of Grace">
-        <set name="item_skill" val="5248-8"/>
+        <set name="item_skill" val="5248-8;5416-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -91,7 +91,7 @@
         </for>
     </item>
     <item id="10006" type="Armor" name="Ring of Holy Spirit">
-        <set name="item_skill" val="5249-8"/>
+        <set name="item_skill" val="5249-8;5417-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -106,7 +106,7 @@
         </for>
     </item>
     <item id="10007" type="Armor" name="Phoenix Ring">
-        <set name="item_skill" val="5250-8"/>
+        <set name="item_skill" val="5250-8;5418-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -121,7 +121,7 @@
         </for>
     </item>
     <item id="10008" type="Armor" name="Cerberus Ring">
-        <set name="item_skill" val="5251-8"/>
+        <set name="item_skill" val="5251-8;5419-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -136,7 +136,7 @@
         </for>
     </item>
     <item id="10009" type="Armor" name="Ring of Aid">
-        <set name="item_skill" val="5252-8"/>
+        <set name="item_skill" val="5252-8;5420-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -151,7 +151,7 @@
         </for>
     </item>
     <item id="10010" type="Armor" name="Ring of Blessing">
-        <set name="item_skill" val="5253-8"/>
+        <set name="item_skill" val="5253-8;5421-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -166,7 +166,7 @@
         </for>
     </item>
     <item id="10011" type="Armor" name="Ring of Raccoon">
-        <set name="item_skill" val="5254-8"/>
+        <set name="item_skill" val="5254-8;5422-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -181,7 +181,7 @@
         </for>
     </item>
     <item id="10012" type="Armor" name="Ring of Firefly">
-        <set name="item_skill" val="5255-8"/>
+        <set name="item_skill" val="5255-8;5423-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -196,7 +196,7 @@
         </for>
     </item>
     <item id="10013" type="Armor" name="Twilight Ring">
-        <set name="item_skill" val="5256-8"/>
+        <set name="item_skill" val="5256-8;5424-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -211,7 +211,7 @@
         </for>
     </item>
     <item id="10014" type="Armor" name="Earth Wyrm Heart Ring">
-        <set name="item_skill" val="5257-8"/>
+        <set name="item_skill" val="5257-8;5425-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -226,7 +226,7 @@
         </for>
     </item>
     <item id="10015" type="Armor" name="National Hero's Ring">
-        <set name="item_skill" val="5258-8"/>
+        <set name="item_skill" val="5258-8;5426-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -241,7 +241,7 @@
         </for>
     </item>
     <item id="10016" type="Armor" name="Immortal Ring">
-        <set name="item_skill" val="5259-8"/>
+        <set name="item_skill" val="5259-8;5427-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -256,7 +256,7 @@
         </for>
     </item>
     <item id="10017" type="Armor" name="Octavis' Ring">
-        <set name="item_skill" val="5260-8"/>
+        <set name="item_skill" val="5260-8;5428-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -271,7 +271,7 @@
         </for>
     </item>
     <item id="10018" type="Armor" name="Istina's Ring">
-        <set name="item_skill" val="5261-8"/>
+        <set name="item_skill" val="5261-8;5429-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -286,7 +286,7 @@
         </for>
     </item>
     <item id="10019" type="Armor" name="Eternal Ring">
-        <set name="item_skill" val="5262-8"/>
+        <set name="item_skill" val="5262-8;5430-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -301,7 +301,7 @@
         </for>
     </item>
     <item id="10020" type="Armor" name="Apprentice's Earring">
-        <set name="item_skill" val="5221-8"/>
+        <set name="item_skill" val="5221-8;5431-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -316,7 +316,7 @@
         </for>
     </item>
     <item id="10021" type="Armor" name="Mystic's Earring">
-        <set name="item_skill" val="5222-8"/>
+        <set name="item_skill" val="5222-8;5432-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -331,7 +331,7 @@
         </for>
     </item>
     <item id="10022" type="Armor" name="Earring of Strength">
-        <set name="item_skill" val="5223-8"/>
+        <set name="item_skill" val="5223-8;5433-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -346,7 +346,7 @@
         </for>
     </item>
     <item id="10023" type="Armor" name="Earring of Wisdom">
-        <set name="item_skill" val="5224-8"/>
+        <set name="item_skill" val="5224-8;5434-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -361,7 +361,7 @@
         </for>
     </item>
     <item id="10024" type="Armor" name="Cat's Eye Earring">
-        <set name="item_skill" val="5225-8"/>
+        <set name="item_skill" val="5225-8;5435-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -376,7 +376,7 @@
         </for>
     </item>
     <item id="10025" type="Armor" name="Coral Earring">
-        <set name="item_skill" val="5226-8"/>
+        <set name="item_skill" val="5226-8;5436-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -391,7 +391,7 @@
         </for>
     </item>
     <item id="10026" type="Armor" name="Red Crescent Earring">
-        <set name="item_skill" val="5227-8"/>
+        <set name="item_skill" val="5227-8;5437-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -406,7 +406,7 @@
         </for>
     </item>
     <item id="10027" type="Armor" name="Enchanted Earring">
-        <set name="item_skill" val="5228-8"/>
+        <set name="item_skill" val="5228-8;5438-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -421,7 +421,7 @@
         </for>
     </item>
     <item id="10028" type="Armor" name="Tiger's Eye Earring">
-        <set name="item_skill" val="5229-8"/>
+        <set name="item_skill" val="5229-8;5439-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -436,7 +436,7 @@
         </for>
     </item>
     <item id="10029" type="Armor" name="Elven Earring">
-        <set name="item_skill" val="5230-8"/>
+        <set name="item_skill" val="5230-8;5440-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -451,7 +451,7 @@
         </for>
     </item>
     <item id="10030" type="Armor" name="Omen Beast's Eye Earring">
-        <set name="item_skill" val="5231-8"/>
+        <set name="item_skill" val="5231-8;5441-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -466,7 +466,7 @@
         </for>
     </item>
     <item id="10031" type="Armor" name="Moonstone Earring">
-        <set name="item_skill" val="5232-8"/>
+        <set name="item_skill" val="5232-8;5442-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -481,7 +481,7 @@
         </for>
     </item>
     <item id="10032" type="Armor" name="Earring of Protection">
-        <set name="item_skill" val="5233-8"/>
+        <set name="item_skill" val="5233-8;5443-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -496,7 +496,7 @@
         </for>
     </item>
     <item id="10033" type="Armor" name="Earring of Binding">
-        <set name="item_skill" val="5234-8"/>
+        <set name="item_skill" val="5234-8;5444-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -511,7 +511,7 @@
         </for>
     </item>
     <item id="10034" type="Armor" name="Nassen's Earring">
-        <set name="item_skill" val="5235-8"/>
+        <set name="item_skill" val="5235-8;5445-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -526,7 +526,7 @@
         </for>
     </item>
     <item id="10035" type="Armor" name="Adamantite Earring">
-        <set name="item_skill" val="5236-8"/>
+        <set name="item_skill" val="5236-8;5446-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -541,7 +541,7 @@
         </for>
     </item>
     <item id="10036" type="Armor" name="Blessed Earring">
-        <set name="item_skill" val="5237-8"/>
+        <set name="item_skill" val="5237-8;5447-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -556,7 +556,7 @@
         </for>
     </item>
     <item id="10037" type="Armor" name="Tateossian Earring">
-        <set name="item_skill" val="5238-8"/>
+        <set name="item_skill" val="5238-8;5448-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -571,7 +571,7 @@
         </for>
     </item>
     <item id="10038" type="Armor" name="Earring of Mana">
-        <set name="item_skill" val="5239-8"/>
+        <set name="item_skill" val="5239-8;5449-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -586,7 +586,7 @@
         </for>
     </item>
     <item id="10039" type="Armor" name="Sage's Earring">
-        <set name="item_skill" val="5240-8"/>
+        <set name="item_skill" val="5240-8;5450-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -601,7 +601,7 @@
         </for>
     </item>
     <item id="10040" type="Armor" name="Paradia Earring">
-        <set name="item_skill" val="5241-8"/>
+        <set name="item_skill" val="5241-8;5451-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -616,7 +616,7 @@
         </for>
     </item>
     <item id="10041" type="Armor" name="Majestic Earring">
-        <set name="item_skill" val="5242-8"/>
+        <set name="item_skill" val="5242-8;5452-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -631,7 +631,7 @@
         </for>
     </item>
     <item id="10042" type="Armor" name="Earring of Solar Eclipse">
-        <set name="item_skill" val="5243-8"/>
+        <set name="item_skill" val="5243-8;5453-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -646,7 +646,7 @@
         </for>
     </item>
     <item id="10043" type="Armor" name="Earring of Black Ore">
-        <set name="item_skill" val="5244-8"/>
+        <set name="item_skill" val="5244-8;5454-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -661,7 +661,7 @@
         </for>
     </item>
     <item id="10044" type="Armor" name="Earring of Summoning">
-        <set name="item_skill" val="5245-8"/>
+        <set name="item_skill" val="5245-8;5455-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -676,7 +676,7 @@
         </for>
     </item>
     <item id="10045" type="Armor" name="Otherworldly Earring">
-        <set name="item_skill" val="5246-8"/>
+        <set name="item_skill" val="5246-8;5456-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -691,7 +691,7 @@
         </for>
     </item>
     <item id="10046" type="Armor" name="Elemental Earring">
-        <set name="item_skill" val="5247-8"/>
+        <set name="item_skill" val="5247-8;5457-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -706,7 +706,7 @@
         </for>
     </item>
     <item id="10047" type="Armor" name="Earring of Phantom">
-        <set name="item_skill" val="5248-8"/>
+        <set name="item_skill" val="5248-8;5458-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -721,7 +721,7 @@
         </for>
     </item>
     <item id="10048" type="Armor" name="Earring of Grace">
-        <set name="item_skill" val="5249-8"/>
+        <set name="item_skill" val="5249-8;5459-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -736,7 +736,7 @@
         </for>
     </item>
     <item id="10049" type="Armor" name="Earring of Holy Spirit">
-        <set name="item_skill" val="5250-8"/>
+        <set name="item_skill" val="5250-8;5460-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -751,7 +751,7 @@
         </for>
     </item>
     <item id="10050" type="Armor" name="Phoenix Earring">
-        <set name="item_skill" val="5251-8"/>
+        <set name="item_skill" val="5251-8;5461-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -766,7 +766,7 @@
         </for>
     </item>
     <item id="10051" type="Armor" name="Cerberus Earring">
-        <set name="item_skill" val="5252-8"/>
+        <set name="item_skill" val="5252-8;5462-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -781,7 +781,7 @@
         </for>
     </item>
     <item id="10052" type="Armor" name="Earring of Aid">
-        <set name="item_skill" val="5253-8"/>
+        <set name="item_skill" val="5253-8;5463-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -796,7 +796,7 @@
         </for>
     </item>
     <item id="10053" type="Armor" name="Earring of Blessing">
-        <set name="item_skill" val="5254-8"/>
+        <set name="item_skill" val="5254-8;5464-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -811,7 +811,7 @@
         </for>
     </item>
     <item id="10054" type="Armor" name="Twilight Earring">
-        <set name="item_skill" val="5255-8"/>
+        <set name="item_skill" val="5255-8;5465-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -826,7 +826,7 @@
         </for>
     </item>
     <item id="10055" type="Armor" name="Bound Seraph Earring">
-        <set name="item_skill" val="5256-8"/>
+        <set name="item_skill" val="5256-8;5466-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -841,7 +841,7 @@
         </for>
     </item>
     <item id="10056" type="Armor" name="National Hero's Earring">
-        <set name="item_skill" val="5257-8"/>
+        <set name="item_skill" val="5257-8;5467-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -856,7 +856,7 @@
         </for>
     </item>
     <item id="10057" type="Armor" name="Immortal Earring">
-        <set name="item_skill" val="5258-8"/>
+        <set name="item_skill" val="5258-8;5468-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -871,7 +871,7 @@
         </for>
     </item>
     <item id="10058" type="Armor" name="Octavis' Earring">
-        <set name="item_skill" val="5259-8"/>
+        <set name="item_skill" val="5259-8;5469-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -886,7 +886,7 @@
         </for>
     </item>
     <item id="10059" type="Armor" name="Istina's Earring">
-        <set name="item_skill" val="5260-8"/>
+        <set name="item_skill" val="5260-8;5470-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -901,7 +901,7 @@
         </for>
     </item>
     <item id="10060" type="Armor" name="Eternal Earring">
-        <set name="item_skill" val="5261-8"/>
+        <set name="item_skill" val="5261-8;5471-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -916,7 +916,7 @@
         </for>
     </item>
     <item id="10061" type="Armor" name="Guard Earring">
-        <set name="item_skill" val="5262-8"/>
+        <set name="item_skill" val="5262-8;5472-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -931,7 +931,7 @@
         </for>
     </item>
     <item id="10062" type="Armor" name="Necklace of Magic">
-        <set name="item_skill" val="5221-8"/>
+        <set name="item_skill" val="5221-8;5473-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -946,7 +946,7 @@
         </for>
     </item>
     <item id="10063" type="Armor" name="Necklace of Binding">
-        <set name="item_skill" val="5222-8"/>
+        <set name="item_skill" val="5222-8;5474-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -961,7 +961,7 @@
         </for>
     </item>
     <item id="10064" type="Armor" name="Necklace of Knowledge">
-        <set name="item_skill" val="5223-8"/>
+        <set name="item_skill" val="5223-8;5475-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -976,7 +976,7 @@
         </for>
     </item>
     <item id="10065" type="Armor" name="Necklace of Anguish">
-        <set name="item_skill" val="5224-8"/>
+        <set name="item_skill" val="5224-8;5476-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -991,7 +991,7 @@
         </for>
     </item>
     <item id="10066" type="Armor" name="Necklace of Wisdom">
-        <set name="item_skill" val="5225-8"/>
+        <set name="item_skill" val="5225-8;5477-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1006,7 +1006,7 @@
         </for>
     </item>
     <item id="10067" type="Armor" name="Blue Diamond Necklace">
-        <set name="item_skill" val="5226-8"/>
+        <set name="item_skill" val="5226-8;5478-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1021,7 +1021,7 @@
         </for>
     </item>
     <item id="10068" type="Armor" name="Necklace of Devotion">
-        <set name="item_skill" val="5227-8"/>
+        <set name="item_skill" val="5227-8;5479-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1036,7 +1036,7 @@
         </for>
     </item>
     <item id="10069" type="Armor" name="Enchanted Necklace">
-        <set name="item_skill" val="5228-8"/>
+        <set name="item_skill" val="5228-8;5480-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1051,7 +1051,7 @@
         </for>
     </item>
     <item id="10070" type="Armor" name="Near Forest Necklace">
-        <set name="item_skill" val="5229-8"/>
+        <set name="item_skill" val="5229-8;5481-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1066,7 +1066,7 @@
         </for>
     </item>
     <item id="10071" type="Armor" name="Elven Necklace">
-        <set name="item_skill" val="5230-8"/>
+        <set name="item_skill" val="5230-8;5482-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1081,7 +1081,7 @@
         </for>
     </item>
     <item id="10072" type="Armor" name="Necklace of Darkness">
-        <set name="item_skill" val="5231-8"/>
+        <set name="item_skill" val="5231-8;5483-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1096,7 +1096,7 @@
         </for>
     </item>
     <item id="10073" type="Armor" name="Aquastone Necklace">
-        <set name="item_skill" val="5232-8"/>
+        <set name="item_skill" val="5232-8;5484-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1111,7 +1111,7 @@
         </for>
     </item>
     <item id="10074" type="Armor" name="Necklace of Protection">
-        <set name="item_skill" val="5233-8"/>
+        <set name="item_skill" val="5233-8;5485-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1126,7 +1126,7 @@
         </for>
     </item>
     <item id="10075" type="Armor" name="Necklace of Mermaid">
-        <set name="item_skill" val="5234-8"/>
+        <set name="item_skill" val="5234-8;5486-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1141,7 +1141,7 @@
         </for>
     </item>
     <item id="10076" type="Armor" name="Adamantite Necklace">
-        <set name="item_skill" val="5235-8"/>
+        <set name="item_skill" val="5235-8;5487-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1156,7 +1156,7 @@
         </for>
     </item>
     <item id="10077" type="Armor" name="Blessed Necklace">
-        <set name="item_skill" val="5236-8"/>
+        <set name="item_skill" val="5236-8;5488-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1171,7 +1171,7 @@
         </for>
     </item>
     <item id="10078" type="Armor" name="Tateossian Necklace">
-        <set name="item_skill" val="5237-8"/>
+        <set name="item_skill" val="5237-8;5489-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1186,7 +1186,7 @@
         </for>
     </item>
     <item id="10079" type="Armor" name="Necklace of Mana">
-        <set name="item_skill" val="5238-8"/>
+        <set name="item_skill" val="5238-8;5490-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1201,7 +1201,7 @@
         </for>
     </item>
     <item id="10080" type="Armor" name="Sage's Necklace">
-        <set name="item_skill" val="5239-8"/>
+        <set name="item_skill" val="5239-8;5491-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1216,7 +1216,7 @@
         </for>
     </item>
     <item id="10081" type="Armor" name="Paradia Necklace">
-        <set name="item_skill" val="5240-8"/>
+        <set name="item_skill" val="5240-8;5492-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1231,7 +1231,7 @@
         </for>
     </item>
     <item id="10082" type="Armor" name="Majestic Necklace">
-        <set name="item_skill" val="5241-8"/>
+        <set name="item_skill" val="5241-8;5493-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1246,7 +1246,7 @@
         </for>
     </item>
     <item id="10083" type="Armor" name="Necklace of Solar Eclipse">
-        <set name="item_skill" val="5242-8"/>
+        <set name="item_skill" val="5242-8;5494-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1261,7 +1261,7 @@
         </for>
     </item>
     <item id="10084" type="Armor" name="Necklace of Black Ore">
-        <set name="item_skill" val="5243-8"/>
+        <set name="item_skill" val="5243-8;5495-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1276,7 +1276,7 @@
         </for>
     </item>
     <item id="10085" type="Armor" name="Necklace of Summoning">
-        <set name="item_skill" val="5244-8"/>
+        <set name="item_skill" val="5244-8;5496-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1291,7 +1291,7 @@
         </for>
     </item>
     <item id="10086" type="Armor" name="Otherworldly Necklace">
-        <set name="item_skill" val="5245-8"/>
+        <set name="item_skill" val="5245-8;5497-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1306,7 +1306,7 @@
         </for>
     </item>
     <item id="10087" type="Armor" name="Elemental Necklace">
-        <set name="item_skill" val="5246-8"/>
+        <set name="item_skill" val="5246-8;5498-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1321,7 +1321,7 @@
         </for>
     </item>
     <item id="10088" type="Armor" name="Necklace of Phantom">
-        <set name="item_skill" val="5247-8"/>
+        <set name="item_skill" val="5247-8;5499-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1336,7 +1336,7 @@
         </for>
     </item>
     <item id="10089" type="Armor" name="Necklace of Grace">
-        <set name="item_skill" val="5248-8"/>
+        <set name="item_skill" val="5248-8;5500-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1351,7 +1351,7 @@
         </for>
     </item>
     <item id="10090" type="Armor" name="Necklace of Holy Spirit">
-        <set name="item_skill" val="5249-8"/>
+        <set name="item_skill" val="5249-8;5501-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1366,7 +1366,7 @@
         </for>
     </item>
     <item id="10091" type="Armor" name="Phoenix Necklace">
-        <set name="item_skill" val="5250-8"/>
+        <set name="item_skill" val="5250-8;5502-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1381,7 +1381,7 @@
         </for>
     </item>
     <item id="10092" type="Armor" name="Cerberus Necklace">
-        <set name="item_skill" val="5251-8"/>
+        <set name="item_skill" val="5251-8;5503-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1396,7 +1396,7 @@
         </for>
     </item>
     <item id="10093" type="Armor" name="Necklace of Aid">
-        <set name="item_skill" val="5252-8"/>
+        <set name="item_skill" val="5252-8;5504-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1411,7 +1411,7 @@
         </for>
     </item>
     <item id="10094" type="Armor" name="Necklace of Blessing">
-        <set name="item_skill" val="5253-8"/>
+        <set name="item_skill" val="5253-8;5505-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1426,7 +1426,7 @@
         </for>
     </item>
     <item id="10095" type="Armor" name="Necklace of Courage">
-        <set name="item_skill" val="5254-8"/>
+        <set name="item_skill" val="5254-8;5506-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1441,7 +1441,7 @@
         </for>
     </item>
     <item id="10096" type="Armor" name="Necklace of Valor">
-        <set name="item_skill" val="5255-8"/>
+        <set name="item_skill" val="5255-8;5507-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1456,7 +1456,7 @@
         </for>
     </item>
     <item id="10097" type="Armor" name="Twilight Necklace">
-        <set name="item_skill" val="5256-8"/>
+        <set name="item_skill" val="5256-8;5508-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1471,7 +1471,7 @@
         </for>
     </item>
     <item id="10098" type="Armor" name="Seraph Necklace">
-        <set name="item_skill" val="5257-8"/>
+        <set name="item_skill" val="5257-8;5509-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>
@@ -1486,7 +1486,7 @@
         </for>
     </item>
     <item id="10099" type="Armor" name="National Hero's Necklace">
-        <set name="item_skill" val="5258-8"/>
+        <set name="item_skill" val="5258-8;5510-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="neck"/>
         <set name="material" val="GOLD"/>

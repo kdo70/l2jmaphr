@@ -324,7 +324,6 @@
             <effect count="5" name="Fear" time="1" val="0" stackOrder="1" stackType="turn_flee"/>
         </for>
     </skill>
-    <!-- Effects of Jewelry -->
     <skill id="5221" levels="10" name="Jewelry: Blessed Body">
         <table name="#power">1.03 1.06 1.09 1.12 1.15 1.18 1.18 1.18 1.23 1.23</table>
         <set name="target" val="SELF"/>
@@ -701,6 +700,376 @@
         <set name="operateType" val="PASSIVE"/>
         <for>
             <mul stat="enchantArmor" val="#power"/>
+        </for>
+    </skill>
+    <skill id="5263" levels="1" name="Item SKill: Magic Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5264" levels="1" name="Item SKill: Ring of Mana PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5265" levels="1" name="Item SKill: Ring of Knowledge PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5266" levels="1" name="Item SKill: Ring of Anguish PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5267" levels="1" name="Item SKill: Ring of Wisdom PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5268" levels="1" name="Item SKill: Blue Coral Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5269" levels="1" name="Item SKill: Enchanted Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5270" levels="1" name="Item SKill: Black Pearl Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5271" levels="1" name="Item SKill: Elven Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5272" levels="1" name="Item SKill: Mithril Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5273" levels="1" name="Item SKill: Aquastone Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5274" levels="1" name="Item SKill: Ring of Protection PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5275" levels="1" name="Item SKill: Ring of Ages PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5276" levels="1" name="Item SKill: Ring of Binding PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5277" levels="1" name="Item SKill: Adamantite Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5278" levels="1" name="Item SKill: Blessed Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5279" levels="1" name="Item SKill: Tateossian Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5280" levels="1" name="Item SKill: Ring of Devotion PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5281" levels="1" name="Item SKill: Sage's Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5282" levels="1" name="Item SKill: Paradia Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5283" levels="1" name="Item SKill: Majestic Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5284" levels="1" name="Item SKill: Ring of Solar Eclipse PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5285" levels="1" name="Item SKill: Ring of Black Ore PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5286" levels="1" name="Item SKill: Ring of Summoning PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5287" levels="1" name="Item SKill: Otherworldly Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5288" levels="1" name="Item SKill: Elemental Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5289" levels="1" name="Item SKill: Ring of Phantom PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5290" levels="1" name="Item SKill: Ring of Grace PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5291" levels="1" name="Item SKill: Ring of Holy Spirit PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5292" levels="1" name="Item SKill: Phoenix Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5293" levels="1" name="Item SKill: Cerberus Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5294" levels="1" name="Item SKill: Ring of Aid PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5295" levels="1" name="Item SKill: Ring of Blessing PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5296" levels="1" name="Item SKill: Ring of Raccoon PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5297" levels="1" name="Item SKill: Ring of Firefly PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5298" levels="1" name="Item SKill: Twilight Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="5299" levels="1" name="Item SKill: Earth Wyrm Heart Ring PVE">
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="PASSIVE"/>
+        <for>
+            <mul stat="pvePhysDmg" val="1.10"/>
+            <mul stat="pvePhysSkillsDmg" val="1.10"/>
+            <mul stat="pveMagicalDmg" val="1.10"/>
         </for>
     </skill>
 </list>

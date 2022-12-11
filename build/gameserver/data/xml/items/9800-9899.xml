@@ -781,7 +781,7 @@
         </for>
     </item>
     <item id="9852" type="Armor" name="Magic Ring">
-        <set name="item_skill" val="5221-7"/>
+        <set name="item_skill" val="5221-7;5263-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -796,7 +796,7 @@
         </for>
     </item>
     <item id="9853" type="Armor" name="Ring of Mana">
-        <set name="item_skill" val="5222-7"/>
+        <set name="item_skill" val="5222-7;5264-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -811,7 +811,7 @@
         </for>
     </item>
     <item id="9854" type="Armor" name="Ring of Knowledge">
-        <set name="item_skill" val="5223-7"/>
+        <set name="item_skill" val="5223-7;5265-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -826,7 +826,7 @@
         </for>
     </item>
     <item id="9855" type="Armor" name="Ring of Anguish">
-        <set name="item_skill" val="5224-7"/>
+        <set name="item_skill" val="5224-7;5266-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -841,7 +841,7 @@
         </for>
     </item>
     <item id="9856" type="Armor" name="Ring of Wisdom">
-        <set name="item_skill" val="5225-7"/>
+        <set name="item_skill" val="5225-7;5267-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -856,7 +856,7 @@
         </for>
     </item>
     <item id="9857" type="Armor" name="Blue Coral Ring">
-        <set name="item_skill" val="5226-7"/>
+        <set name="item_skill" val="5226-7;5268-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -871,7 +871,7 @@
         </for>
     </item>
     <item id="9858" type="Armor" name="Enchanted Ring">
-        <set name="item_skill" val="5227-7"/>
+        <set name="item_skill" val="5227-7;5269-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -886,7 +886,7 @@
         </for>
     </item>
     <item id="9859" type="Armor" name="Black Pearl Ring">
-        <set name="item_skill" val="5228-7"/>
+        <set name="item_skill" val="5228-7;5270-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -901,7 +901,7 @@
         </for>
     </item>
     <item id="9860" type="Armor" name="Elven Ring">
-        <set name="item_skill" val="5229-7"/>
+        <set name="item_skill" val="5229-7;5271-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -916,7 +916,7 @@
         </for>
     </item>
     <item id="9861" type="Armor" name="Mithril Ring">
-        <set name="item_skill" val="5230-7"/>
+        <set name="item_skill" val="5230-7;5272-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -931,7 +931,7 @@
         </for>
     </item>
     <item id="9862" type="Armor" name="Aquastone Ring">
-        <set name="item_skill" val="5231-7"/>
+        <set name="item_skill" val="5231-7;5273-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -946,7 +946,7 @@
         </for>
     </item>
     <item id="9863" type="Armor" name="Ring of Protection">
-        <set name="item_skill" val="5232-7"/>
+        <set name="item_skill" val="5232-7;5274-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -961,7 +961,7 @@
         </for>
     </item>
     <item id="9864" type="Armor" name="Ring of Ages">
-        <set name="item_skill" val="5233-7"/>
+        <set name="item_skill" val="5233-7;5275-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -976,7 +976,7 @@
         </for>
     </item>
     <item id="9865" type="Armor" name="Ring of Binding">
-        <set name="item_skill" val="5234-7"/>
+        <set name="item_skill" val="5234-7;5276-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -991,7 +991,7 @@
         </for>
     </item>
     <item id="9866" type="Armor" name="Adamantite Ring">
-        <set name="item_skill" val="5235-7"/>
+        <set name="item_skill" val="5235-7;5277-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1006,7 +1006,7 @@
         </for>
     </item>
     <item id="9867" type="Armor" name="Blessed Ring">
-        <set name="item_skill" val="5236-7"/>
+        <set name="item_skill" val="5236-7;5278-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1021,7 +1021,7 @@
         </for>
     </item>
     <item id="9868" type="Armor" name="Tateossian Ring">
-        <set name="item_skill" val="5237-7"/>
+        <set name="item_skill" val="5237-7;5279-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1036,7 +1036,7 @@
         </for>
     </item>
     <item id="9869" type="Armor" name="Ring of Devotion">
-        <set name="item_skill" val="5238-7"/>
+        <set name="item_skill" val="5238-7;5280-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1051,7 +1051,7 @@
         </for>
     </item>
     <item id="9870" type="Armor" name="Sage's Ring">
-        <set name="item_skill" val="5239-7"/>
+        <set name="item_skill" val="5239-7;5281-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1066,7 +1066,7 @@
         </for>
     </item>
     <item id="9871" type="Armor" name="Paradia Ring">
-        <set name="item_skill" val="5240-7"/>
+        <set name="item_skill" val="5240-7;5282-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1081,7 +1081,7 @@
         </for>
     </item>
     <item id="9872" type="Armor" name="Majestic Ring">
-        <set name="item_skill" val="5241-7"/>
+        <set name="item_skill" val="5241-7;5283-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1096,7 +1096,7 @@
         </for>
     </item>
     <item id="9873" type="Armor" name="Ring of Solar Eclipse">
-        <set name="item_skill" val="5242-7"/>
+        <set name="item_skill" val="5242-7;5284-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1111,7 +1111,7 @@
         </for>
     </item>
     <item id="9874" type="Armor" name="Ring of Black Ore">
-        <set name="item_skill" val="5243-7"/>
+        <set name="item_skill" val="5243-7;5285-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1126,7 +1126,7 @@
         </for>
     </item>
     <item id="9875" type="Armor" name="Ring of Summoning">
-        <set name="item_skill" val="5244-7"/>
+        <set name="item_skill" val="5244-7;5286-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1141,7 +1141,7 @@
         </for>
     </item>
     <item id="9876" type="Armor" name="Otherworldly Ring">
-        <set name="item_skill" val="5245-7"/>
+        <set name="item_skill" val="5245-7;5287-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1156,7 +1156,7 @@
         </for>
     </item>
     <item id="9877" type="Armor" name="Elemental Ring">
-        <set name="item_skill" val="5246-7"/>
+        <set name="item_skill" val="5246-7;5288-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1171,7 +1171,7 @@
         </for>
     </item>
     <item id="9878" type="Armor" name="Ring of Phantom">
-        <set name="item_skill" val="5247-7"/>
+        <set name="item_skill" val="5247-7;5289-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1186,7 +1186,7 @@
         </for>
     </item>
     <item id="9879" type="Armor" name="Ring of Grace">
-        <set name="item_skill" val="5248-7"/>
+        <set name="item_skill" val="5248-7;5290-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1201,7 +1201,7 @@
         </for>
     </item>
     <item id="9880" type="Armor" name="Ring of Holy Spirit">
-        <set name="item_skill" val="5249-7"/>
+        <set name="item_skill" val="5249-7;5291-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1216,7 +1216,7 @@
         </for>
     </item>
     <item id="9881" type="Armor" name="Phoenix Ring">
-        <set name="item_skill" val="5250-7"/>
+        <set name="item_skill" val="5250-7;5292-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1231,7 +1231,7 @@
         </for>
     </item>
     <item id="9882" type="Armor" name="Cerberus Ring">
-        <set name="item_skill" val="5251-7"/>
+        <set name="item_skill" val="5251-7;5293-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1246,7 +1246,7 @@
         </for>
     </item>
     <item id="9883" type="Armor" name="Ring of Aid">
-        <set name="item_skill" val="5252-7"/>
+        <set name="item_skill" val="5252-7;5294-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1261,7 +1261,7 @@
         </for>
     </item>
     <item id="9884" type="Armor" name="Ring of Blessing">
-        <set name="item_skill" val="5253-7"/>
+        <set name="item_skill" val="5253-7;5295-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1276,7 +1276,7 @@
         </for>
     </item>
     <item id="9885" type="Armor" name="Ring of Raccoon">
-        <set name="item_skill" val="5254-7"/>
+        <set name="item_skill" val="5254-7;5296-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1291,7 +1291,7 @@
         </for>
     </item>
     <item id="9886" type="Armor" name="Ring of Firefly">
-        <set name="item_skill" val="5255-7"/>
+        <set name="item_skill" val="5255-7;5297-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1306,7 +1306,7 @@
         </for>
     </item>
     <item id="9887" type="Armor" name="Twilight Ring">
-        <set name="item_skill" val="5256-7"/>
+        <set name="item_skill" val="5256-7;5298-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1321,7 +1321,7 @@
         </for>
     </item>
     <item id="9888" type="Armor" name="Earth Wyrm Heart Ring">
-        <set name="item_skill" val="5257-7"/>
+        <set name="item_skill" val="5257-7;5299-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1336,7 +1336,7 @@
         </for>
     </item>
     <item id="9889" type="Armor" name="National Hero's Ring">
-        <set name="item_skill" val="5258-7"/>
+        <set name="item_skill" val="5258-7;5300-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1351,7 +1351,7 @@
         </for>
     </item>
     <item id="9890" type="Armor" name="Immortal Ring">
-        <set name="item_skill" val="5259-7"/>
+        <set name="item_skill" val="5259-7;5301-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1366,7 +1366,7 @@
         </for>
     </item>
     <item id="9891" type="Armor" name="Octavis' Ring">
-        <set name="item_skill" val="5260-7"/>
+        <set name="item_skill" val="5260-7;5302-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1381,7 +1381,7 @@
         </for>
     </item>
     <item id="9892" type="Armor" name="Istina's Ring">
-        <set name="item_skill" val="5261-7"/>
+        <set name="item_skill" val="5261-7;5303-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1396,7 +1396,7 @@
         </for>
     </item>
     <item id="9893" type="Armor" name="Eternal Ring">
-        <set name="item_skill" val="5262-7"/>
+        <set name="item_skill" val="5262-7;5304-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rfinger;lfinger"/>
         <set name="material" val="GOLD"/>
@@ -1411,7 +1411,7 @@
         </for>
     </item>
     <item id="9894" type="Armor" name="Apprentice's Earring">
-        <set name="item_skill" val="5221-7"/>
+        <set name="item_skill" val="5221-7;5305-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -1426,7 +1426,7 @@
         </for>
     </item>
     <item id="9895" type="Armor" name="Mystic's Earring">
-        <set name="item_skill" val="5222-7"/>
+        <set name="item_skill" val="5222-7;5306-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -1441,7 +1441,7 @@
         </for>
     </item>
     <item id="9896" type="Armor" name="Earring of Strength">
-        <set name="item_skill" val="5223-7"/>
+        <set name="item_skill" val="5223-7;5307-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -1456,7 +1456,7 @@
         </for>
     </item>
     <item id="9897" type="Armor" name="Earring of Wisdom">
-        <set name="item_skill" val="5224-7"/>
+        <set name="item_skill" val="5224-7;5308-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -1471,7 +1471,7 @@
         </for>
     </item>
     <item id="9898" type="Armor" name="Cat's Eye Earring">
-        <set name="item_skill" val="5225-7"/>
+        <set name="item_skill" val="5225-7;5309-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
@@ -1486,7 +1486,7 @@
         </for>
     </item>
     <item id="9899" type="Armor" name="Coral Earring">
-        <set name="item_skill" val="5226-7"/>
+        <set name="item_skill" val="5226-7;5310-1"/>
         <set name="default_action" val="equip"/>
         <set name="bodypart" val="rear;lear"/>
         <set name="material" val="GOLD"/>
