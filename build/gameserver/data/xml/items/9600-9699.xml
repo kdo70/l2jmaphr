@@ -12,6 +12,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9601" type="Armor" name="Ring of Mana">
@@ -26,6 +27,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9602" type="Armor" name="Ring of Knowledge">
@@ -40,6 +42,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9603" type="Armor" name="Ring of Anguish">
@@ -54,6 +57,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9604" type="Armor" name="Ring of Wisdom">
@@ -68,6 +72,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9605" type="Armor" name="Blue Coral Ring">
@@ -82,6 +87,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9606" type="Armor" name="Enchanted Ring">
@@ -96,6 +102,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9607" type="Armor" name="Black Pearl Ring">
@@ -110,6 +117,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9608" type="Armor" name="Elven Ring">
@@ -124,6 +132,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9609" type="Armor" name="Mithril Ring">
@@ -138,6 +147,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9610" type="Armor" name="Aquastone Ring">
@@ -152,6 +162,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9611" type="Armor" name="Ring of Protection">
@@ -166,6 +177,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9612" type="Armor" name="Ring of Ages">
@@ -180,6 +192,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9613" type="Armor" name="Ring of Binding">
@@ -194,6 +207,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9614" type="Armor" name="Adamantite Ring">
@@ -208,6 +222,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9615" type="Armor" name="Blessed Ring">
@@ -222,6 +237,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9616" type="Armor" name="Tateossian Ring">
@@ -236,6 +252,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9617" type="Armor" name="Ring of Devotion">
@@ -250,6 +267,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9618" type="Armor" name="Sage's Ring">
@@ -264,6 +282,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9619" type="Armor" name="Paradia Ring">
@@ -278,6 +297,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9620" type="Armor" name="Majestic Ring">
@@ -292,6 +312,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9621" type="Armor" name="Ring of Solar Eclipse">
@@ -306,6 +327,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9622" type="Armor" name="Ring of Black Ore">
@@ -320,6 +342,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9623" type="Armor" name="Ring of Summoning">
@@ -334,6 +357,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9624" type="Armor" name="Otherworldly Ring">
@@ -348,6 +372,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9625" type="Armor" name="Elemental Ring">
@@ -362,6 +387,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9626" type="Armor" name="Ring of Phantom">
@@ -376,6 +402,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9627" type="Armor" name="Ring of Grace">
@@ -390,6 +417,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9628" type="Armor" name="Ring of Holy Spirit">
@@ -404,6 +432,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9629" type="Armor" name="Phoenix Ring">
@@ -418,6 +447,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9630" type="Armor" name="Cerberus Ring">
@@ -432,6 +462,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9631" type="Armor" name="Ring of Aid">
@@ -446,6 +477,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9632" type="Armor" name="Ring of Blessing">
@@ -460,6 +492,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9633" type="Armor" name="Ring of Raccoon">
@@ -474,6 +507,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9634" type="Armor" name="Ring of Firefly">
@@ -488,6 +522,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9635" type="Armor" name="Twilight Ring">
@@ -502,6 +537,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9636" type="Armor" name="Earth Wyrm Heart Ring">
@@ -516,6 +552,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9637" type="Armor" name="National Hero's Ring">
@@ -530,6 +567,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9638" type="Armor" name="Immortal Ring">
@@ -544,6 +582,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9639" type="Armor" name="Octavis' Ring">
@@ -558,6 +597,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9640" type="Armor" name="Istina's Ring">
@@ -572,6 +612,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9641" type="Armor" name="Eternal Ring">
@@ -586,6 +627,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9642" type="Armor" name="Apprentice's Earring">
@@ -600,6 +642,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9643" type="Armor" name="Mystic's Earring">
@@ -614,6 +657,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9644" type="Armor" name="Earring of Strength">
@@ -628,6 +672,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9645" type="Armor" name="Earring of Wisdom">
@@ -642,6 +687,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9646" type="Armor" name="Cat's Eye Earring">
@@ -656,6 +702,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9647" type="Armor" name="Coral Earring">
@@ -670,6 +717,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9648" type="Armor" name="Red Crescent Earring">
@@ -684,6 +732,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9649" type="Armor" name="Enchanted Earring">
@@ -698,6 +747,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9650" type="Armor" name="Tiger's Eye Earring">
@@ -712,6 +762,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9651" type="Armor" name="Elven Earring">
@@ -726,6 +777,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9652" type="Armor" name="Omen Beast's Eye Earring">
@@ -740,6 +792,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9653" type="Armor" name="Moonstone Earring">
@@ -754,6 +807,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9654" type="Armor" name="Earring of Protection">
@@ -768,6 +822,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9655" type="Armor" name="Earring of Binding">
@@ -782,6 +837,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9656" type="Armor" name="Nassen's Earring">
@@ -796,6 +852,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9657" type="Armor" name="Adamantite Earring">
@@ -810,6 +867,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9658" type="Armor" name="Blessed Earring">
@@ -824,6 +882,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9659" type="Armor" name="Tateossian Earring">
@@ -838,6 +897,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9660" type="Armor" name="Earring of Mana">
@@ -852,6 +912,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9661" type="Armor" name="Sage's Earring">
@@ -866,6 +927,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9662" type="Armor" name="Paradia Earring">
@@ -880,6 +942,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9663" type="Armor" name="Majestic Earring">
@@ -894,6 +957,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9664" type="Armor" name="Earring of Solar Eclipse">
@@ -908,6 +972,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9665" type="Armor" name="Earring of Black Ore">
@@ -922,6 +987,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9666" type="Armor" name="Earring of Summoning">
@@ -936,6 +1002,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9667" type="Armor" name="Otherworldly Earring">
@@ -950,6 +1017,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9668" type="Armor" name="Elemental Earring">
@@ -964,6 +1032,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9669" type="Armor" name="Earring of Phantom">
@@ -978,6 +1047,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9670" type="Armor" name="Earring of Grace">
@@ -992,6 +1062,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9671" type="Armor" name="Earring of Holy Spirit">
@@ -1006,6 +1077,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9672" type="Armor" name="Phoenix Earring">
@@ -1020,6 +1092,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9673" type="Armor" name="Cerberus Earring">
@@ -1034,6 +1107,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9674" type="Armor" name="Earring of Aid">
@@ -1048,6 +1122,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9675" type="Armor" name="Earring of Blessing">
@@ -1062,6 +1137,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9676" type="Armor" name="Twilight Earring">
@@ -1076,6 +1152,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9677" type="Armor" name="Bound Seraph Earring">
@@ -1090,6 +1167,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9678" type="Armor" name="National Hero's Earring">
@@ -1104,6 +1182,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9679" type="Armor" name="Immortal Earring">
@@ -1118,6 +1197,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9680" type="Armor" name="Octavis' Earring">
@@ -1132,6 +1212,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9681" type="Armor" name="Istina's Earring">
@@ -1146,6 +1227,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9682" type="Armor" name="Eternal Earring">
@@ -1160,6 +1242,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9683" type="Armor" name="Guard Earring">
@@ -1174,6 +1257,7 @@
         <for>
             <baseadd stat="mDef" val="40"/>
             <baseadd stat="maxMp" val="15"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9684" type="Armor" name="Necklace of Magic">
@@ -1188,6 +1272,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9685" type="Armor" name="Necklace of Binding">
@@ -1202,6 +1287,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9686" type="Armor" name="Necklace of Knowledge">
@@ -1216,6 +1302,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9687" type="Armor" name="Necklace of Anguish">
@@ -1230,6 +1317,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9688" type="Armor" name="Necklace of Wisdom">
@@ -1244,6 +1332,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9689" type="Armor" name="Blue Diamond Necklace">
@@ -1258,6 +1347,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9690" type="Armor" name="Necklace of Devotion">
@@ -1272,6 +1362,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9691" type="Armor" name="Enchanted Necklace">
@@ -1286,6 +1377,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9692" type="Armor" name="Near Forest Necklace">
@@ -1300,6 +1392,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9693" type="Armor" name="Elven Necklace">
@@ -1314,6 +1407,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9694" type="Armor" name="Necklace of Darkness">
@@ -1328,6 +1422,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9695" type="Armor" name="Aquastone Necklace">
@@ -1342,6 +1437,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9696" type="Armor" name="Necklace of Protection">
@@ -1356,6 +1452,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9697" type="Armor" name="Necklace of Mermaid">
@@ -1370,6 +1467,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9698" type="Armor" name="Adamantite Necklace">
@@ -1384,6 +1482,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
     <item id="9699" type="Armor" name="Blessed Necklace">
@@ -1398,6 +1497,7 @@
         <for>
             <baseadd stat="mDef" val="80"/>
             <baseadd stat="maxMp" val="30"/>
+            <enchant stat="mDef" val="0"/>
         </for>
     </item>
 </list>

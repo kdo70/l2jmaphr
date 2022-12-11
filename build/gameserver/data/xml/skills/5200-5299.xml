@@ -326,7 +326,7 @@
     </skill>
     <!-- Effects of Jewelry -->
     <skill id="5221" levels="10" name="Jewelry: Blessed Body">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.03 1.06 1.09 1.12 1.15 1.18 1.18 1.18 1.23 1.23</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -335,7 +335,7 @@
         </for>
     </skill>
     <skill id="5222" levels="10" name="Jewelry: Blessed Soul">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.03 1.06 1.09 1.12 1.15 1.18 1.18 1.18 1.23 1.23</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -344,7 +344,7 @@
         </for>
     </skill>
     <skill id="5223" levels="10" name="Jewelry: Victory of War">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.03 1.06 1.09 1.12 1.15 1.18 1.18 1.18 1.23 1.23</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -353,7 +353,7 @@
         </for>
     </skill>
     <skill id="5224" levels="10" name="Jewelry: Regeneration">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.03 1.06 1.09 1.12 1.15 1.18 1.18 1.18 1.23 1.23</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -362,7 +362,7 @@
         </for>
     </skill>
     <skill id="5225" levels="10" name="Jewelry: Combat Regeneration">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.03 1.06 1.09 1.12 1.15 1.18 1.18 1.18 1.23 1.23</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -371,7 +371,7 @@
         </for>
     </skill>
     <skill id="5226" levels="10" name="Jewelry: Mana Regeneration">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.03 1.06 1.09 1.12 1.15 1.18 1.18 1.18 1.23 1.23</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -380,7 +380,7 @@
         </for>
     </skill>
     <skill id="5227" levels="10" name="Jewelry: Recovery Efficiency">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.03 1.06 1.09 1.12 1.15 1.18 1.18 1.18 1.23 1.23</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -389,7 +389,7 @@
         </for>
     </skill>
     <skill id="5228" levels="10" name="Jewelry: Shield">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.15 1.15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -398,7 +398,7 @@
         </for>
     </skill>
     <skill id="5229" levels="10" name="Jewelry: Magic Barrier">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">1.04 1.08 1.12 1.16 1.20 1.24 1.24 1.24 1.30 1.30</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -407,7 +407,7 @@
         </for>
     </skill>
     <skill id="5230" levels="10" name="Jewelry: Might">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.15 1.15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -416,7 +416,7 @@
         </for>
     </skill>
     <skill id="5231" levels="10" name="Jewelry: Empower">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">1.04 1.08 1.12 1.16 1.20 1.24 1.24 1.24 1.30 1.30</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -425,7 +425,7 @@
         </for>
     </skill>
     <skill id="5232" levels="10" name="Jewelry: Haste">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">1.01 1.02 1.03 1.04 1.05 1.06 1.06 1.06 1.08 1.08</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -434,7 +434,7 @@
         </for>
     </skill>
     <skill id="5233" levels="10" name="Jewelry: Acumen">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">1.01 1.02 1.03 1.04 1.05 1.06 1.06 1.06 1.08 1.08</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -443,7 +443,7 @@
         </for>
     </skill>
     <skill id="5234" levels="10" name="Jewelry: Spell Refresh">
-        <table name="#power">0.98 0.96 0.94 0.92 0.90 0.88 0.88 0.88 0.88 0.88</table>
+        <table name="#power">0.98 0.96 0.94 0.92 0.90 0.88 0.88 0.88 0.85 0.85</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -452,7 +452,7 @@
         </for>
     </skill>
     <skill id="5235" levels="10" name="Jewelry: Refresh">
-        <table name="#power">0.98 0.96 0.94 0.92 0.90 0.88 0.88 0.88 0.88 0.88</table>
+        <table name="#power">0.98 0.96 0.94 0.92 0.90 0.88 0.88 0.88 0.85 0.85</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -461,7 +461,7 @@
         </for>
     </skill>
     <skill id="5236" levels="10" name="Jewelry: Death Whisper">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.15 1.15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -470,7 +470,7 @@
         </for>
     </skill>
     <skill id="5237" levels="10" name="Jewelry: Focus">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.15 1.15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -479,7 +479,7 @@
         </for>
     </skill>
     <skill id="5238" levels="10" name="Jewelry: Wild Magic">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.15 1.15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -488,7 +488,7 @@
         </for>
     </skill>
     <skill id="5239" levels="10" name="Jewelry: Ferocious Magic">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.15 1.15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -497,7 +497,7 @@
         </for>
     </skill>
     <skill id="5240" levels="10" name="Jewelry: Wrath">
-        <table name="#power">2 4 6 8 10 12 12 12 12 12</table>
+        <table name="#power">2 4 6 8 10 12 12 12 15 15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -506,7 +506,7 @@
         </for>
     </skill>
     <skill id="5241" levels="10" name="Jewelry: Wind Walk">
-        <table name="#power">5 10 15 20 25 30 30 30 30 30</table>
+        <table name="#power">5 10 15 20 25 30 30 30 38 38</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -515,115 +515,115 @@
         </for>
     </skill>
     <skill id="5242" levels="10" name="Jewelry: Fire Protection">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">2 4 6 8 10 12 12 12 15 15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
         <for>
-            <mul stat="fireRes" val="#power"/>
+            <addMul stat="fireRes" val="#power"/>
         </for>
     </skill>
     <skill id="5243" levels="10" name="Jewelry: Water Protection">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">2 4 6 8 10 12 12 12 15 15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
         <for>
-            <mul stat="waterRes" val="#power"/>
+            <addMul stat="waterRes" val="#power"/>
         </for>
     </skill>
     <skill id="5244" levels="10" name="Jewelry: Wind Protection">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">2 4 6 8 10 12 12 12 15 15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
         <for>
-            <mul stat="windRes" val="#power"/>
+            <addMul stat="windRes" val="#power"/>
         </for>
     </skill>
     <skill id="5245" levels="10" name="Jewelry: Earth Protection">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">2 4 6 8 10 12 12 12 15 15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
         <for>
-            <mul stat="earthRes" val="#power"/>
+            <addMul stat="earthRes" val="#power"/>
         </for>
     </skill>
     <skill id="5246" levels="10" name="Jewelry: Holy Protection">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">2 4 6 8 10 12 12 12 15 15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
         <for>
-            <mul stat="holyRes" val="#power"/>
+            <addMul stat="holyRes" val="#power"/>
         </for>
     </skill>
     <skill id="5247" levels="10" name="Jewelry: Dark Protection">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">2 4 6 8 10 12 12 12 15 15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
         <for>
-            <mul stat="darkRes" val="#power"/>
+            <addMul stat="darkRes" val="#power"/>
         </for>
     </skill>
     <skill id="5248" levels="10" name="Jewelry: Power of Fire">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">25 50 75 100 125 150 150 150 188 188</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
         <for>
-            <mul stat="firePower" val="#power"/>
+            <add stat="firePower" val="#power"/>
         </for>
     </skill>
     <skill id="5249" levels="10" name="Jewelry: Power of Water">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">25 50 75 100 125 150 150 150 188 188</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
         <for>
-            <mul stat="waterPower" val="#power"/>
+            <add stat="waterPower" val="#power"/>
         </for>
     </skill>
     <skill id="5250" levels="10" name="Jewelry: Power of Wind">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">25 50 75 100 125 150 150 150 188 188</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
         <for>
-            <mul stat="windPower" val="#power"/>
+            <add stat="windPower" val="#power"/>
         </for>
     </skill>
     <skill id="5251" levels="10" name="Jewelry: Power of Earth">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">25 50 75 100 125 150 150 150 188 188</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
         <for>
-            <mul stat="earthPower" val="#power"/>
+            <add stat="earthPower" val="#power"/>
         </for>
     </skill>
     <skill id="5252" levels="10" name="Jewelry: Power of Holy">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">25 50 75 100 125 150 150 150 188 188</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
         <for>
-            <mul stat="holyPower" val="#power"/>
+            <add stat="holyPower" val="#power"/>
         </for>
     </skill>
     <skill id="5253" levels="10" name="Jewelry: Power of Dark">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">25 50 75 100 125 150 150 150 188 188</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
         <for>
-            <mul stat="darkPower" val="#power"/>
+            <add stat="darkPower" val="#power"/>
         </for>
     </skill>
     <skill id="5254" levels="10" name="Jewelry: Vampiric Rage">
-        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.12 1.12</table>
+        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.15 1.15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -632,7 +632,7 @@
         </for>
     </skill>
     <skill id="5255" levels="10" name="Jewelry: Experience">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.15 1.15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -641,7 +641,7 @@
         </for>
     </skill>
     <skill id="5256" levels="10" name="Jewelry: Knowledge">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.15 1.15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -650,7 +650,7 @@
         </for>
     </skill>
     <skill id="5257" levels="10" name="Jewelry: Wealth">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.15 1.15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -659,7 +659,7 @@
         </for>
     </skill>
     <skill id="5258" levels="10" name="Jewelry: Prosperity">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.15 1.15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -668,7 +668,7 @@
         </for>
     </skill>
     <skill id="5259" levels="10" name="Jewelry: Abundance">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.02 1.04 1.06 1.08 1.10 1.12 1.12 1.12 1.15 1.15</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -677,7 +677,7 @@
         </for>
     </skill>
     <skill id="5260" levels="10" name="Jewelry: Enchant Magic">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.01 1.02 1.03 1.04 1.05 1.06 1.06 1.06 1.08 1.08</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -686,7 +686,7 @@
         </for>
     </skill>
     <skill id="5261" levels="10" name="Jewelry: Enchant Warrior">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.01 1.02 1.03 1.04 1.05 1.06 1.06 1.06 1.08 1.08</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
@@ -695,7 +695,7 @@
         </for>
     </skill>
     <skill id="5262" levels="10" name="Jewelry: Enchant Armor">
-        <table name="#power">1.05 1.10 1.15 1.20 1.25 1.30 1.30 1.30 1.30 1.30</table>
+        <table name="#power">1.01 1.02 1.03 1.04 1.05 1.06 1.06 1.06 1.08 1.08</table>
         <set name="target" val="SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="PASSIVE"/>
